@@ -20,7 +20,7 @@ import data from "../../data/tipsData";
 import { BiSearchAlt } from "react-icons/bi";
 import ImgTeste from "../../images/esmeralda.webp";
 
-import Header from "../../components/Header";
+import Header from "../../components/Headers/Header";
 import Footer from "../../components/Footer";
 
 const filtrarItens = (data, busca) => {
@@ -96,7 +96,7 @@ const filtrarItens = (data, busca) => {
 
 function TipsPage() {
   const [busca, setBusca] = useState("");
-  const [ScrollY, setScrollY] = useState(0);
+  const [, setScrollY] = useState(0);
 
   useEffect(() => {
     function onScroll() {
@@ -106,6 +106,14 @@ function TipsPage() {
     try {
       window.addEventListener("scroll", onScroll);
       return () => window.removeEventListener("scroll", onScroll);
+    } catch (error) {
+      return console.error(error);
+    }
+  }, []);
+
+  useEffect(() => {
+    try {
+      return window.scrollTo(0, 0);
     } catch (error) {
       return console.error(error);
     }
@@ -144,11 +152,11 @@ function TipsPage() {
                 <Card key={Tip.idDica}>
                   <Link to={`${Tip.tipLink}/${Tip.idDica}`}>
                     <BoxImg>
-                      <img src={ImgTeste} alt={Tip.title} />
+                      <img src={ImgTeste} alt={Tip.title} loading="lazy" />
                     </BoxImg>
                     <CardBody>
                       <h3>{Tip.title}</h3>
-                      Veja mais...
+                      <p>Veja mais...</p>
                     </CardBody>
                   </Link>
                 </Card>

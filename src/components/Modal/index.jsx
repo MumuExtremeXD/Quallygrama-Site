@@ -17,6 +17,7 @@ import {
 import Swal from "sweetalert2";
 
 import CircularProgress from "@mui/material/CircularProgress";
+import { IoIosArrowDropleftCircle } from "react-icons/io";
 
 const Modal = ({ Information, OnClose = () => {} }) => {
   const [data, setData] = useState({
@@ -112,10 +113,21 @@ const Modal = ({ Information, OnClose = () => {} }) => {
     <Container>
       <div className="CloseModal" onClick={OnClose} />
 
-      <button onClick={OnClose}>X</button>
+      <button onClick={OnClose}>
+        <i>
+          <IoIosArrowDropleftCircle />
+        </i>
+        <p>Voltar</p>
+      </button>
 
       <Wrapper>
-        <button onClick={OnClose}>X</button>
+        <button onClick={OnClose}>
+          <i>
+            <IoIosArrowDropleftCircle />
+          </i>
+
+          <p>Voltar</p>
+        </button>
 
         <Box>
           <TitleModal>
@@ -217,7 +229,7 @@ const Modal = ({ Information, OnClose = () => {} }) => {
               href={`https://api.whatsapp.com/send?phone=5515996159898&text=Olá gostaria de comprar ${Information.title}`}
               target="_blank"
             >
-              <button type="button">Peça pelo WhatsApp</button>
+              <button type="button">Pedir pelo WhatsApp</button>
             </a>
           </BoxZap>
         </Box>

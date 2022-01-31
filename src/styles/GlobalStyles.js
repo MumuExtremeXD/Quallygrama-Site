@@ -16,6 +16,7 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    -webkit-appearance: none;
   }
 
   * {
@@ -45,8 +46,9 @@ export default createGlobalStyle`
 }
 
   :root {
-    --primary:#AFDF11;
+    --primary:#93b250;
     --secondary:#FFF;
+    --third:#285d3c;
     --blue: #008ffc;
     --black:#222222;
     --gray:#444;

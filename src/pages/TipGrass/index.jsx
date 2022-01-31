@@ -1,34 +1,84 @@
 /* eslint-disable eqeqeq */
-import React from "react";
+import React, { useEffect } from "react";
 
 import { useParams } from "react-router-dom";
 
+import {
+  Container,
+  SearchSection,
+  CardTip,
+  TipImg,
+  TipInfo,
+  UlAplication,
+} from "./styles";
+import ImgTeste from "../../images/esmeralda.webp";
+import Header from "../../components/Headers/HeaderTips";
+import Footer from "../../components/Footer";
+
+import { GiHighGrass } from "react-icons/gi";
 import data from "../../data/tipsData";
-import { CardTip, TipImg, TipInfo } from "./styles";
+
 function TipEsmelda() {
   const { id } = useParams();
 
   const filterTipId = data.filter((i) => i.idDica == id);
 
+  useEffect(() => {
+    try {
+      return window.scrollTo(0, 0);
+    } catch (error) {
+      return console.error(error);
+    }
+  }, []);
+
   return (
-    <>
+    <Container>
+      <Header />
+
       {filterTipId
         ? filterTipId?.map((Data2) => (
-            <CardTip key={Data2.idDica}>
-              <TipImg>
-                <img src={""} alt="" />
-              </TipImg>
+            <>
+              <SearchSection key={Math.random().toString()}>
+                <div className="Headline">
+                  <h2>{Data2.title}</h2>
+                </div>
+              </SearchSection>
 
-              <TipInfo>
-                <h2>{id}</h2>
+              <CardTip key={Data2.idDica}>
+                <TipInfo>
+                  <p>{Data2.description1}</p>
 
-                <h3>{Data2.title}</h3>
-                <p>{Data2.description1}</p>
-              </TipInfo>
-            </CardTip>
+                  <TipImg>
+                    <div className="Img1">
+                      <img src={ImgTeste} alt="" loading="lazy" />
+                    </div>
+
+                    <div className="Img2">
+                      <img src={ImgTeste} alt="" loading="lazy" />
+                    </div>
+                  </TipImg>
+
+                  <p>{Data2.description1}</p>
+
+                  <UlAplication>
+                    <li>
+                      <GiHighGrass /> {Data2.LongLife}
+                    </li>
+                    <li>
+                      <GiHighGrass /> {Data2.GoldenTip}
+                    </li>
+                    <li>
+                      <GiHighGrass /> {Data2.AfterPruning}
+                    </li>
+                  </UlAplication>
+                </TipInfo>
+              </CardTip>
+            </>
           ))
         : false}
-    </>
+
+      <Footer />
+    </Container>
   );
 }
 

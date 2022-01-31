@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import ImgTeste2 from "../../images/teste.webp";
+import ImgTeste2 from "../../images/teste.png";
 
 export const Container = styled.div`
   width: 100% !important;
@@ -13,8 +13,6 @@ export const Container = styled.div`
   margin: 0 auto;
 
   position: relative;
-
-  max-width: 1440px;
 
   > h2 {
     font-size: 7.8rem;
@@ -41,7 +39,6 @@ export const SearchSection = styled.div`
   flex-wrap: wrap;
 
   width: 100%;
-  max-width: 1440px;
   height: 290px;
 
   margin: 0 auto;
@@ -50,17 +47,16 @@ export const SearchSection = styled.div`
   background-image: url(${ImgTeste2});
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
 
   @media (min-width: 1441px) {
     background-attachment: scroll;
-    margin: auto;
-    max-width: 100%;
+    background-size: cover;
   }
 
   @media (max-width: 425px) {
     background-position: top;
     height: 450px;
+    background-size: auto;
   }
 
   @media (max-width: 425px) {
@@ -70,7 +66,6 @@ export const SearchSection = styled.div`
   > img {
     user-select: none;
 
-    max-width: 1022px;
     width: 100%;
     max-height: 335px;
 
@@ -88,6 +83,7 @@ export const SearchSection = styled.div`
   }
 
   .Headline {
+    max-width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,8 +178,9 @@ export const SearchSection = styled.div`
       > label > svg {
         margin-left: 25px;
         outline: none;
+        font-size: 25px;
         cursor: pointer;
-        fill: var(--primary);
+        fill: var(--third);
       }
 
       > input {
@@ -206,9 +203,10 @@ export const SearchSection = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 80px;
   width: 100%;
+  max-width: 1440px;
 
   display: flex;
   align-items: center;
@@ -293,16 +291,16 @@ export const CardBody = styled.div`
   border-radius: 0 0 6px 6px;
 
   > h3 {
-    font-size: 1.2rem;
+    font-size: 1.13rem;
     color: var(--black);
-    font-weight: 650;
+    font-weight: 550;
   }
 
   > p {
     font-weight: 600;
-    font-size: 1.1rem;
-    font-weight: normal;
-    color: var(--primary);
+    font-size: 1.13rem;
+    font-weight: 500;
+    color: var(--third);
   }
 `;
 

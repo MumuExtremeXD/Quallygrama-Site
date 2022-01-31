@@ -7,16 +7,13 @@ import {
   Wrapper,
   WrapperProducts1,
   WrapperProducts2,
-  WrapperProducts3,
   CardBox,
   Card,
-  CardText2,
   CardImg,
-  CardImg2,
   CardImg3,
 } from "./styles";
 
-import Header from "../../components/Header";
+import Header from "../../components/Headers/Header";
 import Footer from "../../components/Footer";
 
 import VideoXD from "../../videos/Teste3.mp4";
@@ -42,7 +39,10 @@ function Home() {
         </div>
         <div className="EffectBlack">
           <div className="GroupText">
-            <h1>Semear momentos é a essência da Qually Grama</h1>
+            <h1>
+              Semear momentos é a essência da <br />
+              Qually Grama
+            </h1>
 
             <Link to={"../gramas"}>
               <button>Cultivar Momento</button>
@@ -53,17 +53,18 @@ function Home() {
 
       <WrapperProducts1>
         <h1>
-          Conheça os lugares que <span> estamos juntos!</span>
+          Conheça os lugares que <br /> <span>estamos juntos!</span>
         </h1>
 
         <CardBox>
           <Card>
             <CardImg>
-              <img src={ImgTeste} alt="" />
-              <img src={ImgTeste} alt="" />
-
-              <img src={ImgTeste} alt="" />
-              <img src={ImgTeste} alt="" />
+              <img src={ImgTeste} alt="ts" loading="lazy" />
+              <img src={ImgTeste} alt="ts" loading="lazy" />
+              <img src={ImgTeste} alt="ts" loading="lazy" />
+              <img src={ImgTeste} alt="ts" loading="lazy" />
+              <img src={ImgTeste} alt="ts" loading="lazy" />
+              <img src={ImgTeste} alt="ts" loading="lazy" />
             </CardImg>
           </Card>
         </CardBox>
@@ -84,28 +85,13 @@ function Home() {
         <CardBox>
           <Card>
             <CardImg3>
-              <img src={ImgTeste} alt="" />
-              <img src={ImgTeste} alt="" />
-              <img src={ImgTeste} alt="" />
+              <img src={ImgTeste} alt="ts" />
+              <img src={ImgTeste} alt="ts" />
+              <img src={ImgTeste} alt="ts" />
             </CardImg3>
           </Card>
         </CardBox>
       </WrapperProducts2>
-
-      <WrapperProducts3>
-        <CardBox>
-          <Card>
-            <CardImg2 />
-
-            <CardText2>
-              <h2>
-                Venha ser uma flora Forte <br />
-                Conheça o nosso programa de parcerias
-              </h2>
-            </CardText2>
-          </Card>
-        </CardBox>
-      </WrapperProducts3>
 
       <Footer />
     </Container>

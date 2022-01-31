@@ -1,14 +1,16 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import loadable from "@loadable/component";
 
 import Home from "../pages/Home";
-import Products from "../pages/Products";
-import Tips from "../pages/TipsGrass";
 
-import Tip from "../pages/TipGrass";
+const Products = loadable(() => import("../pages/Products"));
+const Tips = loadable(() => import("../pages/TipsGrass"));
+
+const EsmeraldaXD = loadable(() => import("../pages/Product/Esmeralda"));
+const Tip = loadable(() => import("../pages/TipGrass"));
 
 /* Variedades de Grama */
-import EsmeraldaXD from "../pages/Product/Esmeralda";
 
 function routes() {
   return (

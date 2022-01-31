@@ -106,67 +106,50 @@ export const ProductImg = styled.div`
   grid-row-gap: 8px;
 
   .Div1 {
-    > img {
-      border-radius: 13px 0px 0px 13px;
-      height: 347px;
-      width: 100%;
-      object-fit: cover;
-    }
+    border-radius: 13px 0px 0px 13px;
+    height: 347px;
+    width: 100%;
+    object-fit: cover;
 
     grid-area: 1 / 1 / 7 / 7;
   }
 
   .Div2 {
-    > img {
-      object-fit: cover;
-      height: 166.5px;
-      width: 100%;
-      max-width: 350px;
-    }
+    object-fit: cover;
+    height: 166.5px;
+    width: 100%;
+    max-width: 350px;
 
     grid-area: 1 / 7 / 4 / 10;
   }
 
   .Div3 {
-    > img {
-      border-radius: 0px 13px 0px 0px;
-      object-fit: cover;
-      height: 166.5px;
-      width: 100%;
-      max-width: 350px;
-    }
+    border-radius: 0px 13px 0px 0px;
+    object-fit: cover;
+    height: 166.5px;
+    width: 100%;
+    max-width: 350px;
 
     grid-area: 1 / 10 / 4 / 13;
   }
 
   .Div4 {
-    > img {
-      object-fit: cover;
-      width: 100%;
-      max-width: 350px;
-      height: 166.5px;
-    }
+    object-fit: cover;
+    width: 100%;
+    max-width: 350px;
+    height: 166.5px;
+
     grid-area: 4 / 7 / 7 / 10;
   }
   .Div5 {
-    > img {
-      object-fit: cover;
-      width: 100%;
-      max-width: 350px;
-      height: 166.5px;
-      border-radius: 0px 0px 13px 0px;
-    }
+    object-fit: cover;
+    width: 100%;
+    max-width: 350px;
+    height: 166.5px;
+    border-radius: 0px 0px 13px 0px;
 
     grid-area: 4 / 10 / 7 / 13;
   }
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-export const ProductImgMobile = styled.div`
-  display: none;
 
   @media (max-width: 768px) {
     display: flex;
@@ -186,10 +169,37 @@ export const ProductImgMobile = styled.div`
       display: none; /* Safari and Chrome */
     }
 
-    > img {
-      border-radius: 12px;
-      width: 100%;
-      height: 280px;
+    .Div1 {
+      border-radius: 13px 0px 0px 13px;
+      height: 347px;
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    .Div2 {
+      object-fit: cover;
+      height: 347px;
+      max-width: 100%;
+    }
+
+    .Div3 {
+      border-radius: 0px 13px 0px 0px;
+      object-fit: cover;
+      height: 347px;
+      max-width: 100%;
+    }
+
+    .Div4 {
+      object-fit: cover;
+      max-width: 100%;
+      height: 347px;
+    }
+
+    .Div5 {
+      object-fit: cover;
+      max-width: 100%;
+      height: 347px;
+      border-radius: 0px 0px 13px 0px;
     }
   }
 `;
@@ -562,7 +572,7 @@ export const LoadingBox = styled.div`
 export const CardMobile = styled.div`
   display: none;
   background-color: #fff;
-  padding: 16px 16px 24px 16px;
+  padding: 16px 10px 24px 14px;
 
   border-top: 1px solid #ddd;
 
@@ -581,7 +591,7 @@ export const CardMobile = styled.div`
     > p {
       display: flex;
       flex-direction: column;
-      font-size: 18px;
+      font-size: 20px;
       padding-right: 25px;
       line-height: 18px;
 
@@ -590,13 +600,13 @@ export const CardMobile = styled.div`
         gap: 0 10px;
         line-height: 25px;
         > .Price {
-          font-size: 18px;
+          font-size: 20.5px;
           text-decoration: line-through !important;
           color: rgb(113, 113, 113) !important;
         }
 
         > .PricePromotion {
-          font-size: 18px;
+          font-size: 20.5px;
           text-decoration: none !important;
           color: var(--black);
           font-weight: 550;
@@ -623,7 +633,7 @@ export const CardMobile = styled.div`
     > p {
       display: flex;
       flex-direction: column;
-      font-size: 16px;
+      font-size: 18px;
       padding-right: 10px;
       line-height: 18px;
 
@@ -632,13 +642,13 @@ export const CardMobile = styled.div`
         font-weight: 550;
 
         > .Price {
-          font-size: 17px;
+          font-size: 19px;
           text-decoration: line-through !important;
           color: rgb(113, 113, 113) !important;
         }
 
         > .PricePromotion {
-          font-size: 17px;
+          font-size: 19px;
           text-decoration: none !important;
           color: var(--black);
           font-weight: 550;

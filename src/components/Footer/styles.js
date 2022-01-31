@@ -4,7 +4,7 @@ export const Container = styled.footer`
   max-width: 1440px;
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 100%;
 
   display: flex;
   justify-content: center;
@@ -15,44 +15,65 @@ export const Container = styled.footer`
   color: var(--black);
   bottom: 0;
 
-  padding: 10px 0px 120px;
+  padding: 30px 0px 0px;
 `;
 
 export const Wrapper = styled.div`
   margin: 0 auto;
+  padding: 20px 0px 160px;
 `;
 
 export const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
+
+  gap: 40px 160px;
+  padding: 0px 25px;
 `;
 
 export const Column = styled.div`
-  width: 25%;
-  padding: 0px 55px;
-
   > h4 {
     font-size: 18px;
-    text-transform: capitalize;
     margin-bottom: 20px;
+    font-weight: 650;
+    color: var(--third);
   }
 
   > ul {
     list-style: none;
 
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0px;
+
     > li {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
 
       > a {
         font-size: 16px;
         text-decoration: none;
-        display: block;
+        font-weight: 500;
         color: var(--black);
-        text-transform: capitalize;
         transition: all 0.3s ease-in-out;
 
+        gap: 10px 15px;
+        margin-bottom: 5px;
+
+        display: flex;
+        flex-wrap: nowrap;
+
         &:hover {
-          color: var(--primary);
+          color: var(--third);
+        }
+
+        > i {
+          cursor: pointer;
+
+          > svg {
+            height: 19px;
+            width: 19px;
+            fill: var(--black);
+          }
         }
       }
     }
@@ -67,7 +88,7 @@ export const Copyright = styled.div`
   position: absolute;
 
   background: #ddd;
-  height: 65px;
+  height: 80px;
   width: 100%;
 
   bottom: 0;
@@ -75,13 +96,13 @@ export const Copyright = styled.div`
 
   > h4 {
     text-align: center;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 17px;
+    font-weight: 400;
   }
 
   @media (max-width: 425px) {
     > h4 {
-      font-size: 12px;
+      font-size: 16px;
       font-weight: 300;
     }
   }

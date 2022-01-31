@@ -58,7 +58,7 @@ export const Wrapper = styled.div`
   overflow-x: hidden;
 
   position: fixed;
-  top: 40px;
+  top: 10px;
 
   border-radius: 12px 12px 0px 0px;
   width: 100%;
@@ -80,18 +80,31 @@ export const Wrapper = styled.div`
     outline: none;
     border: none;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0 10px;
+
     font-size: 20px;
 
     top: 5px;
-    right: 10%;
+    right: 8%;
+
+    > i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 35px;
+      cursor: pointer;
+    }
 
     @media (min-width: 769px) {
       display: none;
     }
 
     @media (max-width: 630px) {
-      top: 30px;
-      right: 6%;
+      top: 20px;
     }
   }
 
@@ -104,7 +117,7 @@ export const Wrapper = styled.div`
 export const Box = styled.div`
   position: relative;
 
-  padding: 64px 15px 20px 15px;
+  padding: 104px 15px 20px 15px;
   border-radius: 20px;
 
   width: 100%;

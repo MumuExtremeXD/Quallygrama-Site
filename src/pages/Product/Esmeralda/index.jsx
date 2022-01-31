@@ -14,7 +14,6 @@ import {
   ProductHeader,
   CardProduct,
   ProductImg,
-  ProductImgMobile,
   ProductBox,
   BoxDescription,
   ProductForm,
@@ -32,8 +31,8 @@ import Modal from "../../../components/Modal";
 
 import CircularProgress from "@mui/material/CircularProgress";
 import ImgTeste from "../../../images/esmeralda.webp";
-import Header from "../../../components/HeaderProd";
-import Footer from "../../../components/FooterSecondary";
+import Header from "../../../components/Headers/HeaderProd";
+import Footer from "../../../components/FooterProducts";
 
 function ProdEsmelda() {
   const [data, setData] = useState({
@@ -152,38 +151,12 @@ function ProdEsmelda() {
                   </ProductHeader>
 
                   <ProductImg>
-                    <div className="Div1">
-                      <img src={ImgTeste} alt={Data2.title} />
-                    </div>
-
-                    <div className="Div2">
-                      <img src={ImgTeste} alt={Data2.title} />
-                    </div>
-
-                    <div className="Div3">
-                      <img src={ImgTeste} alt={Data2.title} />
-                    </div>
-
-                    <div className="Div4">
-                      <img src={ImgTeste} alt={Data2.title} />
-                    </div>
-
-                    <div className="Div5">
-                      <img src={ImgTeste} alt={Data2.title} />
-                    </div>
+                    <img className="Div1" src={ImgTeste} alt={Data2.title} />
+                    <img className="Div2" src={ImgTeste} alt={Data2.title} />
+                    <img className="Div3" src={ImgTeste} alt={Data2.title} />
+                    <img className="Div4" src={ImgTeste} alt={Data2.title} />
+                    <img className="Div5" src={ImgTeste} alt={Data2.title} />
                   </ProductImg>
-
-                  <ProductImgMobile>
-                    <img src={ImgTeste} alt={Data2.title} />
-
-                    <img src={ImgTeste} alt={Data2.title} />
-
-                    <img src={ImgTeste} alt={Data2.title} />
-
-                    <img src={ImgTeste} alt={Data2.title} />
-
-                    <img src={ImgTeste} alt={Data2.title} />
-                  </ProductImgMobile>
 
                   <ProductBox>
                     <ProductInfo>
@@ -192,7 +165,7 @@ function ProdEsmelda() {
                           <h2>{Data2.shortDescription}</h2>
                           <p>{Data2.Origin}</p>
                         </div>
-                        <img src={ImgTeste} alt="Selo Qually" />
+                        <img src={ImgTeste} alt="Selo Qually" loading="lazy" />
                       </ProductDescription>
 
                       <Divider />
