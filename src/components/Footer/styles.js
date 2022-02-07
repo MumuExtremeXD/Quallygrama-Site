@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.footer`
-  max-width: 1440px;
   position: relative;
   width: 100%;
   height: 100%;
@@ -73,6 +72,40 @@ export const Column = styled.div`
             height: 19px;
             width: 19px;
             fill: var(--black);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    > ul {
+      > li {
+        > a {
+          font-size: 18px;
+          text-decoration: none;
+          font-weight: 500;
+          color: var(--black);
+          transition: all 0.3s ease-in-out;
+
+          gap: 20px 15px;
+          margin-bottom: 15px;
+
+          display: flex;
+          flex-wrap: nowrap;
+
+          &:hover {
+            color: var(--third);
+          }
+
+          > i {
+            cursor: pointer;
+
+            > svg {
+              height: 21px;
+              width: 21px;
+              fill: var(--black);
+            }
           }
         }
       }

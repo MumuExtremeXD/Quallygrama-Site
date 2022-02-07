@@ -1,5 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 
+import ImgEsmeralda1 from "../images/esmeralda.webp";
+
 export default [
   {
     idGrama: 6,
@@ -11,7 +13,7 @@ export default [
     PriceGrass: "R$14,00m²",
     PriceGrassPromotion: "R$7,00m²",
 
-    img1: "",
+    img1: `${ImgEsmeralda1}`,
     img2: "",
     img3: "",
     img4: "",

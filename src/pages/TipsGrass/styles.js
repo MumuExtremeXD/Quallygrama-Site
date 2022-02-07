@@ -14,8 +14,6 @@ export const Container = styled.div`
 
   position: relative;
 
-  max-width: 1440px;
-
   > h2 {
     font-size: 7.8rem;
 
@@ -31,6 +29,10 @@ export const Container = styled.div`
       color: var(--primary);
     }
   }
+
+  .Section {
+    width: 100%;
+  }
 `;
 
 export const SearchSection = styled.div`
@@ -41,7 +43,6 @@ export const SearchSection = styled.div`
   flex-wrap: wrap;
 
   width: 100%;
-  max-width: 1440px;
   height: 290px;
 
   margin: 0 auto;
@@ -53,20 +54,40 @@ export const SearchSection = styled.div`
 
   @media (min-width: 1441px) {
     background-attachment: scroll;
-    margin: auto;
-    max-width: 100%;
+    background-size: cover;
   }
 
   @media (max-width: 425px) {
     background-position: top;
     height: 450px;
+    background-size: auto;
   }
 
   @media (max-width: 425px) {
     height: 240px;
   }
 
+  > img {
+    user-select: none;
+
+    width: 100%;
+    max-height: 335px;
+
+    overflow-x: hidden;
+    position: absolute;
+    bottom: 0px;
+
+    margin: 0 auto;
+
+    @media (max-width: 425px) {
+      object-fit: cover;
+
+      min-width: 300px;
+    }
+  }
+
   .Headline {
+    max-width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,6 +176,7 @@ export const SearchSection = styled.div`
       }
 
       @media (max-width: 425px) {
+        border-radius: 0px;
         margin-top: 210px;
       }
 
@@ -165,30 +187,31 @@ export const SearchSection = styled.div`
         cursor: pointer;
         fill: var(--third);
       }
-
-      > input {
-        outline: none;
-
-        width: 100%;
-        height: 55px;
-        padding: 0px 15px 0px 15px;
-
-        border: none;
-
-        cursor: text;
-
-        line-height: 28px;
-        font-size: 17px;
-        font-weight: 400;
-      }
     }
   }
+`;
+
+export const InputForm = styled.input`
+  outline: none;
+
+  width: 100%;
+  height: 55px;
+  padding: 0px 15px 0px 15px;
+
+  border: none;
+
+  cursor: text;
+
+  line-height: 28px;
+  font-size: 17px;
+  font-weight: 400;
 `;
 
 export const Wrapper = styled.div`
   margin-top: 60px;
   margin-bottom: 80px;
   width: 100%;
+  max-width: 1440px;
 
   display: flex;
   align-items: center;
@@ -207,7 +230,7 @@ export const Box = styled.div`
   width: 100%;
   display: grid;
   margin-top: var(--verticalPadding);
-  padding: 0px 25px;
+  padding: 0px 15px;
 
   gap: 30px 25px;
 
@@ -219,10 +242,10 @@ export const Box = styled.div`
   justify-items: center;
   align-items: center;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     grid-template-columns:
-      minmax(180px, 1fr)
-      repeat(auto-fill, minmax(180px, 1fr));
+      minmax(340px, 1fr)
+      repeat(auto-fill, minmax(340px, 1fr));
     grid-auto-rows: min-content;
   }
 
@@ -238,7 +261,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
 
-  max-width: 350px;
+  max-width: 440px;
 
   user-select: none;
   transition: all 0.2s ease;

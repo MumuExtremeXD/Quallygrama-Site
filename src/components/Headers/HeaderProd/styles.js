@@ -150,7 +150,7 @@ export const Ul = styled.ul`
     }
   }
 
-  right: ${({ menu }) => (menu ? "-100%" : "0")};
+  right: ${({ menu }) => (menu ? "-200%" : "0")};
 
   height: 100%;
   width: 32%;

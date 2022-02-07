@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
-// import ImgTeste2 from "../../images/teste.webp";
-
-import ImgTeste3 from "../../images/teste3.png";
+import ImgTeste2 from "../../images/teste3.png";
 
 export const Container = styled.div`
-  width: 100% !important;
+  width: 100%;
 
   display: flex;
   justify-content: center;
@@ -15,7 +13,19 @@ export const Container = styled.div`
   margin: 0 auto;
 
   position: relative;
-  max-width: 1440px;
+`;
+
+export const Section = styled.div`
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  margin: 0 auto;
+
+  position: relative;
 
   > h2 {
     font-size: 7.8rem;
@@ -24,7 +34,7 @@ export const Container = styled.div`
       font-size: 4.6rem;
     }
 
-    @media (max-width: 605px) {
+    @media (max-width: 425px) {
       font-size: 3.6rem;
     }
 
@@ -47,26 +57,46 @@ export const SearchSection = styled.div`
   margin: 0 auto;
   top: 0;
 
-  background-image: url(${ImgTeste3});
+  background-image: url(${ImgTeste2});
   background-repeat: no-repeat;
   background-attachment: fixed;
 
   @media (min-width: 1441px) {
     background-attachment: scroll;
-    margin: auto;
-    max-width: 100%;
+    background-size: cover;
   }
 
   @media (max-width: 425px) {
     background-position: top;
     height: 450px;
+    background-size: auto;
   }
 
   @media (max-width: 425px) {
     height: 240px;
   }
 
+  > img {
+    user-select: none;
+
+    width: 100%;
+    max-height: 335px;
+
+    overflow-x: hidden;
+    position: absolute;
+    bottom: 0px;
+
+    margin: 0 auto;
+
+    @media (max-width: 425px) {
+      object-fit: cover;
+
+      min-width: 300px;
+    }
+  }
+
   .Headline {
+    max-width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +112,7 @@ export const SearchSection = styled.div`
     text-shadow: -3px 2px 4px rgba(0, 0, 0, 0.16);
 
     > h2 {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       font-weight: 800;
       color: #fff;
     }
@@ -114,11 +144,82 @@ export const SearchSection = styled.div`
       }
     }
   }
+
+  > div {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font-size: 100%;
+
+    z-index: 4;
+
+    max-width: 650px;
+    width: 100%;
+    min-width: 290px;
+
+    display: block;
+    padding: 0px 20px;
+
+    @media (max-width: 425px) {
+      padding: 0px 0px;
+      max-width: 100%;
+    }
+
+    > section {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      width: 100%;
+      height: 64px;
+
+      border-radius: 8px;
+      background: #fff;
+
+      margin-top: 255px;
+      box-shadow: 0px 8px 20px rgb(0 0 0 / 6%);
+
+      @media (max-width: 768px) {
+        margin-top: 250px;
+      }
+
+      @media (max-width: 425px) {
+        border-radius: 0px;
+        margin-top: 210px;
+      }
+
+      > label > svg {
+        margin-left: 25px;
+        outline: none;
+        font-size: 25px;
+        cursor: pointer;
+        fill: var(--third);
+      }
+
+      > input {
+        outline: none;
+
+        width: 100%;
+        height: 55px;
+        padding: 0px 15px 0px 15px;
+
+        border: none;
+
+        cursor: text;
+
+        line-height: 28px;
+        font-size: 17px;
+        font-weight: 400;
+      }
+    }
+  }
 `;
 
 export const CardTip = styled.div`
   margin: 0px;
   padding: 5px 0px;
+  max-width: 1440px;
 `;
 
 export const TipImg = styled.div`

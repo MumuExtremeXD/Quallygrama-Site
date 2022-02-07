@@ -31,6 +31,22 @@ export const Container = styled.div`
   }
 `;
 
+export const InputForm = styled.input`
+  outline: none;
+
+  width: 100%;
+  height: 55px;
+  padding: 0px 15px 0px 15px;
+
+  border: none;
+
+  cursor: text;
+
+  line-height: 28px;
+  font-size: 17px;
+  font-weight: 400;
+`;
+
 export const SearchSection = styled.div`
   display: flex;
   justify-content: center;
@@ -172,6 +188,7 @@ export const SearchSection = styled.div`
       }
 
       @media (max-width: 425px) {
+        border-radius: 0px;
         margin-top: 210px;
       }
 
@@ -181,22 +198,6 @@ export const SearchSection = styled.div`
         font-size: 25px;
         cursor: pointer;
         fill: var(--third);
-      }
-
-      > input {
-        outline: none;
-
-        width: 100%;
-        height: 55px;
-        padding: 0px 15px 0px 15px;
-
-        border: none;
-
-        cursor: text;
-
-        line-height: 28px;
-        font-size: 17px;
-        font-weight: 400;
       }
     }
   }
@@ -225,7 +226,7 @@ export const Box = styled.div`
   width: 100%;
   display: grid;
   margin-top: var(--verticalPadding);
-  padding: 0px 25px;
+  padding: 0px 15px;
 
   gap: 30px 25px;
 
@@ -237,10 +238,10 @@ export const Box = styled.div`
   justify-items: center;
   align-items: center;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     grid-template-columns:
-      minmax(180px, 1fr)
-      repeat(auto-fill, minmax(180px, 1fr));
+      minmax(340px, 1fr)
+      repeat(auto-fill, minmax(340px, 1fr));
     grid-auto-rows: min-content;
   }
 
@@ -256,7 +257,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
 
-  max-width: 350px;
+  max-width: 440px;
 
   user-select: none;
   transition: all 0.2s ease;

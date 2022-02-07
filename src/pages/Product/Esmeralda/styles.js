@@ -35,7 +35,7 @@ export const Content = styled.div`
 
 export const Wrapper = styled.div`
   width: 100%;
-  max-width: 1120px;
+  max-width: 1240px;
   margin: 0 auto;
 
   display: flex;
@@ -64,6 +64,10 @@ export const ProductHeader = styled.div`
   justify-content: flex-start;
 
   width: 100%;
+
+  > h1 {
+    color: var(--third);
+  }
 
   > div {
     display: flex;
@@ -105,50 +109,55 @@ export const ProductImg = styled.div`
   grid-column-gap: 8px;
   grid-row-gap: 8px;
 
-  .Div1 {
+  .Image1 {
     border-radius: 13px 0px 0px 13px;
-    height: 347px;
+    height: 450px;
     width: 100%;
     object-fit: cover;
 
     grid-area: 1 / 1 / 7 / 7;
+    cursor: pointer;
   }
 
-  .Div2 {
+  .Image2 {
     object-fit: cover;
-    height: 166.5px;
+    height: 220px;
     width: 100%;
     max-width: 350px;
 
     grid-area: 1 / 7 / 4 / 10;
+    cursor: pointer;
   }
 
-  .Div3 {
+  .Image3 {
     border-radius: 0px 13px 0px 0px;
     object-fit: cover;
-    height: 166.5px;
+    height: 220px;
     width: 100%;
     max-width: 350px;
 
     grid-area: 1 / 10 / 4 / 13;
+    cursor: pointer;
   }
 
-  .Div4 {
+  .Image4 {
     object-fit: cover;
     width: 100%;
     max-width: 350px;
-    height: 166.5px;
+    height: 220px;
 
     grid-area: 4 / 7 / 7 / 10;
+    cursor: pointer;
   }
-  .Div5 {
+  .Image5 {
     object-fit: cover;
     width: 100%;
     max-width: 350px;
-    height: 166.5px;
+    height: 220px;
     border-radius: 0px 0px 13px 0px;
 
     grid-area: 4 / 10 / 7 / 13;
+    cursor: pointer;
   }
 
   @media (max-width: 768px) {
@@ -169,37 +178,59 @@ export const ProductImg = styled.div`
       display: none; /* Safari and Chrome */
     }
 
-    .Div1 {
+    .Image1 {
       border-radius: 13px 0px 0px 13px;
       height: 347px;
       max-width: 100%;
       object-fit: cover;
     }
 
-    .Div2 {
+    .Image2 {
       object-fit: cover;
       height: 347px;
       max-width: 100%;
     }
 
-    .Div3 {
+    .Image3 {
       border-radius: 0px 13px 0px 0px;
       object-fit: cover;
       height: 347px;
       max-width: 100%;
     }
 
-    .Div4 {
+    .Image4 {
       object-fit: cover;
       max-width: 100%;
       height: 347px;
     }
 
-    .Div5 {
+    .Image5 {
       object-fit: cover;
       max-width: 100%;
       height: 347px;
       border-radius: 0px 0px 13px 0px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .Image1 {
+      height: 300px;
+    }
+
+    .Image2 {
+      height: 300px;
+    }
+
+    .Image3 {
+      height: 300px;
+    }
+
+    .Image4 {
+      height: 300px;
+    }
+
+    .Image5 {
+      height: 300px;
     }
   }
 `;
@@ -209,7 +240,7 @@ export const ProductBox = styled.div`
   align-items: flex-start;
   position: relative;
 
-  padding: 0px 35px 0px 5px;
+  padding: 0px 25px 0px 5px;
 
   @media (max-width: 605px) {
     padding: 0px 10px 0px 0px;
@@ -262,38 +293,6 @@ export const ProductForm = styled.div`
       }
     }
 
-    width: 100%;
-    margin-top: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    padding: 30px 30px;
-    border: 0.5px solid #ddd;
-    box-shadow: 0px 1px 10px -5px rgba(0, 0, 0, 0.33);
-    border-radius: 4px;
-
-    @media (max-width: 768px) {
-      padding: 20px 20px;
-    }
-
-    > input {
-      outline: none;
-      border: 0.5px solid #ddd;
-
-      border-radius: 4px;
-      padding: 10px 15px;
-
-      width: 100%;
-      font-size: 14px;
-
-      @media (max-width: 605px) {
-        padding: 13px 10px;
-        font-size: 14px;
-      }
-    }
-
     > .form-group {
       display: flex;
       justify-content: center;
@@ -303,6 +302,10 @@ export const ProductForm = styled.div`
 
       @media (max-width: 768px) {
         flex-direction: column;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
       }
 
       > input {
@@ -324,18 +327,20 @@ export const ProductForm = styled.div`
       }
     }
 
-    > input {
-      font-size: 15px;
-      outline: none;
-      border: 0.5px solid #ddd;
-      border-radius: 4px;
-      padding: 10px 8px;
-      width: 100%;
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-      @media (max-width: 605px) {
-        padding: 13px 10px;
-        font-size: 14px;
-      }
+    padding: 30px 30px;
+    border: 0.5px solid #ddd;
+    box-shadow: 0px 1px 10px -5px rgba(0, 0, 0, 0.33);
+    border-radius: 4px;
+
+    @media (max-width: 768px) {
+      padding: 20px 20px;
     }
 
     > span {
@@ -418,6 +423,20 @@ export const ProductForm = styled.div`
   }
 `;
 
+export const InputForm = styled.input`
+  font-size: 15px;
+  outline: none;
+  border: 0.5px solid #ddd;
+  border-radius: 4px;
+  padding: 10px 8px;
+  width: 100%;
+
+  @media (max-width: 605px) {
+    padding: 13px 10px;
+    font-size: 14px;
+  }
+`;
+
 export const ProductInfo = styled.div`
   width: 70%;
 
@@ -448,7 +467,7 @@ export const ProductInfo = styled.div`
     font-size: 18px;
   }
 
-  @media (max-width: 605px) {
+  @media (max-width: 667px) {
     width: 100%;
     padding: 10px 10px 0px 15px;
   }
@@ -477,7 +496,7 @@ export const ProductDescription = styled.div`
 
   > img {
     right: 10%;
-    top: -15px;
+    top: -5px;
     position: absolute;
 
     max-width: 70px;
@@ -490,14 +509,26 @@ export const ProductDescription = styled.div`
       top: 10px;
     }
 
+    @media (max-width: 667px) {
+      display: none;
+    }
+
     @media (max-width: 605px) {
       max-width: 90px;
       height: 90px;
+
+      display: block;
 
       right: 0;
       top: 0;
       position: relative;
     }
+  }
+
+  > div > h2 {
+    color: var(--third);
+    max-width: 350px;
+    width: 100%;
   }
 
   @media (max-width: 605px) {
@@ -509,7 +540,17 @@ export const UlProduct = styled.ul`
   list-style: none;
 
   > li {
-    font-size: 19px;
+    margin-bottom: 15px;
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+
+    > i {
+      font-size: 25px;
+      color: var(--third);
+    }
   }
 `;
 
@@ -519,11 +560,19 @@ export const UlAplication = styled.ul`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
 
   > li {
-    font-size: 19px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+
+    > i {
+      font-size: 25px;
+      color: var(--third);
+    }
   }
 `;
 

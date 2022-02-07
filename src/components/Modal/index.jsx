@@ -9,6 +9,7 @@ import {
   TitleModal,
   SocialModal,
   FormBox,
+  InputFormMobile,
   TextBox,
   BoxZap,
   LoadingBox,
@@ -57,9 +58,9 @@ const Modal = ({ Information, OnClose = () => {} }) => {
 
       Swal.fire({
         icon: "success",
-        title: "Solicitação enviada com sucesso!",
-        text: "Os links com os produtos e serviços serão encaminhados para o seu Email",
-        confirmButtonText: "Pronto!",
+        title: "Pedido enviado com Sucesso!",
+        text: "Nossa equipe comercial entrará em contato",
+        confirmButtonText: "Certo!",
         confirmButtonColor: "#1c6adc",
 
         backdrop: `
@@ -154,7 +155,7 @@ const Modal = ({ Information, OnClose = () => {} }) => {
             <p>Faça o seu pedido</p>
 
             <form onSubmit={handleSubmit}>
-              <input
+              <InputFormMobile
                 placeholder="Nome"
                 type="text"
                 name="name"
@@ -164,7 +165,7 @@ const Modal = ({ Information, OnClose = () => {} }) => {
                 minLength={3}
               />
               <div className="form-group">
-                <input
+                <InputFormMobile
                   placeholder="E-mail"
                   type="email"
                   name="email"
@@ -173,7 +174,7 @@ const Modal = ({ Information, OnClose = () => {} }) => {
                   required
                 />
 
-                <input
+                <InputFormMobile
                   placeholder="Telefone"
                   type="text"
                   name="numberTel"
@@ -186,7 +187,7 @@ const Modal = ({ Information, OnClose = () => {} }) => {
               </div>
 
               <div className="form-group">
-                <input
+                <InputFormMobile
                   placeholder="CEP"
                   type="text"
                   name="cep"
@@ -197,7 +198,7 @@ const Modal = ({ Information, OnClose = () => {} }) => {
                   minLength={8}
                 />
 
-                <input
+                <InputFormMobile
                   placeholder="Quantidade"
                   type="number"
                   name="qtd"

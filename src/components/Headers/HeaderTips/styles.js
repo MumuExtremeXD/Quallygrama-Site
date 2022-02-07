@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Nav = styled.div`
   position: fixed;
-  max-width: 1440px;
+
   margin: 0 auto;
 
   top: 0;
@@ -158,7 +158,7 @@ export const Ul = styled.ul`
     }
   }
 
-  right: ${({ menu }) => (menu ? "-100%" : "0")};
+  right: ${({ menu }) => (menu ? "-200%" : "0")};
 
   height: 100%;
   width: 32%;

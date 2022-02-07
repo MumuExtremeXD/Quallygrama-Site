@@ -192,7 +192,7 @@ export const WrapperProducts1 = styled.div`
     > h1 {
       text-align: left;
       padding: 0px 15px;
-      font-size: 2.4em;
+      font-size: 2rem;
       margin-bottom: 10px;
     }
   }
@@ -241,7 +241,55 @@ export const WrapperProducts2 = styled.div`
     text-align: justify;
 
     @media (max-width: 1024px) {
-      padding: 0 38px;
+      padding: 0 20px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    padding: 20px 0px 25px 0px;
+    margin-top: 0px;
+    > h2 {
+      text-align: center;
+      font-size: 2.2em;
+    }
+  }
+`;
+
+export const WrapperText = styled.div`
+  max-width: 1440px;
+  margin: 20px 0px 15vh 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 40px 0px 0px 0px;
+
+  @media (min-width: 1441px) {
+    margin: 20px 0px 5vh 0px;
+  }
+
+  > h2 {
+    text-align: center;
+    font-size: 3em;
+    padding: 0 24px;
+    margin-bottom: 30px;
+    font-weight: 560;
+
+    > span {
+      color: var(--primary);
+    }
+  }
+
+  > p {
+    font-size: 1.2em;
+    padding: 0 180px;
+    text-align: justify;
+
+    @media (max-width: 1024px) {
+      padding: 0 20px;
     }
   }
 
@@ -294,14 +342,14 @@ export const CardImg = styled.div`
 
   > img {
     border-radius: 12px;
-    width: 420px;
+    width: 370px;
     height: 370px;
     object-fit: cover;
   }
 
   @media (max-width: 768px) {
     padding: 0 15px;
-    gap: 24px;
+    gap: 12px;
 
     > img {
       border-radius: 12px;
@@ -326,8 +374,8 @@ export const CardImg = styled.div`
 
     > img {
       border-radius: 12px;
-      width: 90%;
-      height: 270px;
+      width: 99%;
+      height: 340px;
     }
     justify-content: flex-start;
     align-items: flex-start;
@@ -345,7 +393,7 @@ export const CardImg3 = styled.div`
   flex-wrap: wrap;
 
   width: 100%;
-  gap: 24px;
+  gap: 16px;
 
   > img {
     border-radius: 12px;
@@ -380,8 +428,8 @@ export const CardImg3 = styled.div`
 
     > img {
       border-radius: 12px;
-      width: 90%;
-      height: 270px;
+      width: 100%;
+      height: 240px;
     }
     justify-content: flex-start;
     align-items: flex-start;

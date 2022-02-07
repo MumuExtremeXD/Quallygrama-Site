@@ -4,7 +4,16 @@ import React, { useState, useEffect } from "react";
 
 import { useParams } from "react-router-dom";
 import dataGrass from "../../../data/grassData";
-import { GiHighGrass } from "react-icons/gi";
+import {
+  GiHighGrass,
+  GiGroundSprout,
+  GiBootStomp,
+  GiArmorUpgrade,
+} from "react-icons/gi";
+
+import { MdWaterDrop } from "react-icons/md";
+
+import { FaCheck } from "react-icons/fa";
 
 import {
   Container,
@@ -17,6 +26,7 @@ import {
   ProductBox,
   BoxDescription,
   ProductForm,
+  InputForm,
   ProductDescription,
   UlProduct,
   UlAplication,
@@ -28,6 +38,7 @@ import {
 
 import Swal from "sweetalert2";
 import Modal from "../../../components/Modal";
+import ImgEnlarge from "../../../components/ImgEnlarge";
 
 import CircularProgress from "@mui/material/CircularProgress";
 import ImgTeste from "../../../images/esmeralda.webp";
@@ -47,7 +58,10 @@ function ProdEsmelda() {
   const [loading, setLoading] = useState(true);
 
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isImgVisible, setIsImgVisible] = useState(false);
+
   const [information, setInformation] = useState();
+  const [urlImg, setUrlImg] = useState();
 
   const { id } = useParams();
   const idTrue = 6 == id;
@@ -60,9 +74,13 @@ function ProdEsmelda() {
     return setInformation(param);
   };
 
+  const PropsImg = function (param) {
+    return setUrlImg(param);
+  };
+
   //Form
   const handleChange = (e) => {
-    setData({ ...data, [e.target.name]: e.target.value });
+    return setData({ ...data, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
@@ -86,9 +104,9 @@ function ProdEsmelda() {
 
       Swal.fire({
         icon: "success",
-        title: "Solicitação enviada com sucesso!",
-        text: "Os links com os produtos e serviços serão encaminhados para o seu Email",
-        confirmButtonText: "Pronto!",
+        title: "Pedido enviado com Sucesso!",
+        text: "Nossa equipe comercial entrará em contato",
+        confirmButtonText: "Certo!",
         confirmButtonColor: "#1c6adc",
 
         backdrop: `
@@ -106,7 +124,7 @@ function ProdEsmelda() {
         numberTel: "",
         qtd: "",
       });
-      setLoading(true);
+      return setLoading(true);
     } catch (err) {
       console.log(err);
 
@@ -125,11 +143,9 @@ function ProdEsmelda() {
   };
 
   useEffect(() => {
-    try {
-      return window.scrollTo(0, 0);
-    } catch (error) {
-      return console.error(error);
-    }
+    return () => {
+      window.scrollTo(0, 0);
+    };
   }, []);
 
   return (
@@ -140,22 +156,61 @@ function ProdEsmelda() {
         <Wrapper>
           {idTrue
             ? filterProdId?.map((Data2) => (
-                <CardProduct key={Math.random().toString()}>
+                <CardProduct key={Data2.idGrama}>
                   <ProductHeader>
                     <h1>{Data2.title}</h1>
                     <div>
                       <h3>{Data2.metersSold} VENDIDOS </h3>
-
                       <h4>{Data2.metersAvailable} Disponíveis</h4>
                     </div>
                   </ProductHeader>
 
                   <ProductImg>
-                    <img className="Div1" src={ImgTeste} alt={Data2.title} />
-                    <img className="Div2" src={ImgTeste} alt={Data2.title} />
-                    <img className="Div3" src={ImgTeste} alt={Data2.title} />
-                    <img className="Div4" src={ImgTeste} alt={Data2.title} />
-                    <img className="Div5" src={ImgTeste} alt={Data2.title} />
+                    <img
+                      className="Image1"
+                      src={Data2.img1}
+                      alt={Data2.title}
+                      onClick={function () {
+                        setIsImgVisible(true);
+                        return PropsImg(Data2.img1);
+                      }}
+                    />
+                    <img
+                      className="Image2"
+                      src={Data2.img1}
+                      alt={Data2.title}
+                      onClick={function () {
+                        setIsImgVisible(true);
+                        return PropsImg(Data2.img1);
+                      }}
+                    />
+                    <img
+                      className="Image3"
+                      src={Data2.img1}
+                      alt={Data2.title}
+                      onClick={function () {
+                        setIsImgVisible(true);
+                        return PropsImg(Data2.img1);
+                      }}
+                    />
+                    <img
+                      className="Image4"
+                      src={Data2.img1}
+                      alt={Data2.title}
+                      onClick={function () {
+                        setIsImgVisible(true);
+                        return PropsImg(Data2.img1);
+                      }}
+                    />
+                    <img
+                      className="Image5"
+                      src={Data2.img1}
+                      alt={Data2.title}
+                      onClick={function () {
+                        setIsImgVisible(true);
+                        return PropsImg(Data2.img1);
+                      }}
+                    />
                   </ProductImg>
 
                   <ProductBox>
@@ -172,19 +227,39 @@ function ProdEsmelda() {
 
                       <UlProduct>
                         <li>
-                          <GiHighGrass /> {Data2.benefits1}
+                          <i>
+                            <GiArmorUpgrade />
+                          </i>
+
+                          {Data2.benefits1}
                         </li>
                         <li>
-                          <GiHighGrass /> {Data2.benefits2}
+                          <i>
+                            <MdWaterDrop />
+                          </i>
+
+                          {Data2.benefits2}
                         </li>
                         <li>
-                          <GiHighGrass /> {Data2.benefits3}
+                          <i>
+                            <GiHighGrass />
+                          </i>
+
+                          {Data2.benefits3}
                         </li>
                         <li>
-                          <GiHighGrass /> {Data2.benefits4}
+                          <i>
+                            <GiGroundSprout />
+                          </i>
+
+                          {Data2.benefits4}
                         </li>
                         <li>
-                          <GiHighGrass /> {Data2.benefits5}
+                          <i>
+                            <GiBootStomp />
+                          </i>
+
+                          {Data2.benefits5}
                         </li>
                       </UlProduct>
 
@@ -198,19 +273,35 @@ function ProdEsmelda() {
 
                       <UlAplication>
                         <li>
-                          <GiHighGrass /> {Data2.benefits1}
+                          <i>
+                            <FaCheck />
+                          </i>
+
+                          {Data2.benefits1}
                         </li>
                         <li>
-                          <GiHighGrass /> {Data2.benefits2}
+                          <i>
+                            <FaCheck />
+                          </i>
+                          {Data2.benefits2}
                         </li>
                         <li>
-                          <GiHighGrass /> {Data2.benefits3}
+                          <i>
+                            <FaCheck />
+                          </i>
+                          {Data2.benefits3}
                         </li>
                         <li>
-                          <GiHighGrass /> {Data2.benefits4}
+                          <i>
+                            <FaCheck />
+                          </i>
+                          {Data2.benefits4}
                         </li>
                         <li>
-                          <GiHighGrass /> {Data2.benefits5}
+                          <i>
+                            <FaCheck />
+                          </i>
+                          {Data2.benefits5}
                         </li>
                       </UlAplication>
 
@@ -230,17 +321,17 @@ function ProdEsmelda() {
                           <label>{Data2.PriceGrassPromotion}</label>
                         </p>
 
-                        <input
+                        <InputForm
                           placeholder="Nome"
                           type="text"
                           name="name"
-                          value={name}
-                          onChange={handleChange}
                           required
                           minLength={3}
+                          value={name}
+                          onChange={handleChange}
                         />
                         <div className="form-group">
-                          <input
+                          <InputForm
                             placeholder="E-mail"
                             type="email"
                             name="email"
@@ -249,7 +340,7 @@ function ProdEsmelda() {
                             required
                           />
 
-                          <input
+                          <InputForm
                             placeholder="Telefone"
                             type="text"
                             name="numberTel"
@@ -262,7 +353,7 @@ function ProdEsmelda() {
                         </div>
 
                         <div className="form-group">
-                          <input
+                          <InputForm
                             placeholder="CEP"
                             type="text"
                             name="cep"
@@ -273,7 +364,7 @@ function ProdEsmelda() {
                             minLength={8}
                           />
 
-                          <input
+                          <InputForm
                             placeholder="Quantidade"
                             type="number"
                             name="qtd"
@@ -283,7 +374,6 @@ function ProdEsmelda() {
                             required
                           />
                         </div>
-
                         {loading ? (
                           <>
                             <button type="submit">Fazer pedido</button>
@@ -351,6 +441,13 @@ function ProdEsmelda() {
         <Modal
           Information={information}
           OnClose={() => setIsModalVisible(false)}
+        />
+      ) : null}
+
+      {isImgVisible ? (
+        <ImgEnlarge
+          Information={urlImg}
+          OnClose={() => setIsImgVisible(false)}
         />
       ) : null}
 

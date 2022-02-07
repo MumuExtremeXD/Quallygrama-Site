@@ -7,6 +7,7 @@ import {
   Wrapper,
   WrapperProducts1,
   WrapperProducts2,
+  WrapperText,
   CardBox,
   Card,
   CardImg,
@@ -21,11 +22,9 @@ import ImgTeste from "../../images/esmeralda.webp";
 
 function Home() {
   useEffect(() => {
-    try {
-      return window.scrollTo(0, 0);
-    } catch (error) {
-      return console.error(error);
-    }
+    return () => {
+      window.scrollTo(0, 0);
+    };
   }, []);
   return (
     <Container>
@@ -69,6 +68,8 @@ function Home() {
           </Card>
         </CardBox>
       </WrapperProducts1>
+
+      <WrapperText></WrapperText>
 
       <WrapperProducts2>
         <h2>

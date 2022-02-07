@@ -10,6 +10,7 @@ import {
   Wrapper,
   BoxImg,
   Box,
+  InputForm,
   CardBody,
   Card,
   NotFoundContainer,
@@ -112,11 +113,9 @@ function TipsPage() {
   }, []);
 
   useEffect(() => {
-    try {
-      return window.scrollTo(0, 0);
-    } catch (error) {
-      return console.error(error);
-    }
+    return () => {
+      window.scrollTo(0, 0);
+    };
   }, []);
 
   const ProdsFiltrados = useMemo(() => filtrarItens(data, busca), [busca]);
@@ -137,7 +136,7 @@ function TipsPage() {
               <BiSearchAlt />
             </label>
 
-            <input
+            <InputForm
               type="text"
               placeholder="Pesquisar..."
               onChange={(ev) => setBusca(ev.target.value)}
@@ -156,7 +155,7 @@ function TipsPage() {
                     </BoxImg>
                     <CardBody>
                       <h3>{Tip.title}</h3>
-                      <p>Veja mais...</p>
+                      <p>Clique para ver</p>
                     </CardBody>
                   </Link>
                 </Card>

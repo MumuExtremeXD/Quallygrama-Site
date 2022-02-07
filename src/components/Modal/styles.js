@@ -48,6 +48,20 @@ export const Divider = styled.div`
   margin: 15px 0px;
 `;
 
+export const InputFormMobile = styled.input`
+  font-size: 15px;
+  outline: none;
+  border: 0.5px solid #ddd;
+  border-radius: 4px;
+  padding: 10px 8px;
+  width: 100%;
+
+  @media (max-width: 605px) {
+    padding: 13px 10px;
+    font-size: 14px;
+  }
+`;
+
 export const Wrapper = styled.div`
   background-color: #fff;
 

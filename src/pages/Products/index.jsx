@@ -9,6 +9,7 @@ import {
   Wrapper,
   Box,
   CardBody,
+  InputForm,
   Card,
   BoxImg,
   NotFoundContainer,
@@ -60,11 +61,9 @@ function Products() {
   const ProdsFiltrados = useMemo(() => filtrarItens(data, busca), [busca]);
 
   useEffect(() => {
-    try {
-      return window.scrollTo(0, 0);
-    } catch (error) {
-      return console.error(error);
-    }
+    return () => {
+      window.scrollTo(0, 0);
+    };
   }, []);
   return (
     <Container>
@@ -82,7 +81,7 @@ function Products() {
               <BiSearchAlt />
             </label>
 
-            <input
+            <InputForm
               type="text"
               placeholder="Pesquisar..."
               onChange={(ev) => setBusca(ev.target.value)}

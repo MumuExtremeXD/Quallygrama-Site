@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 
 import {
   Container,
+  Section,
   SearchSection,
   CardTip,
   TipImg,
@@ -24,11 +25,9 @@ function TipEsmelda() {
   const filterTipId = data.filter((i) => i.idDica == id);
 
   useEffect(() => {
-    try {
-      return window.scrollTo(0, 0);
-    } catch (error) {
-      return console.error(error);
-    }
+    return () => {
+      window.scrollTo(0, 0);
+    };
   }, []);
 
   return (
@@ -37,14 +36,14 @@ function TipEsmelda() {
 
       {filterTipId
         ? filterTipId?.map((Data2) => (
-            <>
-              <SearchSection key={Math.random().toString()}>
+            <Section key={Data2.idDica}>
+              <SearchSection>
                 <div className="Headline">
                   <h2>{Data2.title}</h2>
                 </div>
               </SearchSection>
 
-              <CardTip key={Data2.idDica}>
+              <CardTip>
                 <TipInfo>
                   <p>{Data2.description1}</p>
 
@@ -73,7 +72,7 @@ function TipEsmelda() {
                   </UlAplication>
                 </TipInfo>
               </CardTip>
-            </>
+            </Section>
           ))
         : false}
 
