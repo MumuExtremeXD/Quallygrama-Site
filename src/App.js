@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable eqeqeq */
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Link } from "react-router-dom";
 import GlobalStyles from "./styles/GlobalStyles";
