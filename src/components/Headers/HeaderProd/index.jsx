@@ -34,7 +34,7 @@ function Header() {
             <i>
               <IoIosArrowDropleftCircle />
             </i>
-            voltar
+            Variedades
           </Link>
         </div>
 

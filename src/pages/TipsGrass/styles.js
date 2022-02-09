@@ -261,7 +261,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
 
-  max-width: 440px;
+  max-width: 400px;
 
   user-select: none;
   transition: all 0.2s ease;

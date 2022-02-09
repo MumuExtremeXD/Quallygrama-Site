@@ -58,18 +58,40 @@ function Home() {
         <CardBox>
           <Card>
             <CardImg>
-              <img src={ImgTeste} alt="ts" loading="lazy" />
-              <img src={ImgTeste} alt="ts" loading="lazy" />
-              <img src={ImgTeste} alt="ts" loading="lazy" />
-              <img src={ImgTeste} alt="ts" loading="lazy" />
-              <img src={ImgTeste} alt="ts" loading="lazy" />
-              <img src={ImgTeste} alt="ts" loading="lazy" />
+              <Link to={"/grama-esmeralda/6"}>
+                <img src={ImgTeste} alt="ts" loading="lazy" />
+              </Link>
+              <Link to={"/grama-sao-carlos/5"}>
+                <img src={ImgTeste} alt="ts" loading="lazy" />
+              </Link>
+              <Link to={"/grama-santo-agostinho/4"}>
+                <img src={ImgTeste} alt="ts" loading="lazy" />
+              </Link>
+              <Link to={"/grama-bermudas/3"}>
+                <img src={ImgTeste} alt="ts" loading="lazy" />
+              </Link>
+              <Link to={"/grama-coreana/2"}>
+                <img src={ImgTeste} alt="ts" loading="lazy" />
+              </Link>
+              <Link to={"/grama-discovery/1"}>
+                <img src={ImgTeste} alt="ts" loading="lazy" />
+              </Link>
             </CardImg>
           </Card>
         </CardBox>
       </WrapperProducts1>
 
-      <WrapperText></WrapperText>
+      <WrapperText>
+        <p>We Do Brandings</p>
+
+        <p>
+          We’re a small creative design studio based in New York, working with
+          adventurous clients and providing Creative Concept, Branding, Graphic
+          Design, Art Direction and Digital Communication services.
+        </p>
+
+        <Link to={""}>Faça parte do nosso time</Link>
+      </WrapperText>
 
       <WrapperProducts2>
         <h2>
@@ -86,9 +108,17 @@ function Home() {
         <CardBox>
           <Card>
             <CardImg3>
-              <img src={ImgTeste} alt="ts" />
-              <img src={ImgTeste} alt="ts" />
-              <img src={ImgTeste} alt="ts" />
+              <Link to={"/dicas/1"}>
+                <img src={ImgTeste} alt="ts" loading="lazy" />
+              </Link>
+
+              <Link to={"/dicas/2"}>
+                <img src={ImgTeste} alt="ts" loading="lazy" />
+              </Link>
+
+              <Link to={"/dicas/3"}>
+                <img src={ImgTeste} alt="ts" loading="lazy" />
+              </Link>
             </CardImg3>
           </Card>
         </CardBox>

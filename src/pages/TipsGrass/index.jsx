@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useMemo, useState, useEffect } from "react";
-
 import { Link } from "react-router-dom";
 
 import {
@@ -155,7 +154,7 @@ function TipsPage() {
                     </BoxImg>
                     <CardBody>
                       <h3>{Tip.title}</h3>
-                      <p>Clique para ver</p>
+                      <p>Leia mais...</p>
                     </CardBody>
                   </Link>
                 </Card>

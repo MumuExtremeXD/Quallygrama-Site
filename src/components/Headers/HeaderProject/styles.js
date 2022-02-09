@@ -3,17 +3,24 @@ import styled from "styled-components";
 /* Menu */
 
 export const Nav = styled.div`
-  max-width: 1440px;
+  position: fixed;
   margin: 0 auto;
 
-  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
 
   z-index: 5;
+  width: 100%;
 
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 1px 10px -5px rgba(0, 0, 0, 0.33);
+  background-color: var(--five);
 
-  background-color: white;
+  @media (min-width: 320px) {
+    &.scrollMenu {
+      box-shadow: 0px 1px 10px -5px rgba(0, 0, 0, 0.33);
+    }
+  }
 `;
 
 export const EffectOverlay = styled.div`
@@ -26,6 +33,7 @@ export const EffectOverlay = styled.div`
   left: 0;
 
   display: ${({ menu }) => (menu ? "none" : "block")};
+
   position: fixed;
   min-width: 100%;
   min-height: 100%;
@@ -48,7 +56,8 @@ export const Content = styled.div`
     font-weight: 600;
 
     text-decoration: none;
-    color: var(--black);
+    color: var(--secondary);
+
     > img {
       margin-left: 15px;
       padding-top: 5px;
@@ -57,7 +66,7 @@ export const Content = styled.div`
   }
 
   > div > i {
-    color: var(--black);
+    color: var(--secondary);
     font-size: 35px;
     cursor: pointer;
   }

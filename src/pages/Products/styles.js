@@ -204,7 +204,7 @@ export const SearchSection = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 80px;
   width: 100%;
   max-width: 1440px;
@@ -228,7 +228,7 @@ export const Box = styled.div`
   margin-top: var(--verticalPadding);
   padding: 0px 15px;
 
-  gap: 30px 25px;
+  gap: 45px 25px;
 
   grid-template-columns:
     minmax(350px, 1fr)
@@ -257,7 +257,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
 
-  max-width: 440px;
+  max-width: 420px;
 
   user-select: none;
   transition: all 0.2s ease;

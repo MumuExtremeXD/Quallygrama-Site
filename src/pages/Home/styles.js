@@ -190,7 +190,6 @@ export const WrapperProducts1 = styled.div`
     margin-top: 40px;
 
     > h1 {
-      text-align: left;
       padding: 0px 15px;
       font-size: 2rem;
       margin-bottom: 10px;
@@ -217,7 +216,7 @@ export const WrapperProducts2 = styled.div`
   flex-direction: column;
 
   width: 100%;
-  padding: 40px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 
   @media (min-width: 1441px) {
     margin: 20px 0px 5vh 0px;
@@ -238,7 +237,7 @@ export const WrapperProducts2 = styled.div`
   > p {
     font-size: 1.2em;
     padding: 0 180px;
-    text-align: justify;
+    text-align: center;
 
     @media (max-width: 1024px) {
       padding: 0 20px;
@@ -256,50 +255,70 @@ export const WrapperProducts2 = styled.div`
 `;
 
 export const WrapperText = styled.div`
-  max-width: 1440px;
-  margin: 20px 0px 15vh 0px;
+  margin: 10px 0px 10vh 0px;
+
+  background-color: #f2f2f2;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 60px;
   flex-direction: column;
 
   width: 100%;
-  padding: 40px 0px 0px 0px;
+  padding: 40px 0px 80px;
 
   @media (min-width: 1441px) {
     margin: 20px 0px 5vh 0px;
   }
 
-  > h2 {
-    text-align: center;
-    font-size: 3em;
-    padding: 0 24px;
-    margin-bottom: 30px;
-    font-weight: 560;
-
-    > span {
-      color: var(--primary);
-    }
-  }
-
-  > p {
-    font-size: 1.2em;
+  > p:first-child {
+    max-width: 1440px;
+    font-size: 2.6em;
     padding: 0 180px;
-    text-align: justify;
+    text-align: center;
 
     @media (max-width: 1024px) {
       padding: 0 20px;
     }
   }
 
+  > p {
+    max-width: 1440px;
+    font-size: 1.1em;
+    padding: 0 180px;
+    text-align: center;
+
+    @media (max-width: 1024px) {
+      padding: 0 20px;
+    }
+  }
+
+  > a {
+    max-width: 280px;
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 40px;
+
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--secondary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border: none;
+    padding: 40px 60px;
+
+    background: var(--fourth);
+  }
+
   @media (max-width: 425px) {
     padding: 20px 0px 25px 0px;
     margin-top: 0px;
-    > h2 {
-      text-align: center;
-      font-size: 2.2em;
-    }
   }
 `;
 
@@ -338,12 +357,12 @@ export const CardImg = styled.div`
   flex-wrap: wrap;
 
   width: 100%;
-  gap: 24px 30px;
+  gap: 20px;
 
-  > img {
+  > a > img {
     border-radius: 12px;
-    width: 370px;
-    height: 370px;
+    width: 360px;
+    height: 305px;
     object-fit: cover;
   }
 
@@ -351,7 +370,7 @@ export const CardImg = styled.div`
     padding: 0 15px;
     gap: 12px;
 
-    > img {
+    > a > img {
       border-radius: 12px;
       width: 420px;
       height: 370px;
@@ -372,10 +391,10 @@ export const CardImg = styled.div`
   @media (max-width: 425px) {
     padding: 0 15px;
 
-    > img {
+    > a > img {
       border-radius: 12px;
-      width: 99%;
-      height: 340px;
+      width: 380px;
+      height: 370px;
     }
     justify-content: flex-start;
     align-items: flex-start;
@@ -395,19 +414,19 @@ export const CardImg3 = styled.div`
   width: 100%;
   gap: 16px;
 
-  > img {
+  > a > img {
     border-radius: 12px;
-    width: 310px;
-    height: 300px;
+    width: 320px;
+    height: 290px;
     object-fit: cover;
   }
 
   @media (max-width: 768px) {
     padding: 0 15px;
 
-    > img {
+    > a > img {
       border-radius: 12px;
-      width: 90%;
+      width: 320px;
       height: 275px;
     }
     justify-content: flex-start;
@@ -426,10 +445,10 @@ export const CardImg3 = styled.div`
   @media (max-width: 425px) {
     padding: 0 15px;
 
-    > img {
+    > a > img {
       border-radius: 12px;
-      width: 100%;
-      height: 240px;
+      width: 320px;
+      height: 280px;
     }
     justify-content: flex-start;
     align-items: flex-start;
