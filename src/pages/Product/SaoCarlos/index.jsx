@@ -50,11 +50,12 @@ function ProdEsmelda() {
     name: "",
     cep: "",
     numberTel: "",
+    variety: "São Carlos",
     qtd: "",
     email: "",
   });
 
-  const { name, email, qtd, numberTel, cep } = data;
+  const { name, email, qtd, numberTel, cep, variety } = data;
   const [loading, setLoading] = useState(true);
 
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -97,7 +98,15 @@ function ProdEsmelda() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify([
-            [name, cep, numberTel, qtd, email, new Date().toLocaleString()],
+            [
+              name,
+              cep,
+              numberTel,
+              variety,
+              qtd,
+              email,
+              new Date().toLocaleString(),
+            ],
           ]),
         }
       );

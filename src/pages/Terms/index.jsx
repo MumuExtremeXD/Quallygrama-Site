@@ -1,16 +1,34 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-// import Logo from "../../images/LogoHeader.png";
+import Logo from "../../images/logo.png";
 
 import Footer from "../../components/Footer";
-import { Container, LogoBox, TextBox } from "./styles";
+import { Container, LogoBox, TextBox, BackUp } from "./styles";
+
+import { TiArrowUpThick } from "react-icons/ti";
+
+const scrollThreshold = 0.5;
+
+const scrollTop = function () {
+  window.scrollTo(0, 0);
+};
 
 const Terms = () => {
+  const [scrollY, setScrollY] = useState(0);
+  const classes = scrollY >= scrollThreshold ? "scrollMenu" : "";
+
   useEffect(() => {
-    return () => {
-      window.scrollTo(0, 0);
-    };
+    function onScroll() {
+      setScrollY(window.scrollY);
+    }
+
+    try {
+      window.addEventListener("scroll", onScroll);
+      return () => window.removeEventListener("scroll", onScroll);
+    } catch (error) {
+      return console.error(error);
+    }
   }, []);
 
   return (
@@ -18,9 +36,7 @@ const Terms = () => {
       <Container>
         <LogoBox>
           <Link to={"../"}>
-            {/* <img src={Logo} alt="TendTudoTatuí" /> */}
-
-            <h2>Qually Grama</h2>
+            <img src={Logo} alt="Qually Grama - Logo" />
           </Link>
         </LogoBox>
 
@@ -29,16 +45,8 @@ const Terms = () => {
           <p>
             A sua privacidade é importante para nós. É política do Qually Grama
             respeitar a sua privacidade em relação a qualquer informação sua que
-            possamos coletar no site
-            <a
-              href="https://www.quallygrama.com.br"
-              target="_blank"
-              without
-              rel="noreferrer"
-            >
-              Qually Grama
-            </a>
-            , e outros sites que possuímos e operamos.
+            possamos coletar no site <Link to={"../"}>Qually Grama</Link>, e
+            outros sites que possuímos e operamos.
           </p>
           <p>
             Solicitamos informações pessoais apenas quando realmente precisamos
@@ -62,14 +70,7 @@ const Terms = () => {
             por nós. Esteja ciente de que não temos controle sobre o conteúdo e
             práticas desses sites e não podemos aceitar responsabilidade por
             suas respectivas{" "}
-            <a
-              href="https://politicaprivacidade.com"
-              target="_BLANK"
-              rel="noreferrer"
-            >
-              políticas de privacidade
-            </a>
-            .
+            <Link to={"../termos"}>políticas de privacidade</Link>.
           </p>
           <p>
             Você é livre para recusar a nossa solicitação de informações
@@ -299,6 +300,10 @@ const Terms = () => {
             <strong>2022</strong>.
           </p>
         </TextBox>
+
+        <BackUp className={classes}>
+          <TiArrowUpThick onClick={() => scrollTop()} />
+        </BackUp>
         <Footer />
       </Container>
     </>

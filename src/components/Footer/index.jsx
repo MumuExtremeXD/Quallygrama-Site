@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 
 import { Container, Wrapper, Row, Column, Copyright } from "./styles";
@@ -20,42 +21,54 @@ function Footer() {
             <h4>Rede sociais</h4>
             <ul>
               <li>
-                <Link to="/">
+                <a
+                  href={"https://www.instagram.com/tendtudotatui/"}
+                  target="_blank"
+                >
                   <i>
                     <BsPinterest />
                   </i>
 
                   <p>Pinterest</p>
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link to="/">
+                <a
+                  href={"https://www.instagram.com/quallygrama/"}
+                  target="_blank"
+                >
                   <i>
                     <AiFillInstagram />
                   </i>
                   <p>Instagram</p>
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link to="/">
+                <a
+                  href={"https://www.linkedin.com/company/qually-grama"}
+                  target="_blank"
+                >
                   <i>
                     <FaLinkedinIn />
                   </i>
 
                   <p>LinkedIn</p>
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link to="/">
+                <a
+                  href={"https://www.facebook.com/QuallyGrama"}
+                  target="_blank"
+                >
                   <i>
                     <FaFacebookF />
                   </i>
 
                   <p>Facebook</p>
-                </Link>
+                </a>
               </li>
             </ul>
           </Column>
@@ -64,7 +77,7 @@ function Footer() {
             <h4>Políticas de privacidade</h4>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/termos">Política de Cookies</Link>
               </li>
             </ul>
           </Column>

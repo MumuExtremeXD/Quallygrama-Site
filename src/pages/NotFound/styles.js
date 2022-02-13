@@ -5,8 +5,15 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
 
-  margin-top: 7%;
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10% 0 6% 0;
   > a {
     font-size: 1.8rem;
 

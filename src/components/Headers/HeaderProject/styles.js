@@ -14,6 +14,7 @@ export const Nav = styled.div`
   width: 100%;
 
   transition: all 0.3s ease-in-out;
+
   background-color: var(--five);
 
   @media (min-width: 320px) {
@@ -43,9 +44,9 @@ export const EffectOverlay = styled.div`
 `;
 
 export const Content = styled.div`
-  max-width: 1250px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 15px 15px 15px;
+  padding: 2px 15px 2px;
 
   display: flex;
   align-items: center;
@@ -65,14 +66,30 @@ export const Content = styled.div`
     }
   }
 
-  > div > i {
-    color: var(--secondary);
-    font-size: 35px;
-    cursor: pointer;
+  > div {
+    > i {
+      color: var(--secondary);
+      font-size: 35px;
+      cursor: pointer;
+    }
+  }
+
+  > .icon {
+    @media (min-width: 769px) {
+      display: none;
+    }
   }
 
   @media (max-width: 868px) {
     max-width: 100%;
+  }
+`;
+
+export const DivMenuDesktop = styled.ul`
+  display: none;
+
+  @media (min-width: 769px) {
+    display: inline-flex;
   }
 `;
 
@@ -182,5 +199,37 @@ export const Ul = styled.ul`
   > .icon {
     color: var(--primary);
     display: ${({ menu }) => (menu ? "none" : "block")};
+  }
+`;
+
+export const UlDesktop = styled.ul`
+  max-width: 1440px;
+  margin: 0 auto;
+
+  display: inline-flex;
+  padding: 20px 20px 20px 20px;
+
+  transition: all 0.4s ease;
+
+  > li {
+    list-style: none;
+    transition: all 0.4s ease;
+
+    &:hover {
+      transform: scale(1.16);
+    }
+
+    > a,
+    > a:active,
+    > a:visited {
+      font-size: 18px;
+      font-weight: 500;
+      margin-left: 25px;
+      transition: all 0.3s;
+
+      color: white;
+
+      text-decoration: none;
+    }
   }
 `;

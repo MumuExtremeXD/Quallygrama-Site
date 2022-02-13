@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import ImgTeste2 from "../../images/teste.png";
+import ImgTeste2 from "../../images/teste2.webp";
 
 export const Container = styled.div`
   width: 100% !important;
@@ -250,58 +250,6 @@ export const Box = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
-`;
-
-export const Card = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  max-width: 420px;
-
-  user-select: none;
-  transition: all 0.2s ease;
-
-  &:hover {
-    transform: scale(1.01);
-  }
-
-  a:active,
-  a:visited {
-    color: var(--primary);
-  }
-
-  cursor: pointer;
-`;
-
-export const BoxImg = styled.div`
-  > img {
-    border-radius: 6px;
-    background: var(--white);
-
-    height: auto;
-    width: 100%;
-  }
-`;
-
-export const CardBody = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  border-radius: 0 0 6px 6px;
-
-  > h3 {
-    font-size: 1.13rem;
-    color: var(--black);
-    font-weight: 550;
-  }
-
-  > p {
-    font-weight: 600;
-    font-size: 1.13rem;
-    font-weight: 500;
-    color: var(--third);
   }
 `;
 

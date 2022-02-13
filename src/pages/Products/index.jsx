@@ -1,29 +1,25 @@
 /* eslint-disable no-unused-vars */
-import React, { useMemo, useState, useEffect } from "react";
-
-import { Link } from "react-router-dom";
+import React, { useMemo, useState, useEffect, Suspense } from "react";
 
 import {
   Container,
   SearchSection,
   Wrapper,
   Box,
-  CardBody,
   InputForm,
-  Card,
-  BoxImg,
   NotFoundContainer,
 } from "./styles";
 
 import data from "../../data/grassData";
 
 import { BiSearchAlt } from "react-icons/bi";
-import ImgTeste from "../../images/esmeralda.webp";
 
 import Header from "../../components/Headers/Header";
 import Footer from "../../components/Footer";
 
-const filtrarItens = (data, busca) => {
+const Card = React.lazy(() => import("../../components/CardProducts"));
+
+const FiltrarItens = (data, busca) => {
   const lowerBusca = busca.toLowerCase();
 
   try {
@@ -58,7 +54,7 @@ const filtrarItens = (data, busca) => {
 
 function Products() {
   const [busca, setBusca] = useState("");
-  const ProdsFiltrados = useMemo(() => filtrarItens(data, busca), [busca]);
+  const ProdsFiltrados = useMemo(() => FiltrarItens(data, busca), [busca]);
 
   useEffect(() => {
     return () => {
@@ -92,19 +88,13 @@ function Products() {
       <Wrapper>
         <Box>
           {ProdsFiltrados
-            ? ProdsFiltrados?.map((Prod) => (
-                <Card key={Prod.idGrama}>
-                  <Link to={`${Prod.ProdLink}/${Prod.idGrama}`}>
-                    <BoxImg>
-                      <img src={ImgTeste} alt={Prod.title} loading="lazy" />
-                    </BoxImg>
-
-                    <CardBody>
-                      <h3>{Prod.title}</h3>
-                      <p>Veja mais...</p>
-                    </CardBody>
-                  </Link>
-                </Card>
+            ? ProdsFiltrados?.map((prod) => (
+                <Suspense
+                  fallback={<div>Carregando...</div>}
+                  key={prod.idGrama}
+                >
+                  <Card Information={prod} />
+                </Suspense>
               ))
             : false}
         </Box>

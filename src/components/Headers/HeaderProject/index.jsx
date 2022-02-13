@@ -2,7 +2,14 @@ import React, { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
-import { Nav, Content, Ul, EffectOverlay } from "./styles";
+import {
+  Nav,
+  Content,
+  Ul,
+  DivMenuDesktop,
+  UlDesktop,
+  EffectOverlay,
+} from "./styles";
 
 import { CgMenuRight } from "react-icons/cg";
 import { IoMdCloseCircle } from "react-icons/io";
@@ -55,7 +62,33 @@ function Header() {
           <li>
             <Link to={"../dicas"}>Sobre nós</Link>
           </li>
+
+          <li>
+            <Link to={"../projeto-educacional"}>Trabalhe Conosco</Link>
+          </li>
         </Ul>
+
+        <DivMenuDesktop>
+          <UlDesktop>
+            <li>
+              <Link to={"../"}>Início</Link>
+            </li>
+            <li>
+              <Link to={"../gramas"}>Gramas</Link>
+            </li>
+            <li>
+              <Link to={"../dicas"}>Dicas</Link>
+            </li>
+
+            <li>
+              <Link to={"../dicas"}>Sobre nós</Link>
+            </li>
+            <li>
+              <Link to={"../projeto-educacional"}>Trabalhe Conosco</Link>
+            </li>
+          </UlDesktop>
+        </DivMenuDesktop>
+
         <div className="icon" onClick={() => setOpen(!open)}>
           <i>
             <CgMenuRight />

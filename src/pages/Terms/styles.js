@@ -75,7 +75,7 @@ export const LogoBox = styled.div`
 
   background-color: var(--primary);
   > a {
-    max-width: 340px;
+    max-width: 840px;
     > img {
       transition: all ease 0.3s;
       width: 100%;
@@ -84,6 +84,43 @@ export const LogoBox = styled.div`
   :hover {
     > a > img {
       transform: scale(1.02);
+    }
+  }
+`;
+
+export const BackUp = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  cursor: pointer;
+
+  background-color: var(--gray);
+  border-radius: 100%;
+
+  right: 20px;
+  bottom: 25px;
+
+  z-index: 9000;
+
+  svg {
+    fill: #fff;
+    font-size: 3.9rem;
+  }
+
+  transition: all 0.2s ease;
+  visibility: hidden;
+  opacity: 0.6;
+
+  @media (min-width: 320px) {
+    &.scrollMenu {
+      visibility: visible;
+      box-shadow: 0px 1px 10px -5px rgba(0, 0, 0, 0.33);
+    }
+
+    &:hover {
+      opacity: 1;
     }
   }
 `;

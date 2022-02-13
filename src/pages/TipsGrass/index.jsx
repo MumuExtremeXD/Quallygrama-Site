@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useMemo, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useMemo, useState, useEffect, Suspense } from "react";
 
 import {
   Container,
@@ -10,18 +9,17 @@ import {
   BoxImg,
   Box,
   InputForm,
-  CardBody,
-  Card,
   NotFoundContainer,
 } from "./styles";
 
 import data from "../../data/tipsData";
 
 import { BiSearchAlt } from "react-icons/bi";
-import ImgTeste from "../../images/esmeralda.webp";
 
 import Header from "../../components/Headers/Header";
 import Footer from "../../components/Footer";
+
+const Card = React.lazy(() => import("../../components/CardTips"));
 
 const filtrarItens = (data, busca) => {
   const lowerBusca = busca.toLowerCase();
@@ -98,6 +96,8 @@ function TipsPage() {
   const [busca, setBusca] = useState("");
   const [, setScrollY] = useState(0);
 
+  const ProdsFiltrados = useMemo(() => filtrarItens(data, busca), [busca]);
+
   useEffect(() => {
     function onScroll() {
       setScrollY(window.scrollY);
@@ -116,8 +116,6 @@ function TipsPage() {
       window.scrollTo(0, 0);
     };
   }, []);
-
-  const ProdsFiltrados = useMemo(() => filtrarItens(data, busca), [busca]);
 
   return (
     <Container>
@@ -147,17 +145,9 @@ function TipsPage() {
         <Box>
           {ProdsFiltrados
             ? ProdsFiltrados?.map((Tip) => (
-                <Card key={Tip.idDica}>
-                  <Link to={`${Tip.tipLink}/${Tip.idDica}`}>
-                    <BoxImg>
-                      <img src={ImgTeste} alt={Tip.title} loading="lazy" />
-                    </BoxImg>
-                    <CardBody>
-                      <h3>{Tip.title}</h3>
-                      <p>Leia mais...</p>
-                    </CardBody>
-                  </Link>
-                </Card>
+                <Suspense fallback={<div>Carregando...</div>} key={Tip.idDica}>
+                  <Card Information={Tip} />
+                </Suspense>
               ))
             : false}
         </Box>

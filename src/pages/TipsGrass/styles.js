@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import ImgTeste2 from "../../images/teste.png";
+import ImgTeste2 from "../../images/teste2.webp";
 
 export const Container = styled.div`
   width: 100% !important;

@@ -43,7 +43,7 @@ export const EffectOverlay = styled.div`
 `;
 
 export const Content = styled.div`
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 2px 15px 2px;
 
