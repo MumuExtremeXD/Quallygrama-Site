@@ -30,18 +30,18 @@ export const BoxImg = styled.div`
     width: 100%;
 
     @media (max-width: 425px) {
-      height: 330px;
-      width: 400px;
+      height: 300px;
+      width: 390px;
     }
 
     @media (max-width: 375px) {
       height: 300px;
-      width: 355px;
+      width: 345px;
     }
 
     @media (max-width: 320px) {
-      height: 300px;
-      width: 300px;
+      height: 240px;
+      width: 290px;
     }
   }
 `;

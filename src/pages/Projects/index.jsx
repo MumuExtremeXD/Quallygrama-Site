@@ -28,7 +28,7 @@ function Projects() {
 
       <Content>
         <ContainerHalfText>
-          <p>Teste</p>
+          <h2>Teste</h2>
 
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam

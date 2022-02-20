@@ -30,17 +30,17 @@ export const BoxImg = styled.div`
     width: 100%;
 
     @media (max-width: 425px) {
-      height: 330px;
-      width: 400px;
+      height: 320px;
+      width: 390px;
     }
 
     @media (max-width: 375px) {
-      height: 300px;
-      width: 355px;
+      height: 290px;
+      width: 340px;
     }
 
     @media (max-width: 320px) {
-      height: 300px;
+      height: 260px;
       width: 300px;
     }
   }

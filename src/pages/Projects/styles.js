@@ -11,22 +11,6 @@ export const Container = styled.div`
   margin: 0 auto;
 
   position: relative;
-
-  > h2 {
-    font-size: 7.8rem;
-
-    @media (max-width: 645px) {
-      font-size: 4.6rem;
-    }
-
-    @media (max-width: 605px) {
-      font-size: 3.6rem;
-    }
-
-    > span {
-      color: var(--primary);
-    }
-  }
 `;
 
 export const Content = styled.div`
@@ -37,7 +21,7 @@ export const Content = styled.div`
   justify-content: center;
 
   gap: 10px;
-  margin-top: 10%;
+  margin-top: 145px;
   padding: 0px 20px;
 
   @media (max-width: 640px) {
@@ -46,6 +30,9 @@ export const Content = styled.div`
 
     align-items: center;
     text-align: justify;
+
+    margin-top: 40px;
+    padding: 0px 10px;
   }
 `;
 
@@ -58,7 +45,7 @@ export const ContentExplication = styled.div`
   justify-content: center;
 
   gap: 10px;
-  margin-top: 5%;
+  margin-bottom: 25px;
   padding: 0px 20px;
 `;
 
@@ -69,8 +56,12 @@ export const ContentDivider = styled.div`
   justify-content: center;
 
   gap: 10px;
-  margin-top: 5%;
+  margin-top: 65px;
   padding: 0px 20px;
+
+  @media (max-width: 425px) {
+    margin-top: 25px;
+  }
 `;
 
 export const ContainerHalf = styled.div`
@@ -88,10 +79,45 @@ export const ContainerHalf = styled.div`
     width: 100%;
     min-width: 300px;
   }
+
+  @media (max-width: 600px) {
+    margin-top: 15px;
+  }
 `;
 
 export const ContainerHalfText = styled.div`
+  margin-top: 25px;
+
   flex: 1;
+
+  > h2 {
+    padding: 0 60px;
+    font-size: 4.1em;
+
+    margin-bottom: 25px;
+
+    @media (max-width: 1024px) {
+      padding: 0 20px;
+    }
+  }
+
+  > p {
+    font-size: 1.5em;
+    padding: 0 60px;
+    text-align: justify;
+
+    @media (max-width: 1024px) {
+      padding: 0 20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 35px;
+    > h2 {
+      margin-bottom: 10px;
+      font-size: 3.1em;
+    }
+  }
 `;
 
 export const WrapperText = styled.div`
@@ -211,6 +237,16 @@ export const WrapperImg = styled.div`
 export const WrapperFeature = styled.div`
   flex: 1;
   max-width: 600px;
+
+  > p {
+    font-size: 1.3em;
+    padding: 0 20px;
+    text-align: justify;
+
+    @media (max-width: 1024px) {
+      padding: 0 20px;
+    }
+  }
 
   @media (max-width: 640px) {
     max-width: 380px;

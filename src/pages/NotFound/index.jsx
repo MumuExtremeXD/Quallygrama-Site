@@ -18,7 +18,9 @@ function NotFound() {
           <img src={Img404} alt="ts" loading="lazy" />
         </Link>
 
-        <Link to={"../"}>Voltar ao íncio</Link>
+        <Link to={"../"}>
+          <p> Voltar ao íncio</p>
+        </Link>
       </Wrapper>
 
       <Footer />

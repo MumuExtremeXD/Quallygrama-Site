@@ -45,7 +45,7 @@ export const EffectOverlay = styled.div`
 export const Content = styled.div`
   max-width: 1440px;
   margin: 0 auto;
-  padding: 2px 15px 2px;
+  padding: 20px 25px 20px;
 
   display: flex;
   align-items: center;
@@ -177,8 +177,8 @@ export const Ul = styled.ul`
     width: 60%;
   }
 
-  @media (max-width: 375px) {
-    width: 80%;
+  @media (max-width: 475px) {
+    width: 90%;
   }
 
   > li {
