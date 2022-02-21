@@ -8,6 +8,7 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: justify;
+
   > h2 {
     text-align: justify;
   }
@@ -16,8 +17,10 @@ export const Container = styled.div`
 export const NotFoundContainer = styled.div`
   display: flex;
   align-items: center;
+
   justify-content: center;
   max-width: 440px;
+
   > img {
     width: 100%;
   }
@@ -61,6 +64,7 @@ export const TextBox = styled.div`
   @media (max-width: 425px) {
     padding: 50px 30px 0px 30px;
   }
+
   @media (max-width: 320px) {
     padding: 50px 20px 0px 20px;
   }
@@ -74,6 +78,7 @@ export const LogoBox = styled.div`
   height: 290px;
 
   background-color: var(--primary);
+
   > a {
     max-width: 840px;
     > img {
@@ -81,6 +86,7 @@ export const LogoBox = styled.div`
       width: 100%;
     }
   }
+
   :hover {
     > a > img {
       transform: scale(1.02);

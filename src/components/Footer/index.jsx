@@ -74,10 +74,14 @@ function Footer() {
           </Column>
 
           <Column>
-            <h4>Políticas de privacidade</h4>
+            <h4>Políticas da empresa</h4>
             <ul>
               <li>
                 <Link to="/termos">Política de Cookies</Link>
+              </li>
+
+              <li>
+                <Link to="/termos">Política de privacidade</Link>
               </li>
             </ul>
           </Column>
@@ -86,7 +90,25 @@ function Footer() {
             <h4>Fale conosco</h4>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <p>
+                  Clique no Link abaixo e converse diretamente com a nossa
+                  equipe:
+                </p>
+              </li>
+              <li>
+                <a
+                  href={`https://api.whatsapp.com/send?phone=5515996159898&text=Oi`}
+                  target="_blank"
+                >
+                  <button type="button">WhatsApp</button>
+                </a>
+              </li>
+
+              <li>
+                <p>
+                  Você também pode ligar nesse número
+                  <a href="tel:+5501532059300"> (15) 3205-9300</a>
+                </p>
               </li>
             </ul>
           </Column>
@@ -95,7 +117,15 @@ function Footer() {
             <h4>Nossos Parceiros</h4>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <a href="https://sodsolutions.com/" target="_blank">
+                  SodSolutions
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.turfgrasssod.org/" target="_blank">
+                  TPI
+                </a>
               </li>
             </ul>
           </Column>

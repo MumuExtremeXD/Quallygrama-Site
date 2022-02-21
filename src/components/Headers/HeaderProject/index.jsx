@@ -62,10 +62,6 @@ function Header() {
           <li>
             <Link to={"../dicas"}>Sobre nós</Link>
           </li>
-
-          <li>
-            <Link to={"../projeto-educacional"}>Trabalhe Conosco</Link>
-          </li>
         </Ul>
 
         <DivMenuDesktop>
@@ -82,9 +78,6 @@ function Header() {
 
             <li>
               <Link to={"../dicas"}>Sobre nós</Link>
-            </li>
-            <li>
-              <Link to={"../projeto-educacional"}>Trabalhe Conosco</Link>
             </li>
           </UlDesktop>
         </DivMenuDesktop>

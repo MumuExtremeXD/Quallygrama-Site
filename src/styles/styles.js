@@ -21,7 +21,7 @@ export const WarningContainer = styled.div`
   > div {
     background-color: var(--secondary);
     width: 100%;
-    height: 160px;
+    height: 100%;
 
     max-width: 1000px;
 
@@ -33,20 +33,30 @@ export const WarningContainer = styled.div`
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
       rgba(0, 0, 0, 0.05) 0px 5px 10px;
 
+    > p {
+      text-align: justify;
+      padding-right: 25px;
+
+      letter-spacing: 1px;
+      line-height: 30px;
+      margin-bottom: 15px;
+
+      > a,
+      > a:visited,
+      > a:link,
+      > a:active {
+        color: var(--primary);
+      }
+    }
     @media (max-width: 768px) {
       flex-direction: column;
-      height: 51vh;
-      padding: 0px 20px 20px 20px;
+      padding: 0px 15px 20px 15px;
 
       > p {
         margin-top: 18px;
         text-align: justify;
-        font-size: 18px;
+        font-size: 16.5px;
       }
-    }
-
-    @media (max-width: 320px) {
-      height: 50vh;
     }
 
     > button {
@@ -54,7 +64,7 @@ export const WarningContainer = styled.div`
       width: 100%;
 
       border: none;
-      background-color: var(--five);
+      background: var(--third);
 
       cursor: pointer;
 
@@ -64,8 +74,8 @@ export const WarningContainer = styled.div`
 
       @media (max-width: 768px) {
         font-size: 1.4rem;
-        margin-top: 20px;
-        padding: 15px;
+        margin: 14px 0px 8px;
+        padding: 12px;
         max-width: 100%;
       }
     }

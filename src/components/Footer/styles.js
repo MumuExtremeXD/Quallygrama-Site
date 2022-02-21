@@ -48,6 +48,21 @@ export const Column = styled.div`
     > li {
       margin-bottom: 10px;
 
+      > p {
+        max-width: 280px;
+
+        > a {
+          text-decoration: none;
+          font-weight: 500;
+          color: var(--black);
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--third);
+          }
+        }
+      }
+
       > a {
         font-size: 16px;
         text-decoration: none;
@@ -63,6 +78,21 @@ export const Column = styled.div`
 
         &:hover {
           color: var(--third);
+        }
+
+        > button {
+          cursor: pointer;
+          padding: 18px;
+          border-radius: 6px;
+          border: none;
+          transition: all 0.2s;
+          font-size: 16px;
+          color: var(--secondary);
+          background: var(--third);
+
+          &:hover {
+            background: var(--primary);
+          }
         }
 
         > i {

@@ -48,11 +48,10 @@ export default function App() {
         <div>
           <p>
             Nós usamos cookies e outras tecnologias semelhantes para melhorar a
-            sua experiência em nossos serviços, personalizar publicidade e
-            recomendar conteúdo de seu interesse. Ao utilizar nossos serviços,
+            sua experiência em nossos serviços. Ao utilizar nossos serviços,
             você concorda com tal monitoramento. Informamos ainda que
-            atualizamos nossa.
-            <Link to="termos"> Política de Privacidade</Link>
+            atualizamos nossa
+            <Link to="termos"> Política de Privacidade</Link>.
           </p>
 
           <button onClick={() => armazenar("accepted", termos)}>Aceitar</button>
