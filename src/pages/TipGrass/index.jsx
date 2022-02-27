@@ -10,7 +10,6 @@ import {
   CardTip,
   TipImg,
   TipInfo,
-  UlAplication,
   BackUp,
 } from "./styles";
 
@@ -18,7 +17,6 @@ import ImgTeste from "../../images/esmeralda.webp";
 import Header from "../../components/Headers/HeaderTips";
 import Footer from "../../components/Footer";
 
-import { GiHighGrass } from "react-icons/gi";
 import { TiArrowUpThick } from "react-icons/ti";
 
 import ImgEnlarge from "../../components/ImgEnlarge";
@@ -102,32 +100,6 @@ function TipEsmelda() {
                   </TipImg>
 
                   <p>{Data2.description1}</p>
-
-                  <UlAplication>
-                    {Data2.LongLife && (
-                      <li>
-                        <GiHighGrass /> {Data2.LongLife}
-                      </li>
-                    )}
-
-                    {Data2.GoldenTip && (
-                      <li>
-                        <GiHighGrass /> {Data2.GoldenTip}
-                      </li>
-                    )}
-
-                    {Data2.AfterPruning && (
-                      <li>
-                        <GiHighGrass /> {Data2.AfterPruning}
-                      </li>
-                    )}
-
-                    {Data2.AfterPruning && (
-                      <li>
-                        <GiHighGrass /> {Data2.AfterPruning}
-                      </li>
-                    )}
-                  </UlAplication>
                 </TipInfo>
               </CardTip>
             </Section>
