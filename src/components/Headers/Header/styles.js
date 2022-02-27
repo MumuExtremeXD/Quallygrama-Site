@@ -15,10 +15,24 @@ export const Nav = styled.div`
 
   transition: all 0.3s ease-in-out;
 
+  > div > div > i {
+    color: #fff;
+  }
+
   @media (min-width: 320px) {
     &.scrollMenu {
-      background-color: var(--five);
+      background-color: white;
       box-shadow: 0px 1px 10px -5px rgba(0, 0, 0, 0.33);
+
+      > div > div > ul > li > a,
+      > a:active,
+      > a:visited {
+        color: #666366;
+      }
+
+      > div > div > i {
+        color: #666366;
+      }
     }
   }
 `;
@@ -51,12 +65,15 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  // Colocar imagem do logo
+
   > .logo > a {
     font-size: 20px;
     font-weight: 600;
 
     text-decoration: none;
-    color: var(--secondary);
+
+    color: #888388;
 
     > img {
       margin-left: 15px;
@@ -67,7 +84,7 @@ export const Content = styled.div`
 
   > div {
     > i {
-      color: var(--secondary);
+      color: var(--white);
       font-size: 35px;
       cursor: pointer;
     }
@@ -84,7 +101,7 @@ export const Content = styled.div`
   }
 `;
 
-export const DivMenuDesktop = styled.ul`
+export const DivMenuDesktop = styled.div`
   display: none;
 
   @media (min-width: 769px) {
@@ -226,9 +243,9 @@ export const UlDesktop = styled.ul`
       margin-left: 25px;
       transition: all 0.3s;
 
-      color: white;
-
       text-decoration: none;
+
+      color: #fff;
     }
   }
 `;

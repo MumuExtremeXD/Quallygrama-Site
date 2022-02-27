@@ -58,7 +58,7 @@ export const Content = styled.div`
       font-weight: 600;
 
       text-decoration: none;
-      color: var(--black);
+      color: #666366;
 
       > i {
         display: flex;
@@ -71,7 +71,7 @@ export const Content = styled.div`
   }
 
   > div > i {
-    color: var(--black);
+    color: #666366;
     font-size: 35px;
     cursor: pointer;
   }

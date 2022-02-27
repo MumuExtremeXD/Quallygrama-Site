@@ -61,9 +61,9 @@ export const Container = styled.div`
   }
 
   > i {
-    position: absolute;
-    top: 10px;
-    right: 2vw;
+    position: fixed;
+    top: 3vh;
+    right: 3vw;
     z-index: 1;
 
     font-size: 50px;

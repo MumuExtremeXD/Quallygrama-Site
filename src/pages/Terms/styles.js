@@ -42,6 +42,7 @@ export const TextBox = styled.div`
   > p {
     font-size: 15px;
     letter-spacing: 1px;
+
     line-height: 30px;
     margin-bottom: 15px;
   }

@@ -55,14 +55,14 @@ export const CardBody = styled.div`
 
   > h3 {
     font-size: 1.13rem;
-    color: var(--black);
+    color: #444344;
     font-weight: 550;
   }
 
   > p {
     font-size: 1.13rem;
     font-weight: 500;
-    color: var(--third);
+    color: var(--fourth);
   }
 
   @media (max-width: 320px) {

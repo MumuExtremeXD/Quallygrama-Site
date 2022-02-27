@@ -164,6 +164,8 @@ export const WrapperProducts1 = styled.div`
   border-radius: 50% 50% 0 0;
   padding: 60px 0px 45px 0px;
 
+  color: #888388;
+
   > h1 {
     text-align: center;
     font-size: 3.1em;
@@ -173,7 +175,7 @@ export const WrapperProducts1 = styled.div`
     line-height: 55px;
 
     > span {
-      color: var(--primary);
+      color: var(--fourth);
     }
   }
 
@@ -218,6 +220,8 @@ export const WrapperProducts2 = styled.div`
   width: 100%;
   padding: 0px 0px 0px 0px;
 
+  color: #888388;
+
   @media (min-width: 1441px) {
     margin: 20px 0px 5vh 0px;
   }
@@ -230,7 +234,7 @@ export const WrapperProducts2 = styled.div`
     font-weight: 560;
 
     > span {
-      color: var(--primary);
+      color: var(--fourth);
     }
   }
 

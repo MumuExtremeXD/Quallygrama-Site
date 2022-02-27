@@ -21,6 +21,7 @@ import Footer from "../../components/Footer";
 import { GiHighGrass } from "react-icons/gi";
 import { TiArrowUpThick } from "react-icons/ti";
 
+import ImgEnlarge from "../../components/ImgEnlarge";
 import data from "../../data/tipsData";
 
 const scrollThreshold = 0.5;
@@ -33,9 +34,16 @@ function TipEsmelda() {
   const { id } = useParams();
 
   const [scrollY, setScrollY] = useState(0);
+  const [isImgVisible, setIsImgVisible] = useState(false);
+  const [urlImg, setUrlImg] = useState();
+
   const classes = scrollY >= scrollThreshold ? "scrollMenu" : "";
 
   const filterTipId = data.filter((i) => i.idDica == id);
+
+  const PropsImg = function (param) {
+    return setUrlImg(param);
+  };
 
   useEffect(() => {
     function onScroll() {
@@ -69,26 +77,56 @@ function TipEsmelda() {
 
                   <TipImg>
                     <div className="Img1">
-                      <img src={ImgTeste} alt="" loading="lazy" />
+                      <img
+                        src={ImgTeste}
+                        alt=""
+                        loading="lazy"
+                        onClick={function () {
+                          setIsImgVisible(true);
+                          return PropsImg(Data2.TipImg1);
+                        }}
+                      />
                     </div>
 
                     <div className="Img2">
-                      <img src={ImgTeste} alt="" loading="lazy" />
+                      <img
+                        src={ImgTeste}
+                        alt=""
+                        loading="lazy"
+                        onClick={function () {
+                          setIsImgVisible(true);
+                          return PropsImg(Data2.TipImg2);
+                        }}
+                      />
                     </div>
                   </TipImg>
 
                   <p>{Data2.description1}</p>
 
                   <UlAplication>
-                    <li>
-                      <GiHighGrass /> {Data2.LongLife}
-                    </li>
-                    <li>
-                      <GiHighGrass /> {Data2.GoldenTip}
-                    </li>
-                    <li>
-                      <GiHighGrass /> {Data2.AfterPruning}
-                    </li>
+                    {Data2.LongLife && (
+                      <li>
+                        <GiHighGrass /> {Data2.LongLife}
+                      </li>
+                    )}
+
+                    {Data2.GoldenTip && (
+                      <li>
+                        <GiHighGrass /> {Data2.GoldenTip}
+                      </li>
+                    )}
+
+                    {Data2.AfterPruning && (
+                      <li>
+                        <GiHighGrass /> {Data2.AfterPruning}
+                      </li>
+                    )}
+
+                    {Data2.AfterPruning && (
+                      <li>
+                        <GiHighGrass /> {Data2.AfterPruning}
+                      </li>
+                    )}
                   </UlAplication>
                 </TipInfo>
               </CardTip>
@@ -99,6 +137,13 @@ function TipEsmelda() {
       <BackUp className={classes}>
         <TiArrowUpThick onClick={() => scrollTop()} />
       </BackUp>
+
+      {isImgVisible ? (
+        <ImgEnlarge
+          Information={urlImg}
+          OnClose={() => setIsImgVisible(false)}
+        />
+      ) : null}
 
       <Footer />
     </Container>

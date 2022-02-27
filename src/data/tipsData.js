@@ -1,5 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 
+import ImgEsmeralda1 from "../images/esmeralda.webp";
+
 export default [
   {
     idDica: 3,
@@ -17,7 +19,8 @@ export default [
     finalConsiderations1: "BBBBBBBBBBBBBBBB",
     finalConsiderations2: "BBBBBBBBBBBBBBBB",
 
-    TipImg: "",
+    TipImg1: `${ImgEsmeralda1}`,
+    TipImg2: `${ImgEsmeralda1}`,
     tipLink: "/dicas",
   },
 
@@ -37,7 +40,8 @@ export default [
     finalConsiderations1: "BBBBBBBBBBBBBBBB",
     finalConsiderations2: "BBBBBBBBBBBBBBBB",
 
-    TipImg: "",
+    TipImg1: `${ImgEsmeralda1}`,
+    TipImg2: `${ImgEsmeralda1}`,
     tipLink: "/dicas",
   },
 
@@ -57,7 +61,8 @@ export default [
     finalConsiderations1: "BBBBBBBBBBBBBBBB",
     finalConsiderations2: "BBBBBBBBBBBBBBBB",
 
-    TipImg: "",
+    TipImg1: `${ImgEsmeralda1}`,
+    TipImg2: `${ImgEsmeralda1}`,
     tipLink: "/dicas",
   },
 ];

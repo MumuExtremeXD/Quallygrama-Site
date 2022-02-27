@@ -16,10 +16,22 @@ export const Nav = styled.div`
 
   transition: all 0.3s ease-in-out;
 
+  > div > Div > a {
+    color: #fff;
+  }
+
   @media (min-width: 320px) {
     &.scrollMenu {
-      background-color: var(--primary);
+      background-color: var(--secondary);
       box-shadow: 0px 1px 10px -5px rgba(0, 0, 0, 0.33);
+
+      > div > Div > a {
+        color: #666366;
+      }
+
+      > div > div > i {
+        color: #666366;
+      }
     }
   }
 `;
@@ -79,7 +91,6 @@ export const MenuOptions = styled.div`
     font-weight: 600;
 
     text-decoration: none;
-    color: var(--secondary);
 
     > i {
       display: flex;

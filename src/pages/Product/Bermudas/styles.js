@@ -12,6 +12,8 @@ export const Container = styled.div`
 
   position: relative;
 
+  color: #888388;
+
   > h2 {
     font-size: 7.8rem;
 
@@ -74,9 +76,9 @@ export const ProductHeader = styled.div`
     align-items: center;
     gap: 30px 16px;
 
-    > h3,
-    > h4 {
-      font-size: 16.3px;
+    > h3 {
+      color: var(--fourth);
+      font-size: 19px;
       font-weight: 500;
     }
   }
@@ -272,7 +274,8 @@ export const ProductForm = styled.div`
   > form {
     > h5 {
       text-align: center;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
+      color: var(--third);
     }
 
     > p {
@@ -280,11 +283,12 @@ export const ProductForm = styled.div`
       gap: 0px 10px;
 
       text-align: center;
-      font-size: 1.25rem;
+      font-size: 1.31rem;
       margin-bottom: 6%;
 
       > label {
         font-weight: 630;
+        color: var(--fourth);
       }
 
       > .Price {
@@ -318,7 +322,7 @@ export const ProductForm = styled.div`
         max-width: 250px;
         width: 100%;
 
-        font-size: 15px;
+        font-size: 18px;
 
         @media (max-width: 605px) {
           padding: 13px 10px;
@@ -424,7 +428,7 @@ export const ProductForm = styled.div`
 `;
 
 export const InputForm = styled.input`
-  font-size: 15px;
+  font-size: 18px;
   outline: none;
   border: 0.5px solid #ddd;
   border-radius: 4px;
@@ -525,10 +529,17 @@ export const ProductDescription = styled.div`
     }
   }
 
-  > div > h2 {
-    color: var(--third);
-    max-width: 350px;
-    width: 100%;
+  > div {
+    > h2 {
+      color: var(--third);
+      max-width: 350px;
+      width: 100%;
+    }
+
+    > p {
+      font-size: 18px;
+      color: var(--fourth);
+    }
   }
 
   @media (max-width: 605px) {
@@ -546,6 +557,8 @@ export const UlProduct = styled.ul`
     display: flex;
     align-items: center;
     gap: 0 8px;
+
+    color: #888388;
 
     > i {
       font-size: 25px;
@@ -568,6 +581,8 @@ export const UlAplication = styled.ul`
     display: flex;
     align-items: center;
     gap: 0 10px;
+
+    color: #888388;
 
     > i {
       font-size: 25px;

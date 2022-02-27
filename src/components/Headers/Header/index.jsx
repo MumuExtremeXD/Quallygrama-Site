@@ -65,7 +65,7 @@ function Header() {
         </Ul>
 
         <DivMenuDesktop>
-          <UlDesktop>
+          <UlDesktop className={classes}>
             <li>
               <Link to={"../"}>Início</Link>
             </li>

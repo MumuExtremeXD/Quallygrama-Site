@@ -90,7 +90,6 @@ export const SearchSection = styled.div`
 
     @media (max-width: 425px) {
       object-fit: cover;
-
       min-width: 300px;
     }
   }
@@ -248,6 +247,7 @@ export const TipImg = styled.div`
     grid-area: 1 / 1 / 4 / 4;
 
     > img {
+      cursor: pointer;
       width: 100%;
       max-width: 450px;
     }
@@ -257,6 +257,7 @@ export const TipImg = styled.div`
     grid-area: 1 / 4 / 4 / 7;
 
     > img {
+      cursor: pointer;
       width: 100%;
       max-width: 450px;
     }
@@ -285,9 +286,10 @@ export const TipInfo = styled.div`
     margin: 40px auto;
 
     padding: 1px 0px;
-    font-size: 16px;
+    font-size: 24px;
 
     text-align: justify;
+    color: #555355;
   }
 `;
 
@@ -301,7 +303,8 @@ export const UlAplication = styled.ul`
   grid-row-gap: 20px;
 
   > li {
-    font-size: 19px;
+    color: #555355;
+    font-size: 20px;
   }
 
   margin-bottom: 40px;

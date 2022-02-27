@@ -10,7 +10,6 @@ const Modal = ({ Information, OnClose = () => {} }) => {
       document.body.style.overflow = "hidden";
 
       return () => {
-        window.scrollTo(0, 0);
         document.body.style.overflow = "auto";
       };
     } catch (error) {

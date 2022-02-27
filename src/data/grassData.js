@@ -7,8 +7,7 @@ export default [
     idGrama: 6,
     title: "Grama Esmeralda",
 
-    metersSold: "15.000m²",
-    metersAvailable: "+ de 20.000m²",
+    metersSold: "+ de 15.000m²",
 
     PriceGrass: "R$14,00m²",
     PriceGrassPromotion: "R$7,00m²",
@@ -36,7 +35,7 @@ export default [
     applications2: "Campos de Futebol",
     applications3: "Jardins e Praças",
     applications4: "Residências",
-    applications5: "",
+    applications5: "Casa de campo",
     applications6: "",
 
     finalConsiderations:
@@ -63,8 +62,7 @@ export default [
     idGrama: 5,
     title: "Grama São Carlos",
 
-    metersSold: "15.000m²",
-    metersAvailable: "+ de 20.000m²",
+    metersSold: "+ de 15.000m²",
 
     PriceGrass: "R$15,00m²",
     PriceGrassPromotion: "R$8,50m²",
@@ -120,8 +118,7 @@ export default [
     idGrama: 4,
     title: "Grama Santo Agostinho",
 
-    metersSold: "15.000m²",
-    metersAvailable: "+ de 20.000m²",
+    metersSold: "+ de 15.000m²",
 
     PriceGrass: "R$14,00m²",
     PriceGrassPromotion: "R$7,00m²",
@@ -177,8 +174,7 @@ export default [
     idGrama: 3,
     title: "Grama Bermudas",
 
-    metersSold: "15.000m²",
-    metersAvailable: "+ de 20.000m²",
+    metersSold: "+ de 15.000m²",
 
     PriceGrass: "R$16,00m²",
     PriceGrassPromotion: "R$9,50m²",
@@ -234,8 +230,7 @@ export default [
     idGrama: 2,
     title: "Grama Coreana",
 
-    metersSold: "15.000m²",
-    metersAvailable: "+ de 20.000m²",
+    metersSold: "+ de 15.000m²",
 
     PriceGrass: "R$16,00m²",
     PriceGrassPromotion: "R$9,50m²",
@@ -291,8 +286,7 @@ export default [
     idGrama: 1,
     title: "Grama Discovery",
 
-    metersSold: "15.000m²",
-    metersAvailable: "+ de 20.000m²",
+    metersSold: "+ de 15.000m²",
 
     PriceGrass: "R$16,00m²",
     PriceGrassPromotion: "R$9,50m²",

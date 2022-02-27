@@ -169,8 +169,7 @@ function ProdEsmelda() {
                   <ProductHeader>
                     <h1>{Data2.title}</h1>
                     <div>
-                      <h3>{Data2.metersSold} VENDIDOS </h3>
-                      <h4>{Data2.metersAvailable} Disponíveis</h4>
+                      <h3>{Data2.metersSold} VENDIDOS</h3>
                     </div>
                   </ProductHeader>
 
@@ -235,41 +234,55 @@ function ProdEsmelda() {
                       <Divider />
 
                       <UlProduct>
-                        <li>
-                          <i>
-                            <GiArmorUpgrade />
-                          </i>
+                        {Data2.benefits1 && (
+                          <li>
+                            <i>
+                              <GiArmorUpgrade />
+                            </i>
 
-                          {Data2.benefits1}
-                        </li>
-                        <li>
-                          <i>
-                            <MdWaterDrop />
-                          </i>
+                            {Data2.benefits1}
+                          </li>
+                        )}
 
-                          {Data2.benefits2}
-                        </li>
-                        <li>
-                          <i>
-                            <GiHighGrass />
-                          </i>
+                        {Data2.benefits2 && (
+                          <li>
+                            <i>
+                              <MdWaterDrop />
+                            </i>
 
-                          {Data2.benefits3}
-                        </li>
-                        <li>
-                          <i>
-                            <GiGroundSprout />
-                          </i>
+                            {Data2.benefits2}
+                          </li>
+                        )}
 
-                          {Data2.benefits4}
-                        </li>
-                        <li>
-                          <i>
-                            <GiBootStomp />
-                          </i>
+                        {Data2.benefits3 && (
+                          <li>
+                            <i>
+                              <GiHighGrass />
+                            </i>
 
-                          {Data2.benefits5}
-                        </li>
+                            {Data2.benefits3}
+                          </li>
+                        )}
+
+                        {Data2.benefits4 && (
+                          <li>
+                            <i>
+                              <GiGroundSprout />
+                            </i>
+
+                            {Data2.benefits4}
+                          </li>
+                        )}
+
+                        {Data2.benefits5 && (
+                          <li>
+                            <i>
+                              <GiBootStomp />
+                            </i>
+
+                            {Data2.benefits5}
+                          </li>
+                        )}
                       </UlProduct>
 
                       <Divider />
@@ -281,37 +294,65 @@ function ProdEsmelda() {
                       <Divider />
 
                       <UlAplication>
-                        <li>
-                          <i>
-                            <FaCheck />
-                          </i>
+                        {Data2.applications1 && (
+                          <li>
+                            <i>
+                              <FaCheck />
+                            </i>
 
-                          {Data2.benefits1}
-                        </li>
-                        <li>
-                          <i>
-                            <FaCheck />
-                          </i>
-                          {Data2.benefits2}
-                        </li>
-                        <li>
-                          <i>
-                            <FaCheck />
-                          </i>
-                          {Data2.benefits3}
-                        </li>
-                        <li>
-                          <i>
-                            <FaCheck />
-                          </i>
-                          {Data2.benefits4}
-                        </li>
-                        <li>
-                          <i>
-                            <FaCheck />
-                          </i>
-                          {Data2.benefits5}
-                        </li>
+                            {Data2.applications1}
+                          </li>
+                        )}
+
+                        {Data2.applications2 && (
+                          <li>
+                            <i>
+                              <FaCheck />
+                            </i>
+
+                            {Data2.applications2}
+                          </li>
+                        )}
+
+                        {Data2.applications3 && (
+                          <li>
+                            <i>
+                              <FaCheck />
+                            </i>
+
+                            {Data2.applications3}
+                          </li>
+                        )}
+
+                        {Data2.applications4 && (
+                          <li>
+                            <i>
+                              <FaCheck />
+                            </i>
+
+                            {Data2.applications4}
+                          </li>
+                        )}
+
+                        {Data2.applications5 && (
+                          <li>
+                            <i>
+                              <FaCheck />
+                            </i>
+
+                            {Data2.applications5}
+                          </li>
+                        )}
+
+                        {Data2.applications6 && (
+                          <li>
+                            <i>
+                              <FaCheck />
+                            </i>
+
+                            {Data2.applications6}
+                          </li>
+                        )}
                       </UlAplication>
 
                       <Divider />
