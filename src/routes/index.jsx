@@ -12,6 +12,7 @@ const Project = loadable(() => import("../pages/Projects"));
 
 const NotFound = loadable(() => import("../pages/NotFound"));
 const Terms = loadable(() => import("../pages/Terms"));
+const TermsCookies = loadable(() => import("../pages/TermsCookies"));
 
 /* Variedades de Grama */
 const EsmeraldaGrass = loadable(() => import("../pages/Product/Esmeralda"));
@@ -32,6 +33,8 @@ function routes() {
       <Route path="/dicas/:id" element={<Tip />} />
       <Route path="/projeto-educacional" element={<Project />} />
       <Route path="/termos" element={<Terms />} />
+      <Route path="/termosCookies" element={<TermsCookies />} />
+
       <Route path="/gramas" element={<Products />} />
       {/* Variedades de Grama */}
       <Route path="/grama-esmeralda/:id" element={<EsmeraldaGrass />} />

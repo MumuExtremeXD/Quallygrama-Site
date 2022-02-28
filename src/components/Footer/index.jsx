@@ -77,11 +77,11 @@ function Footer() {
             <h4>Políticas da empresa</h4>
             <ul>
               <li>
-                <Link to="/termos">Política de Cookies</Link>
+                <Link to="/termos">Política de privacidade</Link>
               </li>
 
               <li>
-                <Link to="/termos">Política de privacidade</Link>
+                <Link to="/termosCookies">Política de Cookies</Link>
               </li>
             </ul>
           </Column>
