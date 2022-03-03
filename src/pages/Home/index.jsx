@@ -39,12 +39,12 @@ function Home() {
         <div className="EffectBlack">
           <div className="GroupText">
             <h1>
-              Semear momentos é a essência da <br />
-              Qually Grama
+              Conheça nossas <br />
+              Variedades
             </h1>
 
             <Link to={"../gramas"}>
-              <button>Cultivar Momento</button>
+              <button>Conhecer</button>
             </Link>
           </div>
         </div>
@@ -52,7 +52,7 @@ function Home() {
 
       <WrapperProducts1>
         <h1>
-          Conheça os lugares que <br /> <span>estamos juntos!</span>
+          Todos os lugares que <br /> <span>estamos juntos!</span>
         </h1>
 
         <CardBox>

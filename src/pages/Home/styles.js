@@ -63,14 +63,14 @@ export const Wrapper = styled.div`
         color: var(--secondary);
         text-align: center;
 
-        font-size: 2.2rem;
-        line-height: 45px;
+        font-size: 3.8rem;
+        line-height: 70px;
         font-weight: 600;
         letter-spacing: -0.02em;
 
-        max-width: 380px;
+        max-width: 650px;
 
-        padding: 0px 18px 50px 18px;
+        padding: 0px 18px 40px 18px;
 
         @media (max-width: 390px) {
           font-size: 2.1rem;
@@ -101,7 +101,7 @@ export const Wrapper = styled.div`
           cursor: pointer;
           border-radius: 40px;
 
-          font-size: 1.1em;
+          font-size: 1.6em;
           font-weight: bold;
           color: var(--secondary);
 
