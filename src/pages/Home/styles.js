@@ -72,21 +72,17 @@ export const Wrapper = styled.div`
 
         padding: 0px 18px 40px 18px;
 
-        @media (max-width: 390px) {
-          font-size: 2.1rem;
+        @media (max-width: 550px) {
+          font-size: 2.8rem;
         }
 
-        @media (max-width: 357px) {
+        @media (max-width: 375px) {
+          font-size: 2.3rem;
+        }
+
+        @media (max-width: 340px) {
+          line-height: 55px;
           font-size: 2rem;
-        }
-
-        @media (max-width: 343px) {
-          font-size: 1.9rem;
-        }
-
-        @media (max-width: 331px) {
-          line-height: 35px;
-          font-size: 1.8rem;
         }
       }
 
@@ -94,6 +90,11 @@ export const Wrapper = styled.div`
         max-width: 240px;
         width: 100%;
         height: 60px;
+
+        @media (max-width: 375px) {
+          max-width: 200px;
+        }
+
         > button {
           max-width: 240px;
           width: 100%;
@@ -104,6 +105,10 @@ export const Wrapper = styled.div`
           font-size: 1.6em;
           font-weight: bold;
           color: var(--secondary);
+
+          @media (max-width: 375px) {
+            font-size: 1.5em;
+          }
 
           border: none;
 
