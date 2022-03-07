@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import ImgTeste2 from "../../images/teste2.webp";
-
 export const Container = styled.div`
   width: 100% !important;
 
@@ -29,22 +27,10 @@ export const Container = styled.div`
       color: var(--primary);
     }
   }
-`;
 
-export const InputForm = styled.input`
-  outline: none;
-
-  width: 100%;
-  height: 55px;
-  padding: 0px 15px 0px 15px;
-
-  border: none;
-
-  cursor: text;
-
-  line-height: 28px;
-  font-size: 17px;
-  font-weight: 400;
+  .Section {
+    width: 100%;
+  }
 `;
 
 export const SearchSection = styled.div`
@@ -60,9 +46,7 @@ export const SearchSection = styled.div`
   margin: 0 auto;
   top: 0;
 
-  background-image: url(${ImgTeste2});
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: #fafafa;
 
   @media (min-width: 1441px) {
     background-attachment: scroll;
@@ -112,31 +96,42 @@ export const SearchSection = styled.div`
 
     user-select: none;
 
-    text-shadow: -3px 2px 4px rgba(0, 0, 0, 0.16);
+    margin-top: 35px;
 
     > h2 {
       font-size: 2.5rem;
       font-weight: 800;
-      color: #fff;
+      color: var(--third);
     }
 
     > p {
       font-size: 1.2rem;
-      color: #fff;
+      color: var(--five);
     }
 
     @media (max-width: 768px) {
+      margin-top: 18px;
+
       > h2 {
         font-size: 1.9rem;
       }
 
       > p {
         font-size: 1rem;
-        color: #fff;
       }
     }
 
     @media (max-width: 425px) {
+      > h2 {
+        padding: 60px 35px 40px 35px;
+      }
+
+      > p {
+        display: none;
+      }
+    }
+
+    @media (max-width: 320px) {
       > h2 {
         font-size: 1.8rem;
         padding: 60px 10px 40px 10px;
@@ -203,8 +198,24 @@ export const SearchSection = styled.div`
   }
 `;
 
+export const InputForm = styled.input`
+  outline: none;
+
+  width: 100%;
+  height: 55px;
+  padding: 0px 15px 0px 15px;
+
+  border: none;
+
+  cursor: text;
+
+  line-height: 28px;
+  font-size: 17px;
+  font-weight: 400;
+`;
+
 export const Wrapper = styled.div`
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 80px;
   width: 100%;
   max-width: 1440px;
@@ -228,7 +239,7 @@ export const Box = styled.div`
   margin-top: var(--verticalPadding);
   padding: 0px 15px;
 
-  gap: 45px 25px;
+  gap: 30px 25px;
 
   grid-template-columns:
     minmax(350px, 1fr)
@@ -250,6 +261,58 @@ export const Box = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+`;
+
+export const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  max-width: 400px;
+
+  user-select: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  a:active,
+  a:visited {
+    color: var(--primary);
+  }
+
+  cursor: pointer;
+`;
+
+export const BoxImg = styled.div`
+  > img {
+    border-radius: 6px;
+    background: var(--white);
+
+    height: auto;
+    width: 100%;
+  }
+`;
+
+export const CardBody = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 0 0 6px 6px;
+
+  > h3 {
+    font-size: 1.13rem;
+    color: var(--black);
+    font-weight: 550;
+  }
+
+  > p {
+    font-weight: 600;
+    font-size: 1.13rem;
+    font-weight: 500;
+    color: var(--third);
   }
 `;
 

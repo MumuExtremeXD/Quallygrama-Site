@@ -49,8 +49,8 @@ export default createGlobalStyle`
     --primary:#559645;
     --secondary:#FFF;
     --third:#0b5b3a;
-    --fourth:#84b13f;
-    --five:#121823;
+    --fourth:#93c53b;
+    --five:#4f2d0f;
     --blue: #008ffc;
     --black:#222222;
     --gray:#444;

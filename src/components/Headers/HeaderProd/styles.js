@@ -112,13 +112,41 @@ export const Ul = styled.ul`
     cursor: pointer;
 
     position: absolute;
-    right: 40px;
+    right: 20px;
     top: 30px;
   }
 
   > li {
     list-style: none;
     transition: all 0.4s ease;
+
+    > a {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      > button {
+        max-width: 180px;
+        background: #7cb407;
+
+        outline: none;
+        border: none;
+
+        border-radius: 4px;
+        padding: 10px 0px;
+        width: 100%;
+
+        transition: all 0.2s ease;
+
+        outline: none;
+        border: none;
+        font-size: 22px;
+
+        color: white;
+        cursor: pointer;
+        font-weight: 500;
+      }
+    }
 
     > a {
       font-size: 18px;

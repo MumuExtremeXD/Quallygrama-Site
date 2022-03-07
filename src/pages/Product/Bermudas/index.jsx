@@ -11,7 +11,7 @@ import {
   GiArmorUpgrade,
 } from "react-icons/gi";
 
-import { MdWaterDrop } from "react-icons/md";
+import { WiHot } from "react-icons/wi";
 
 import { FaCheck } from "react-icons/fa";
 
@@ -237,7 +237,7 @@ function ProdEsmelda() {
                         {Data2.benefits1 && (
                           <li>
                             <i>
-                              <GiArmorUpgrade />
+                              <WiHot />
                             </i>
 
                             {Data2.benefits1}
@@ -247,7 +247,7 @@ function ProdEsmelda() {
                         {Data2.benefits2 && (
                           <li>
                             <i>
-                              <MdWaterDrop />
+                              <GiArmorUpgrade />
                             </i>
 
                             {Data2.benefits2}

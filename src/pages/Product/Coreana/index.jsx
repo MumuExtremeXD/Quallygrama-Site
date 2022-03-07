@@ -4,16 +4,13 @@ import React, { useState, useEffect } from "react";
 
 import { useParams } from "react-router-dom";
 import dataGrass from "../../../data/grassData";
-import {
-  GiHighGrass,
-  GiGroundSprout,
-  GiBootStomp,
-  GiArmorUpgrade,
-} from "react-icons/gi";
 
+import { GiHealthIncrease } from "react-icons/gi";
+import { BsStars } from "react-icons/bs";
 import { MdWaterDrop } from "react-icons/md";
-
 import { FaCheck } from "react-icons/fa";
+
+import { AiOutlineFall } from "react-icons/ai";
 
 import {
   Container,
@@ -237,7 +234,7 @@ function ProdEsmelda() {
                         {Data2.benefits1 && (
                           <li>
                             <i>
-                              <GiArmorUpgrade />
+                              <GiHealthIncrease />
                             </i>
 
                             {Data2.benefits1}
@@ -247,7 +244,7 @@ function ProdEsmelda() {
                         {Data2.benefits2 && (
                           <li>
                             <i>
-                              <MdWaterDrop />
+                              <AiOutlineFall />
                             </i>
 
                             {Data2.benefits2}
@@ -257,7 +254,7 @@ function ProdEsmelda() {
                         {Data2.benefits3 && (
                           <li>
                             <i>
-                              <GiHighGrass />
+                              <MdWaterDrop />
                             </i>
 
                             {Data2.benefits3}
@@ -267,7 +264,7 @@ function ProdEsmelda() {
                         {Data2.benefits4 && (
                           <li>
                             <i>
-                              <GiGroundSprout />
+                              <BsStars />
                             </i>
 
                             {Data2.benefits4}
@@ -277,7 +274,7 @@ function ProdEsmelda() {
                         {Data2.benefits5 && (
                           <li>
                             <i>
-                              <GiBootStomp />
+                              <BsStars />
                             </i>
 
                             {Data2.benefits5}

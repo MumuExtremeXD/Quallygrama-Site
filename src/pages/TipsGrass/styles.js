@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import ImgTeste2 from "../../images/teste2.webp";
-
 export const Container = styled.div`
   width: 100% !important;
 
@@ -48,9 +46,7 @@ export const SearchSection = styled.div`
   margin: 0 auto;
   top: 0;
 
-  background-image: url(${ImgTeste2});
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: #fafafa;
 
   @media (min-width: 1441px) {
     background-attachment: scroll;
@@ -100,31 +96,42 @@ export const SearchSection = styled.div`
 
     user-select: none;
 
-    text-shadow: -3px 2px 4px rgba(0, 0, 0, 0.16);
+    margin-top: 35px;
 
     > h2 {
       font-size: 2.5rem;
       font-weight: 800;
-      color: #fff;
+      color: var(--third);
     }
 
     > p {
       font-size: 1.2rem;
-      color: #fff;
+      color: var(--five);
     }
 
     @media (max-width: 768px) {
+      margin-top: 18px;
+
       > h2 {
         font-size: 1.9rem;
       }
 
       > p {
         font-size: 1rem;
-        color: #fff;
       }
     }
 
     @media (max-width: 425px) {
+      > h2 {
+        padding: 60px 35px 40px 35px;
+      }
+
+      > p {
+        display: none;
+      }
+    }
+
+    @media (max-width: 320px) {
       > h2 {
         font-size: 1.8rem;
         padding: 60px 10px 40px 10px;

@@ -13,10 +13,10 @@ export const Nav = styled.div`
   z-index: 5;
   width: 100%;
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   > div > div > i {
-    color: #fff;
+    color: #666366;
   }
 
   @media (min-width: 320px) {
@@ -65,7 +65,9 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  // Colocar imagem do logo
+  @media (max-width: 425px) {
+    padding: 15px 18px 15px;
+  }
 
   > .logo > a {
     font-size: 20px;
@@ -78,13 +80,19 @@ export const Content = styled.div`
     > img {
       margin-left: 15px;
       padding-top: 5px;
-      width: 100px;
+      width: 100%;
+      max-width: 220px;
+
+      @media (max-width: 425px) {
+        max-width: 200px;
+        margin-left: 0px;
+      }
     }
   }
 
   > div {
     > i {
-      color: var(--white);
+      color: var(--primary);
       font-size: 35px;
       cursor: pointer;
     }
@@ -140,8 +148,45 @@ export const Ul = styled.ul`
     cursor: pointer;
 
     position: absolute;
-    right: 40px;
+    right: 13px;
     top: 30px;
+  }
+
+  > li {
+    list-style: none;
+    transition: all 0.4s ease;
+
+    &:hover {
+      transform: scale(1.16);
+    }
+
+    > a {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      > button {
+        max-width: 180px;
+        background: #7cb407;
+
+        outline: none;
+        border: none;
+
+        border-radius: 4px;
+        padding: 10px 0px;
+        width: 100%;
+
+        transition: all 0.2s ease;
+
+        outline: none;
+        border: none;
+        font-size: 22px;
+
+        color: white;
+        cursor: pointer;
+        font-weight: 500;
+      }
+    }
   }
 
   > li {
@@ -167,13 +212,12 @@ export const Ul = styled.ul`
       margin-left: 25px;
       background: transparent;
 
-      font-size: 18px;
-      color: var(--secondary);
+      color: var(--primary);
 
       cursor: pointer;
 
       &:hover {
-        color: var(--secondary);
+        color: var(--primary);
       }
     }
   }
@@ -223,7 +267,9 @@ export const UlDesktop = styled.ul`
   margin: 0 auto;
 
   display: inline-flex;
-  padding: 20px 20px 20px 20px;
+  align-items: center;
+
+  padding: 5px 10px 5px 10px;
 
   transition: all 0.4s ease;
 
@@ -233,6 +279,34 @@ export const UlDesktop = styled.ul`
 
     &:hover {
       transform: scale(1.16);
+    }
+
+    > a {
+      > button {
+        background: #7cb407;
+
+        outline: none;
+        border: 1px;
+
+        border-radius: 4px;
+        padding: 20px 5px;
+        width: 100%;
+
+        transition: all 0.2s ease;
+
+        outline: none;
+        border: none;
+        font-size: 17px;
+
+        color: white;
+        cursor: pointer;
+
+        width: 100%;
+
+        @media (max-width: 605px) {
+          font-size: 14px;
+        }
+      }
     }
 
     > a,
@@ -245,7 +319,11 @@ export const UlDesktop = styled.ul`
 
       text-decoration: none;
 
-      color: #fff;
+      color: #888388;
+
+      &:hover {
+        color: var(--primary);
+      }
     }
   }
 `;

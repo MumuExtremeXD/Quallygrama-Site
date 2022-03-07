@@ -31,7 +31,7 @@ export const TextBox = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 50px 60px 80px 60px;
+  padding: 50px 60px 60px 60px;
 
   > h2 {
     font-size: 18px;
@@ -75,14 +75,16 @@ export const LogoBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 100%;
   height: 290px;
 
-  background-color: var(--primary);
+  background: #fafafa;
 
   > a {
     max-width: 840px;
     > img {
+      max-width: 440px;
       transition: all ease 0.3s;
       width: 100%;
     }

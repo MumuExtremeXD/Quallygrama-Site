@@ -67,8 +67,8 @@ function Products() {
 
       <SearchSection>
         <div className="Headline">
-          <h2>Conheça antes de comprar</h2>
-          <p>Seus produtos e serviços explicados</p>
+          <h2>Variedades de Grama</h2>
+          <p>Qualidade e Procedência Comprovada</p>
         </div>
 
         <div>

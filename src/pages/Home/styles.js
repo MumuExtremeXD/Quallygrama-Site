@@ -18,139 +18,148 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
-
-  flex-wrap: wrap;
-
   width: 100%;
-  height: 100vh;
 
-  background-color: var(--secondary);
+  background: #fafafa;
+  padding-top: 120px;
 
-  @media (min-width: 1440px) {
-    max-height: 850px !important;
-    height: 100%;
+  @media (max-width: 425px) {
+    padding-top: 85px;
   }
 
-  > .EffectBlack {
-    width: 100%;
-
-    @media (min-width: 1440px) {
-      max-height: 850px !important;
-    }
-    height: 100vh;
-
-    position: absolute;
-    opacity: 1;
-    transition: 0.5s ease;
-
+  > div {
     display: flex;
-    justify-content: center;
-    align-items: center;
 
-    overflow: hidden;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+
+    padding: 15px 40px 15px;
+
+    @media (max-width: 760px) {
+      padding: 15px 40px 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    > img {
+      max-height: 820px;
+      height: 100%;
+      width: 100%;
+
+      @media (max-width: 768px) {
+        max-width: 400px;
+      }
+
+      @media (max-width: 760px) {
+        max-width: 650px;
+        width: 100%;
+      }
+    }
 
     .GroupText {
       display: flex;
       justify-content: center;
-      align-items: center;
 
       flex-direction: column;
 
       padding: 0px 5px;
 
-      > h1 {
-        color: var(--secondary);
-        text-align: center;
+      max-width: 670px;
 
-        font-size: 3.8rem;
-        line-height: 70px;
+      @media (max-width: 760px) {
+        align-items: center;
+      }
+
+      > h1 {
+        color: var(--primary);
+        text-align: left;
+
+        font-size: 3.3rem;
+        line-height: auto;
         font-weight: 600;
         letter-spacing: -0.02em;
 
-        max-width: 650px;
+        padding: 0px 18px 45px 18px;
 
-        padding: 0px 18px 40px 18px;
+        @media (max-width: 768px) {
+          font-size: 1.6rem;
+          padding: 0px 18px 25px 18px;
+        }
 
-        @media (max-width: 550px) {
-          font-size: 2.8rem;
+        @media (max-width: 760px) {
+          text-align: center;
         }
 
         @media (max-width: 375px) {
-          font-size: 2.3rem;
+          font-size: 1.3rem;
+        }
+      }
+
+      > p {
+        text-align: left;
+
+        font-size: 2rem;
+        line-height: auto;
+
+        color: var(--gray);
+
+        letter-spacing: -0.02em;
+        padding: 0px 18px 0px 18px;
+
+        @media (max-width: 768px) {
+          font-size: 1.2rem;
         }
 
-        @media (max-width: 340px) {
-          line-height: 55px;
-          font-size: 2rem;
+        @media (max-width: 760px) {
+          text-align: center;
+        }
+
+        @media (max-width: 375px) {
+          padding: 0px 10px 0px 10px;
+          font-size: 1.2rem;
         }
       }
 
       > a {
-        max-width: 240px;
+        margin-top: 15px;
+
+        max-width: 200px;
         width: 100%;
         height: 60px;
 
+        @media (max-width: 760px) {
+          margin-bottom: 45px;
+        }
+
         @media (max-width: 375px) {
-          max-width: 200px;
+          max-width: 180px;
         }
 
         > button {
-          max-width: 240px;
+          max-width: 200px;
           width: 100%;
           height: 60px;
           cursor: pointer;
           border-radius: 40px;
 
-          font-size: 1.6em;
+          font-size: 1.4em;
           font-weight: bold;
           color: var(--secondary);
 
           @media (max-width: 375px) {
-            font-size: 1.5em;
+            max-width: 180px;
+            font-size: 1.3em;
           }
 
           border: none;
 
-          background: rgb(152, 203, 37);
-          background: linear-gradient(
-            79deg,
-            rgba(152, 203, 37, 1) 0%,
-            rgba(0, 209, 122, 1) 100%
-          );
+          background: var(--third);
         }
       }
-    }
-
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.4) 100%,
-      rgba(0, 0, 0, 0) 0%
-    );
-  }
-
-  > .VideoStyle {
-    position: relative;
-    display: inline-block;
-
-    @media (min-width: 1440px) {
-      max-height: 850px !important;
-    }
-    height: 100vh;
-    width: 100%;
-
-    overflow: hidden;
-
-    > video {
-      display: block;
-
-      height: 100%;
-      width: 100%;
-
-      overflow: hidden;
-
-      object-fit: cover;
     }
   }
 `;
@@ -192,23 +201,11 @@ export const WrapperProducts1 = styled.div`
     }
   }
 
-  @media (max-width: 425px) {
-    padding: 20px 0px 15px 0px;
-    margin-top: 40px;
-
+  @media (max-width: 672px) {
     > h1 {
-      padding: 0px 15px;
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-  }
-
-  @media (max-width: 320px) {
-    > h1 {
-      padding: 0px 15px;
-      font-size: 2.6em;
-      margin-bottom: 10px;
-      line-height: 55px;
+      padding: 0 40px;
+      font-size: 1.9em;
+      line-height: 40px;
     }
   }
 `;
@@ -243,6 +240,14 @@ export const WrapperProducts2 = styled.div`
     }
   }
 
+  @media (max-width: 672px) {
+    > h2 {
+      font-size: 1.9em;
+      line-height: 40px;
+      margin-bottom: 30px;
+    }
+  }
+
   > p {
     font-size: 1.2em;
     padding: 0 180px;
@@ -266,7 +271,7 @@ export const WrapperProducts2 = styled.div`
 export const WrapperText = styled.div`
   margin: 10px 0px 10vh 0px;
 
-  background-color: #f2f2f2;
+  background-color: #fafafa;
 
   display: flex;
   justify-content: center;

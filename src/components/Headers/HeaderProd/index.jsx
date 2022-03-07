@@ -60,6 +60,16 @@ function Header() {
           <li>
             <Link to={"../dicas"}>Sobre nós</Link>
           </li>
+
+          <li>
+            <a
+              href={`https://api.whatsapp.com/send?phone=5515996159898&text=Olá!`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button type="button">Fale Conosco</button>
+            </a>
+          </li>
         </Ul>
         <div className="icon" onClick={() => setOpen(!open)}>
           <i>

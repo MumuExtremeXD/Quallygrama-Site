@@ -4,15 +4,10 @@ import React, { useState, useEffect } from "react";
 
 import { useParams } from "react-router-dom";
 import dataGrass from "../../../data/grassData";
-import {
-  GiHighGrass,
-  GiGroundSprout,
-  GiBootStomp,
-  GiArmorUpgrade,
-} from "react-icons/gi";
+import { GiHighGrass, GiGroundSprout, GiThermometerCold } from "react-icons/gi";
 
-import { MdWaterDrop } from "react-icons/md";
-
+import { SiShadow } from "react-icons/si";
+import { IoIosCut } from "react-icons/io";
 import { FaCheck } from "react-icons/fa";
 
 import {
@@ -237,7 +232,7 @@ function ProdEsmelda() {
                         {Data2.benefits1 && (
                           <li>
                             <i>
-                              <GiArmorUpgrade />
+                              <SiShadow />
                             </i>
 
                             {Data2.benefits1}
@@ -247,7 +242,7 @@ function ProdEsmelda() {
                         {Data2.benefits2 && (
                           <li>
                             <i>
-                              <MdWaterDrop />
+                              <GiThermometerCold />
                             </i>
 
                             {Data2.benefits2}
@@ -277,7 +272,7 @@ function ProdEsmelda() {
                         {Data2.benefits5 && (
                           <li>
                             <i>
-                              <GiBootStomp />
+                              <IoIosCut />
                             </i>
 
                             {Data2.benefits5}

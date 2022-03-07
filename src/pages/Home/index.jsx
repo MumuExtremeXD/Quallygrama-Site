@@ -17,7 +17,7 @@ import {
 import Header from "../../components/Headers/Header";
 import Footer from "../../components/Footer";
 
-import VideoXD from "../../videos/Teste3.mp4";
+import gramasVen from "../../images/gramasVen.png";
 import ImgTeste from "../../images/esmeralda.webp";
 
 function Home() {
@@ -31,22 +31,23 @@ function Home() {
       <Header />
 
       <Wrapper>
-        <div className="VideoStyle">
-          <video autoPlay={true} loop={true} muted>
-            <source src={VideoXD} type="video/mp4" />
-          </video>
-        </div>
-        <div className="EffectBlack">
+        <div>
           <div className="GroupText">
             <h1>
-              Conheça nossas <br />
-              Variedades
+              lorem ipsum dolor sit amet, consectetur lorem ipsum lorem ipsum
+              dolor sit
             </h1>
+
+            <p>
+              lorem lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit.
+            </p>
 
             <Link to={"../gramas"}>
               <button>Conhecer</button>
             </Link>
           </div>
+
+          <img src={gramasVen} alt="" />
         </div>
       </Wrapper>
 
@@ -100,9 +101,7 @@ function Home() {
 
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-          tempore laudantium maiores incidunt quo? Quis nam id inventore
-          repellendus dolore praesentium molestias amet saepe, incidunt harum
-          eveniet dignissimos est placeat.
+          tempore laudantium maiores incidunt quo?
         </p>
 
         <CardBox>

@@ -106,7 +106,7 @@ function Footer() {
 
               <li>
                 <p>
-                  Você também pode ligar nesse número
+                  Você também pode nos ligar nesse número
                   <a href="tel:+5501532059300"> (15) 3205-9300</a>
                 </p>
               </li>

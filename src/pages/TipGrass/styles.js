@@ -229,6 +229,8 @@ export const TipImg = styled.div`
   grid-row-gap: 0px;
 
   @media (max-width: 425px) {
+    grid-column-gap: 0px;
+
     display: flex;
     flex-direction: column;
 
@@ -237,6 +239,7 @@ export const TipImg = styled.div`
       grid-area: unset;
 
       > img {
+        padding: 0px 15px 0px 15px;
         width: 100%;
         min-width: 320px;
       }
@@ -271,16 +274,6 @@ export const TipInfo = styled.div`
 
   padding: 0px 20px 0px 20px;
 
-  > h2 {
-    font-size: 4.8rem;
-    text-align: center;
-  }
-  > h3 {
-    padding: 1px 0px;
-    font-size: 15px;
-    font-weight: normal;
-  }
-
   > p {
     max-width: 900px;
     margin: 40px auto;
@@ -290,6 +283,22 @@ export const TipInfo = styled.div`
 
     text-align: justify;
     color: #555355;
+  }
+
+  @media (max-width: 425px) {
+    padding: 0px;
+
+    > p {
+      max-width: 900px;
+      margin: 20px auto;
+
+      padding: 0px 15px 0px 15px;
+
+      font-size: 18px;
+
+      text-align: justify;
+      color: #555355;
+    }
   }
 `;
 

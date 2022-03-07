@@ -4,15 +4,11 @@ import React, { useState, useEffect } from "react";
 
 import { useParams } from "react-router-dom";
 import dataGrass from "../../../data/grassData";
-import {
-  GiHighGrass,
-  GiGroundSprout,
-  GiBootStomp,
-  GiArmorUpgrade,
-} from "react-icons/gi";
 
+import { GiHighGrass, GiBootStomp } from "react-icons/gi";
+import { AiOutlineFall } from "react-icons/ai";
+import { WiHot } from "react-icons/wi";
 import { MdWaterDrop } from "react-icons/md";
-
 import { FaCheck } from "react-icons/fa";
 
 import {
@@ -237,7 +233,7 @@ function ProdEsmelda() {
                         {Data2.benefits1 && (
                           <li>
                             <i>
-                              <GiArmorUpgrade />
+                              <AiOutlineFall />
                             </i>
 
                             {Data2.benefits1}
@@ -267,7 +263,7 @@ function ProdEsmelda() {
                         {Data2.benefits4 && (
                           <li>
                             <i>
-                              <GiGroundSprout />
+                              <WiHot />
                             </i>
 
                             {Data2.benefits4}

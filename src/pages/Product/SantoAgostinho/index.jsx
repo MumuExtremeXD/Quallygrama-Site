@@ -7,11 +7,11 @@ import dataGrass from "../../../data/grassData";
 import {
   GiHighGrass,
   GiGroundSprout,
-  GiBootStomp,
-  GiArmorUpgrade,
+  GiSandstorm,
+  GiHealthIncrease,
 } from "react-icons/gi";
 
-import { MdWaterDrop } from "react-icons/md";
+import { FaShieldVirus } from "react-icons/fa";
 
 import { FaCheck } from "react-icons/fa";
 
@@ -237,7 +237,7 @@ function ProdEsmelda() {
                         {Data2.benefits1 && (
                           <li>
                             <i>
-                              <GiArmorUpgrade />
+                              <GiSandstorm />
                             </i>
 
                             {Data2.benefits1}
@@ -247,7 +247,7 @@ function ProdEsmelda() {
                         {Data2.benefits2 && (
                           <li>
                             <i>
-                              <MdWaterDrop />
+                              <GiGroundSprout />
                             </i>
 
                             {Data2.benefits2}
@@ -267,7 +267,7 @@ function ProdEsmelda() {
                         {Data2.benefits4 && (
                           <li>
                             <i>
-                              <GiGroundSprout />
+                              <GiHealthIncrease />
                             </i>
 
                             {Data2.benefits4}
@@ -277,7 +277,7 @@ function ProdEsmelda() {
                         {Data2.benefits5 && (
                           <li>
                             <i>
-                              <GiBootStomp />
+                              <FaShieldVirus />
                             </i>
 
                             {Data2.benefits5}

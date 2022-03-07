@@ -46,7 +46,11 @@ export const Container = styled.div`
     max-width: 650px;
     width: 100%;
 
-    margin: 7vh auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     position: fixed;
 
     @media (max-width: 768px) {
@@ -55,7 +59,6 @@ export const Container = styled.div`
 
     @media (max-width: 587px) {
       padding: 0px 20px;
-      margin: 20vh auto;
     }
   }
 
