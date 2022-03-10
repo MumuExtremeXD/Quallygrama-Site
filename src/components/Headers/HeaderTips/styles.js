@@ -213,6 +213,10 @@ export const Ul = styled.ul`
     width: 60%;
   }
 
+  @media (max-width: 600px) {
+    width: 70%;
+  }
+
   @media (max-width: 375px) {
     width: 80%;
   }

@@ -531,7 +531,7 @@ export const ProductDescription = styled.div`
 
   > div {
     > h2 {
-      color: var(--third);
+      color: var(--black);
       max-width: 350px;
       width: 100%;
     }
@@ -725,7 +725,8 @@ export const CardMobile = styled.div`
     width: 100%;
     max-width: 150px;
 
-    background: var(--primary);
+    background: var(--third);
+    color: white;
 
     border: none;
     height: 60px;

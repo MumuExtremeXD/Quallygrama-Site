@@ -185,38 +185,38 @@ function ProdEsmelda() {
                     />
                     <img
                       className="Image2"
-                      src={Data2.img1}
+                      src={Data2.img2}
                       alt={Data2.title}
                       onClick={function () {
                         setIsImgVisible(true);
-                        return PropsImg(Data2.img1);
+                        return PropsImg(Data2.img2);
                       }}
                     />
                     <img
                       className="Image3"
-                      src={Data2.img1}
+                      src={Data2.img3}
                       alt={Data2.title}
                       onClick={function () {
                         setIsImgVisible(true);
-                        return PropsImg(Data2.img1);
+                        return PropsImg(Data2.img3);
                       }}
                     />
                     <img
                       className="Image4"
-                      src={Data2.img1}
+                      src={Data2.img4}
                       alt={Data2.title}
                       onClick={function () {
                         setIsImgVisible(true);
-                        return PropsImg(Data2.img1);
+                        return PropsImg(Data2.img4);
                       }}
                     />
                     <img
                       className="Image5"
-                      src={Data2.img1}
+                      src={Data2.img5}
                       alt={Data2.title}
                       onClick={function () {
                         setIsImgVisible(true);
-                        return PropsImg(Data2.img1);
+                        return PropsImg(Data2.img5);
                       }}
                     />
                   </ProductImg>

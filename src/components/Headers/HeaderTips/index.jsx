@@ -58,7 +58,7 @@ function Header() {
           </li>
 
           <li>
-            <Link to={"../dicas"}>Sobre nós</Link>
+            <Link to={"../sobre-nos"}>Sobre nós</Link>
           </li>
 
           <li>

@@ -8,7 +8,7 @@ const Products = loadable(() => import("../pages/Products"));
 const Tips = loadable(() => import("../pages/TipsGrass"));
 
 const Tip = loadable(() => import("../pages/TipGrass"));
-const Project = loadable(() => import("../pages/Projects"));
+const AboutUs = loadable(() => import("../pages/AboutUs"));
 
 const NotFound = loadable(() => import("../pages/NotFound"));
 const Terms = loadable(() => import("../pages/Terms"));
@@ -31,7 +31,7 @@ function routes() {
       <Route path="/" element={<Home />} />
       <Route path="/dicas" element={<Tips />} />
       <Route path="/dicas/:id" element={<Tip />} />
-      <Route path="/projeto-educacional" element={<Project />} />
+      <Route path="/sobre-nos" element={<AboutUs />} />
       <Route path="/termos" element={<Terms />} />
       <Route path="/termosCookies" element={<TermsCookies />} />
 

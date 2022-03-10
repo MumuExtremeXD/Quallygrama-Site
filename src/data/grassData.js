@@ -1,6 +1,40 @@
 /* eslint-disable import/no-anonymous-default-export */
 
 import ImgEsmeralda1 from "../images/esmeralda.webp";
+import ImgEsmeralda2 from "../images/esmeralda.webp";
+import ImgEsmeralda3 from "../images/esmeralda.webp";
+import ImgEsmeralda4 from "../images/esmeralda.webp";
+import ImgEsmeralda5 from "../images/esmeralda.webp";
+
+import ImgBermuda1 from "../images/bermudas.webp";
+import ImgBermuda2 from "../images/bermudas.webp";
+import ImgBermuda3 from "../images/bermudas.webp";
+import ImgBermuda4 from "../images/bermudas.webp";
+import ImgBermuda5 from "../images/bermudas.webp";
+
+import ImgSC1 from "../images/saocarlos.webp";
+import ImgSC2 from "../images/saocarlos.webp";
+import ImgSC3 from "../images/saocarlos.webp";
+import ImgSC4 from "../images/saocarlos.webp";
+import ImgSC5 from "../images/saocarlos.webp";
+
+import ImgSA1 from "../images/stagostinho.webp";
+import ImgSA2 from "../images/stagostinho.webp";
+import ImgSA3 from "../images/stagostinho.webp";
+import ImgSA4 from "../images/stagostinho.webp";
+import ImgSA5 from "../images/stagostinho.webp";
+
+import ImgCoreana1 from "../images/coreana.webp";
+import ImgCoreana2 from "../images/coreana.webp";
+import ImgCoreana3 from "../images/coreana.webp";
+import ImgCoreana4 from "../images/coreana.webp";
+import ImgCoreana5 from "../images/coreana.webp";
+
+import ImgDiscovery1 from "../images/discovery.webp";
+import ImgDiscovery2 from "../images/discovery.webp";
+import ImgDiscovery3 from "../images/discovery.webp";
+import ImgDiscovery4 from "../images/discovery.webp";
+import ImgDiscovery5 from "../images/discovery.webp";
 
 export default [
   {
@@ -13,10 +47,10 @@ export default [
     PriceGrassPromotion: "R$7,00m²",
 
     img1: `${ImgEsmeralda1}`,
-    img2: "",
-    img3: "",
-    img4: "",
-    img5: "",
+    img2: `${ImgEsmeralda2}`,
+    img3: `${ImgEsmeralda3}`,
+    img4: `${ImgEsmeralda4}`,
+    img5: `${ImgEsmeralda5}`,
 
     shortDescription: "Grama Esmeralda com você em todos os momentos",
     Origin: "Original do Japão",
@@ -66,11 +100,11 @@ export default [
     PriceGrass: "R$15,00m²",
     PriceGrassPromotion: "R$8,50m²",
 
-    img1: `${ImgEsmeralda1}`,
-    img2: "",
-    img3: "",
-    img4: "",
-    img5: "",
+    img1: `${ImgSC1}`,
+    img2: `${ImgSC2}`,
+    img3: `${ImgSC3}`,
+    img4: `${ImgSC4}`,
+    img5: `${ImgSC5}`,
 
     shortDescription: "Grama São Carlos com você em todos os momentos",
     Origin: "Original do Brasil",
@@ -121,11 +155,11 @@ export default [
     PriceGrass: "R$14,00m²",
     PriceGrassPromotion: "R$7,00m²",
 
-    img1: `${ImgEsmeralda1}`,
-    img2: "",
-    img3: "",
-    img4: "",
-    img5: "",
+    img1: `${ImgSA1}`,
+    img2: `${ImgSA2}`,
+    img3: `${ImgSA3}`,
+    img4: `${ImgSA4}`,
+    img5: `${ImgSA5}`,
 
     shortDescription: "Grama Santo Agostinho sempre com você",
     Origin: "Original da América do Sul",
@@ -176,11 +210,11 @@ export default [
     PriceGrass: "R$16,00m²",
     PriceGrassPromotion: "R$9,50m²",
 
-    img1: `${ImgEsmeralda1}`,
-    img2: "",
-    img3: "",
-    img4: "",
-    img5: "",
+    img1: `${ImgBermuda1}`,
+    img2: `${ImgBermuda2}`,
+    img3: `${ImgBermuda3}`,
+    img4: `${ImgBermuda4}`,
+    img5: `${ImgBermuda5}`,
 
     shortDescription: "Grama Bermudas com você em todos os momentos",
     Origin: "Original do Reino Unido",
@@ -230,11 +264,11 @@ export default [
     PriceGrass: "R$16,00m²",
     PriceGrassPromotion: "R$9,50m²",
 
-    img1: `${ImgEsmeralda1}`,
-    img2: "",
-    img3: "",
-    img4: "",
-    img5: "",
+    img1: `${ImgCoreana1}`,
+    img2: `${ImgCoreana2}`,
+    img3: `${ImgCoreana3}`,
+    img4: `${ImgCoreana4}`,
+    img5: `${ImgCoreana5}`,
 
     shortDescription: "Grama Coreana com você em todos os momentos",
     Origin: "Original da Ásia",
@@ -285,11 +319,11 @@ export default [
     PriceGrass: "R$16,00m²",
     PriceGrassPromotion: "R$9,50m²",
 
-    img1: `${ImgEsmeralda1}`,
-    img2: "",
-    img3: "",
-    img4: "",
-    img5: "",
+    img1: `${ImgDiscovery1}`,
+    img2: `${ImgDiscovery2}`,
+    img3: `${ImgDiscovery3}`,
+    img4: `${ImgDiscovery4}`,
+    img5: `${ImgDiscovery5}`,
 
     shortDescription: "Grama Discovery™ com você em todos os momentos",
     Origin: "Desenvolvida na Europa",

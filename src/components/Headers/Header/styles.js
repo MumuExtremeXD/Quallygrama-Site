@@ -50,7 +50,7 @@ export const EffectOverlay = styled.div`
 
   position: fixed;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 120%;
   background-color: rgba(0, 0, 0, 0.33);
 
   cursor: pointer;
@@ -66,7 +66,7 @@ export const Content = styled.div`
   justify-content: space-between;
 
   @media (max-width: 425px) {
-    padding: 15px 18px 15px;
+    padding: 15px 18px 15px 10px;
   }
 
   > .logo > a {
@@ -84,7 +84,7 @@ export const Content = styled.div`
       max-width: 220px;
 
       @media (max-width: 425px) {
-        max-width: 200px;
+        max-width: 190px;
         margin-left: 0px;
       }
     }
@@ -148,8 +148,8 @@ export const Ul = styled.ul`
     cursor: pointer;
 
     position: absolute;
-    right: 13px;
-    top: 30px;
+    right: 10px;
+    top: 14px;
   }
 
   > li {
@@ -224,7 +224,7 @@ export const Ul = styled.ul`
 
   right: ${({ menu }) => (menu ? "-200%" : "0")};
 
-  height: 100%;
+  height: 120%;
   width: 32%;
 
   background-color: #fff;
@@ -236,6 +236,10 @@ export const Ul = styled.ul`
 
   @media (max-width: 868px) {
     width: 60%;
+  }
+
+  @media (max-width: 600px) {
+    width: 70%;
   }
 
   @media (max-width: 375px) {
@@ -279,6 +283,12 @@ export const UlDesktop = styled.ul`
 
     &:hover {
       transform: scale(1.16);
+    }
+
+    @media (max-width: 868px) {
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     > a {

@@ -5,7 +5,7 @@ import { Container, Wrapper } from "./styles";
 
 import Img404 from "../../images/404/404img.png";
 
-import Header from "../../components/Headers/HeaderProject";
+import Header from "../../components/Headers/Header";
 import Footer from "../../components/Footer";
 
 function NotFound() {

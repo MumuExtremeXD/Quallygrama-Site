@@ -16,7 +16,7 @@ import {
   WrapperFeature,
 } from "./styles";
 
-import Header from "../../components/Headers/HeaderProject";
+import Header from "../../components/Headers/Header";
 import Footer from "../../components/Footer";
 
 import ImgTeste from "../../images/esmeralda.webp";

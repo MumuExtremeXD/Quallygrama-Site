@@ -10,7 +10,6 @@ import {
   SocialModal,
   FormBox,
   InputFormMobile,
-  TextBox,
   BoxZap,
   LoadingBox,
 } from "./styles";
@@ -138,16 +137,6 @@ const Modal = ({ Information, OnClose = () => {} }) => {
           <SocialModal>
             <p>{Information.PriceGrassPromotion}</p>
           </SocialModal>
-
-          <Divider />
-
-          <TextBox>
-            <p>
-              Você sabia que ao comprar grama você ajuda... Lorem ipsum dolor
-              sit amet consectetur, adipisicing elit. Accusamus omnis, soluta
-              praesentium facere repellendus quam.
-            </p>
-          </TextBox>
 
           <Divider />
 

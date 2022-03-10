@@ -82,7 +82,7 @@ export const Wrapper = styled.div`
   justify-content: center;
 
   z-index: 100;
-  margin: 0;
+  margin: 0 auto;
 
   > button {
     z-index: 1200;
@@ -131,7 +131,7 @@ export const Wrapper = styled.div`
 export const Box = styled.div`
   position: relative;
 
-  padding: 104px 15px 20px 15px;
+  padding: 90px 15px 20px 15px;
   border-radius: 20px;
 
   width: 100%;
@@ -143,14 +143,14 @@ export const Box = styled.div`
   z-index: 100;
 
   max-width: 1172px;
-
-  margin-bottom: 25px;
 `;
 
 export const TitleModal = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  color: var(--third);
 
   @media (max-width: 630px) {
     > p {
@@ -194,25 +194,6 @@ export const Content = styled.div`
   }
 `;
 
-export const TextBox = styled.div`
-  margin: 20px 0;
-
-  display: flex;
-  width: 100%;
-
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  flex-direction: column;
-  max-width: 650px;
-
-  > p {
-    font-size: 1.3rem;
-    text-align: justify !important;
-  }
-`;
-
 export const ImgBox = styled.div`
   margin: 20px 0 20px 0;
 
@@ -248,6 +229,8 @@ export const ImgBox = styled.div`
 
 export const FormBox = styled.div`
   > p {
+    color: var(--black);
+
     font-size: 25px;
     font-weight: 550;
 
@@ -366,7 +349,7 @@ export const FormBox = styled.div`
       transition: all 0.2s ease;
 
       @media (max-width: 605px) {
-        padding: 13px 10px;
+        padding: 20px 10px;
       }
 
       &:hover {
@@ -403,10 +386,6 @@ export const FormBox = styled.div`
         }
       }
 
-      @media (max-width: 605px) {
-        padding: 13px 10px;
-      }
-
       &:hover {
         transform: scale(1.02);
       }
@@ -436,14 +415,11 @@ export const BoxZap = styled.div`
     border: 1px;
 
     border-radius: 4px;
-    padding: 15px 10px;
+    padding: 18px 10px;
     width: 100%;
+    margin-bottom: 20px;
 
     transition: all 0.2s ease;
-
-    /* padding-bottom: 40px; */
-
-    margin-bottom: 40px;
 
     > button {
       outline: none;
