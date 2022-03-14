@@ -135,7 +135,7 @@ function Footer() {
       <Copyright>
         <h4>
           ©Todos os direitos reservados {year} <br />
-          Qually Grama
+          Qually Grama - Matriz Tatuí-SP
         </h4>
       </Copyright>
     </Container>
