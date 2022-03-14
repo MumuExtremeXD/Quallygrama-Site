@@ -22,7 +22,7 @@ function Footer() {
             <ul>
               <li>
                 <a
-                  href={"https://www.instagram.com/tendtudotatui/"}
+                  href={"https://br.pinterest.com/QuallyGrama/"}
                   target="_blank"
                 >
                   <i>

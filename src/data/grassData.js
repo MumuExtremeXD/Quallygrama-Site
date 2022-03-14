@@ -1,40 +1,40 @@
 /* eslint-disable import/no-anonymous-default-export */
 
 import ImgEsmeralda1 from "../images/esmeralda.webp";
-import ImgEsmeralda2 from "../images/esmeralda.webp";
-import ImgEsmeralda3 from "../images/esmeralda.webp";
-import ImgEsmeralda4 from "../images/esmeralda.webp";
-import ImgEsmeralda5 from "../images/esmeralda.webp";
+import ImgEsmeralda2 from "../images/esmeralda2.webp";
+import ImgEsmeralda3 from "../images/esmeralda6.webp";
+import ImgEsmeralda4 from "../images/esmeralda4.webp";
+import ImgEsmeralda5 from "../images/esmeralda5.webp";
 
 import ImgBermuda1 from "../images/bermudas.webp";
-import ImgBermuda2 from "../images/bermudas.webp";
-import ImgBermuda3 from "../images/bermudas.webp";
-import ImgBermuda4 from "../images/bermudas.webp";
-import ImgBermuda5 from "../images/bermudas.webp";
+import ImgBermuda2 from "../images/bermudas4.webp";
+import ImgBermuda3 from "../images/bermudas2.webp";
+import ImgBermuda4 from "../images/bermudas5.webp";
+import ImgBermuda5 from "../images/bermudas3.webp";
 
 import ImgSC1 from "../images/saocarlos.webp";
-import ImgSC2 from "../images/saocarlos.webp";
-import ImgSC3 from "../images/saocarlos.webp";
-import ImgSC4 from "../images/saocarlos.webp";
-import ImgSC5 from "../images/saocarlos.webp";
+import ImgSC2 from "../images/saocarlos4.webp";
+import ImgSC3 from "../images/saocarlos5.webp";
+import ImgSC4 from "../images/saocarlos3.webp";
+import ImgSC5 from "../images/saocarlos2.webp";
 
 import ImgSA1 from "../images/stagostinho.webp";
-import ImgSA2 from "../images/stagostinho.webp";
-import ImgSA3 from "../images/stagostinho.webp";
-import ImgSA4 from "../images/stagostinho.webp";
-import ImgSA5 from "../images/stagostinho.webp";
+import ImgSA2 from "../images/santoagostinho5.webp";
+import ImgSA3 from "../images/santoagostinho4.webp";
+import ImgSA4 from "../images/santoagostinho3.webp";
+import ImgSA5 from "../images/santoagostinho2.webp";
 
 import ImgCoreana1 from "../images/coreana.webp";
-import ImgCoreana2 from "../images/coreana.webp";
-import ImgCoreana3 from "../images/coreana.webp";
-import ImgCoreana4 from "../images/coreana.webp";
-import ImgCoreana5 from "../images/coreana.webp";
+import ImgCoreana2 from "../images/coreana4.webp";
+import ImgCoreana3 from "../images/coreana2.webp";
+import ImgCoreana4 from "../images/coreana3.webp";
+import ImgCoreana5 from "../images/coreana5.webp";
 
 import ImgDiscovery1 from "../images/discovery.webp";
-import ImgDiscovery2 from "../images/discovery.webp";
-import ImgDiscovery3 from "../images/discovery.webp";
-import ImgDiscovery4 from "../images/discovery.webp";
-import ImgDiscovery5 from "../images/discovery.webp";
+import ImgDiscovery2 from "../images/discovery4.webp";
+import ImgDiscovery3 from "../images/discovery3.webp";
+import ImgDiscovery4 from "../images/discovery2.webp";
+import ImgDiscovery5 from "../images/discovery5.webp";
 
 export default [
   {
@@ -91,8 +91,63 @@ export default [
     payment3: "",
     payment4: "",
   },
+
   {
     idGrama: 5,
+    title: "Grama Bermudas",
+
+    metersSold: "+ de 470.000m²",
+
+    PriceGrass: "R$16,00m²",
+    PriceGrassPromotion: "R$9,50m²",
+
+    img1: `${ImgBermuda1}`,
+    img2: `${ImgBermuda2}`,
+    img3: `${ImgBermuda3}`,
+    img4: `${ImgBermuda4}`,
+    img5: `${ImgBermuda5}`,
+
+    shortDescription: "Grama Bermudas com você em todos os momentos",
+    Origin: "Original do Reino Unido",
+
+    benefits1: "Boa adaptação ao calor",
+    benefits2: "Alta regeneração",
+    benefits3: "Controle de erosão",
+    benefits4: "Facilidade de adaptação",
+    benefits5: "Resistente ao pisoteio",
+
+    description:
+      "Originária das Ilhas Bermudas, a grama Bermudas possui uma excelente tolerância ao pisoteio e com uma rápida regeneração. Ótima para campos esportivos como Futebol, Golfe e PlayGrounds. Esta grama forma um gramado bem denso e possui uma alta maciez",
+    applications1: "Campos de Futebol",
+    applications2: "Campos de Pólo",
+    applications3: "Campos de Golfe",
+    applications4: "Hípicas",
+    applications5: "Gramados Esportivos",
+    applications6: "",
+
+    finalConsiderations:
+      "A grama Bermudas apresenta um crescimento rápido, ou seja, a sua manutenção é recorrente.",
+
+    ProdLink: "/grama-bermudas",
+
+    platation1: "",
+    platation2: "",
+    platation3: "",
+    platation4: "",
+
+    support1: "",
+    support2: "",
+    support3: "",
+    support4: "",
+
+    payment1: "",
+    payment2: "",
+    payment3: "",
+    payment4: "",
+  },
+
+  {
+    idGrama: 4,
     title: "Grama São Carlos",
 
     metersSold: "+ de 455.000m²",
@@ -147,7 +202,7 @@ export default [
   },
 
   {
-    idGrama: 4,
+    idGrama: 3,
     title: "Grama Santo Agostinho",
 
     metersSold: "+ de 215.000m²",
@@ -184,60 +239,6 @@ export default [
       "Apesar de ser uma grama resistente a meia-sombra, ela é pouco tolerante ao frio e ao pisoteio.",
 
     ProdLink: "/grama-santo-agostinho",
-
-    platation1: "",
-    platation2: "",
-    platation3: "",
-    platation4: "",
-
-    support1: "",
-    support2: "",
-    support3: "",
-    support4: "",
-
-    payment1: "",
-    payment2: "",
-    payment3: "",
-    payment4: "",
-  },
-
-  {
-    idGrama: 3,
-    title: "Grama Bermudas",
-
-    metersSold: "+ de 470.000m²",
-
-    PriceGrass: "R$16,00m²",
-    PriceGrassPromotion: "R$9,50m²",
-
-    img1: `${ImgBermuda1}`,
-    img2: `${ImgBermuda2}`,
-    img3: `${ImgBermuda3}`,
-    img4: `${ImgBermuda4}`,
-    img5: `${ImgBermuda5}`,
-
-    shortDescription: "Grama Bermudas com você em todos os momentos",
-    Origin: "Original do Reino Unido",
-
-    benefits1: "Boa adaptação ao calor",
-    benefits2: "Alta regeneração",
-    benefits3: "Controle de erosão",
-    benefits4: "Facilidade de adaptação",
-    benefits5: "Resistente ao pisoteio",
-
-    description:
-      "Originária das Ilhas Bermudas, a grama Bermudas possui uma excelente tolerância ao pisoteio e com uma rápida regeneração. Ótima para campos esportivos como Futebol, Golfe e PlayGrounds. Esta grama forma um gramado bem denso e possui uma alta maciez",
-    applications1: "Campos de Futebol",
-    applications2: "Campos de Pólo",
-    applications3: "Campos de Golfe",
-    applications4: "Hípicas",
-    applications5: "Gramados Esportivos",
-    applications6: "",
-
-    finalConsiderations:
-      "A grama Bermudas apresenta um crescimento rápido, ou seja, a sua manutenção é recorrente.",
-
-    ProdLink: "/grama-bermudas",
 
     platation1: "",
     platation2: "",

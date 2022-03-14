@@ -37,7 +37,7 @@ export const Wrapper = styled.div`
     width: 100%;
     height: 100%;
 
-    padding: 15px 40px 15px;
+    padding: 15px 40px 45px;
 
     @media (max-width: 760px) {
       padding: 15px 40px 15px;
@@ -45,10 +45,40 @@ export const Wrapper = styled.div`
       justify-content: center;
     }
 
-    > img {
+    @media (max-width: 680px) {
+      padding: 15px 10px 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    > .ImgMobileVg {
+      display: none;
+
+      @media (max-width: 680px) {
+        display: block;
+      }
+
       max-height: 820px;
       height: 100%;
       width: 100%;
+
+      object-fit: cover;
+
+      @media (max-width: 760px) {
+        width: 100%;
+      }
+    }
+
+    > .ImgDesktopVg {
+      @media (max-width: 680px) {
+        display: none;
+      }
+
+      max-height: 820px;
+      height: 100%;
+      width: 100%;
+
+      object-fit: cover;
 
       @media (max-width: 768px) {
         max-width: 400px;
@@ -78,20 +108,22 @@ export const Wrapper = styled.div`
         color: var(--primary);
         text-align: left;
 
-        font-size: 3.3rem;
+        font-size: 3.4rem;
         line-height: auto;
         font-weight: 600;
         letter-spacing: -0.02em;
 
-        padding: 0px 18px 45px 18px;
+        padding: 0px 25px 35px 0px;
 
         @media (max-width: 768px) {
           font-size: 1.6rem;
-          padding: 0px 18px 25px 18px;
+          padding: 0px 20px 25px 20px;
         }
 
         @media (max-width: 760px) {
           text-align: center;
+          font-size: 1.7rem;
+          padding: 15px 10px;
         }
 
         @media (max-width: 375px) {
@@ -102,25 +134,32 @@ export const Wrapper = styled.div`
       > p {
         text-align: left;
 
-        font-size: 2rem;
+        font-size: 1.9rem;
         line-height: auto;
 
         color: var(--gray);
 
         letter-spacing: -0.02em;
-        padding: 0px 18px 0px 18px;
+        padding: 0px 18px 0px 0px;
 
         @media (max-width: 768px) {
           font-size: 1.2rem;
+          padding: 0px 18px 10px 0px;
         }
 
         @media (max-width: 760px) {
+          padding: 0px 10px 10px 10px;
           text-align: center;
         }
 
         @media (max-width: 375px) {
           padding: 0px 10px 0px 10px;
-          font-size: 1.2rem;
+          font-size: 1.1rem;
+        }
+
+        @media (max-width: 375px) {
+          font-size: 1rem;
+          padding: 0px 5px 0px 5px;
         }
       }
 
@@ -132,7 +171,7 @@ export const Wrapper = styled.div`
         height: 60px;
 
         @media (max-width: 760px) {
-          margin-bottom: 45px;
+          margin-bottom: 35px;
         }
 
         @media (max-width: 375px) {
@@ -286,9 +325,15 @@ export const WrapperText = styled.div`
     margin: 20px 0px 5vh 0px;
   }
 
+  @media (max-width: 600px) {
+    gap: 20px;
+  }
+
   > p:first-child {
     max-width: 1440px;
     font-size: 2.6em;
+
+    color: var(--third);
     padding: 0 180px;
     text-align: center;
 
@@ -299,12 +344,17 @@ export const WrapperText = styled.div`
 
   > p {
     max-width: 1440px;
-    font-size: 1.1em;
+    font-size: 1.3em;
+
     padding: 0 180px;
     text-align: center;
 
     @media (max-width: 1024px) {
       padding: 0 20px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 1em;
     }
   }
 
@@ -315,7 +365,7 @@ export const WrapperText = styled.div`
     cursor: pointer;
     border-radius: 40px;
 
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 500;
     color: var(--secondary);
 

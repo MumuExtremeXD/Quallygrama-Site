@@ -22,6 +22,8 @@ export const Container = styled.div`
 
   > button {
     top: 5px;
+    right: 15px;
+
     position: fixed;
     color: #fff;
 
@@ -32,7 +34,6 @@ export const Container = styled.div`
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-size: 20px;
-    right: 15px;
 
     @media (max-width: 768px) {
       display: none;
@@ -88,7 +89,7 @@ export const Wrapper = styled.div`
     z-index: 1200;
 
     position: absolute;
-    color: #000;
+    color: var(--gray);
 
     background: none;
     outline: none;
@@ -102,8 +103,8 @@ export const Wrapper = styled.div`
 
     font-size: 20px;
 
-    top: 5px;
-    right: 8%;
+    top: 25px;
+    right: 4%;
 
     > i {
       display: flex;
@@ -118,7 +119,7 @@ export const Wrapper = styled.div`
     }
 
     @media (max-width: 630px) {
-      top: 20px;
+      top: 30px;
     }
   }
 

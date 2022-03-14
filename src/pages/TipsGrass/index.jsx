@@ -154,7 +154,7 @@ function TipsPage() {
 
         {!ProdsFiltrados ? (
           <NotFoundContainer>
-            <h1>Não tem nada</h1>
+            <p>Não há dados...</p>
           </NotFoundContainer>
         ) : (
           false

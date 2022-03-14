@@ -112,8 +112,8 @@ export const Ul = styled.ul`
     cursor: pointer;
 
     position: absolute;
-    right: 20px;
-    top: 30px;
+    right: 15px;
+    top: 35px;
   }
 
   > li {

@@ -28,13 +28,13 @@ function Projects() {
 
       <Content>
         <ContainerHalfText>
-          <h2>Teste</h2>
+          <h2>O começo...</h2>
 
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            doloremque cupiditate, tempore sunt delectus repudiandae debitis ad
-            temporibus officia, saepe cumque? Voluptatum in quasi quis similique
-            nostrum eius delectus corporis.
+            Desde 1999 no mercado, a Qually Grama é uma empresa especializada na
+            produção de gramas. Investimos constantemente em tecnologia de
+            ponta, do cultivo à entrega, atendemos clientes de todo território
+            nacional.
           </p>
         </ContainerHalfText>
 

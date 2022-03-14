@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { Container, Wrapper } from "./styles";
 
-import Img404 from "../../images/404/404img.png";
+import Img404 from "../../images/404/404img.webp";
 
 import Header from "../../components/Headers/Header";
 import Footer from "../../components/Footer";
@@ -15,11 +15,7 @@ function NotFound() {
 
       <Wrapper>
         <Link to={"../"}>
-          <img src={Img404} alt="ts" loading="lazy" />
-        </Link>
-
-        <Link to={"../"}>
-          <p> Voltar ao íncio</p>
+          <img src={Img404} alt="404" loading="lazy" />
         </Link>
       </Wrapper>
 

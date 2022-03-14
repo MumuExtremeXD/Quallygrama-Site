@@ -321,9 +321,12 @@ export const NotFoundContainer = styled.div`
   align-items: center;
   flex-direction: center;
 
-  max-width: 550px;
+  > p {
+    padding-top: 40px;
 
-  > img {
-    width: 100%;
+    font-weight: bold;
+    font-size: 3.4rem;
+
+    color: var(--gray);
   }
 `;

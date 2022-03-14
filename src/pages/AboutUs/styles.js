@@ -31,7 +31,7 @@ export const Content = styled.div`
     align-items: center;
     text-align: justify;
 
-    margin-top: 40px;
+    margin-top: 65px;
     padding: 0px 10px;
   }
 `;
@@ -57,7 +57,7 @@ export const ContentDivider = styled.div`
 
   gap: 10px;
   margin-top: 65px;
-  padding: 0px 20px;
+  padding: 0px;
 
   @media (max-width: 425px) {
     margin-top: 25px;
@@ -86,43 +86,53 @@ export const ContainerHalf = styled.div`
 `;
 
 export const ContainerHalfText = styled.div`
-  margin-top: 25px;
-
   flex: 1;
 
   > h2 {
     padding: 0 60px;
-    font-size: 4.1em;
+    font-size: 2.4em;
 
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 
     @media (max-width: 1024px) {
       padding: 0 20px;
     }
+
+    @media (max-width: 640px) {
+      padding: 0px 5px;
+    }
+
+    @media (max-width: 350px) {
+      font-size: 2.3em;
+      color: var(--third);
+    }
   }
 
   > p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 0 60px;
     text-align: justify;
 
+    color: #888388;
+
     @media (max-width: 1024px) {
       padding: 0 20px;
+    }
+
+    @media (max-width: 640px) {
+      padding: 0px 5px;
     }
   }
 
   @media (max-width: 600px) {
     margin-top: 35px;
-    > h2 {
-      margin-bottom: 10px;
-      font-size: 3.1em;
-    }
   }
 `;
 
 export const WrapperText = styled.div`
   margin: 10px 0px 10vh 0px;
 
+  width: 100%;
   background-color: #f2f2f2;
 
   display: flex;
@@ -150,6 +160,8 @@ export const WrapperText = styled.div`
   }
 
   > p {
+    color: #888388;
+
     max-width: 1440px;
     font-size: 1.1em;
     padding: 0 180px;
@@ -201,6 +213,8 @@ export const WrapperReverse = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
+    margin: 10px 0px 15px 0px;
   }
 `;
 
@@ -217,6 +231,8 @@ export const WrapperNormal = styled.div`
 
     flex-direction: row-reverse;
     flex-wrap: wrap;
+
+    margin: 10px 0px 15px 0px;
   }
 `;
 
@@ -239,16 +255,23 @@ export const WrapperFeature = styled.div`
   max-width: 600px;
 
   > p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 0 20px;
     text-align: justify;
+
+    color: #888388;
 
     @media (max-width: 1024px) {
       padding: 0 20px;
     }
+
+    @media (max-width: 640px) {
+      padding: 0px;
+    }
   }
 
   @media (max-width: 640px) {
+    padding: 0px;
     max-width: 380px;
   }
 `;

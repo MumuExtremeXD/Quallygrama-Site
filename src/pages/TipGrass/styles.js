@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import ImgTeste2 from "../../images/teste3.png";
+import Capa from "../../images/capa.webp";
 
 export const Container = styled.div`
   width: 100%;
@@ -57,9 +57,12 @@ export const SearchSection = styled.div`
   margin: 0 auto;
   top: 0;
 
-  background-image: url(${ImgTeste2});
+  background-image: url(${Capa});
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  background-position: top;
+  background-size: auto;
 
   @media (min-width: 1441px) {
     background-attachment: scroll;

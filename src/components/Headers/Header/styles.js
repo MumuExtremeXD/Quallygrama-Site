@@ -149,7 +149,7 @@ export const Ul = styled.ul`
 
     position: absolute;
     right: 10px;
-    top: 14px;
+    top: 25px;
   }
 
   > li {
