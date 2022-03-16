@@ -28,7 +28,7 @@ function Projects() {
 
       <Content>
         <ContainerHalfText>
-          <h2>O começo...</h2>
+          <h2>Nossa História</h2>
 
           <p>
             Desde 1999 no mercado, a Qually Grama é uma empresa especializada na

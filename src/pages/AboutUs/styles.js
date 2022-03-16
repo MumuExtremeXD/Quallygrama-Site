@@ -31,7 +31,7 @@ export const Content = styled.div`
     align-items: center;
     text-align: justify;
 
-    margin-top: 65px;
+    margin-top: 75px;
     padding: 0px 10px;
   }
 `;
@@ -46,7 +46,6 @@ export const ContentExplication = styled.div`
 
   gap: 10px;
   margin-bottom: 25px;
-  padding: 0px 20px;
 `;
 
 export const ContentDivider = styled.div`
@@ -59,8 +58,12 @@ export const ContentDivider = styled.div`
   margin-top: 65px;
   padding: 0px;
 
+  @media (max-width: 685px) {
+    margin-top: 85px;
+  }
+
   @media (max-width: 425px) {
-    margin-top: 25px;
+    margin-top: 65px;
   }
 `;
 
@@ -75,13 +78,16 @@ export const ContainerHalf = styled.div`
 
   max-width: 600px;
 
+  margin-top: 25px;
+
   > img {
+    padding: 0px 20px;
     width: 100%;
     min-width: 300px;
   }
 
   @media (max-width: 600px) {
-    margin-top: 15px;
+    margin-top: 45px;
   }
 `;
 
