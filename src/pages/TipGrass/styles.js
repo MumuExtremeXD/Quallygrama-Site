@@ -233,6 +233,7 @@ export const TipImg = styled.div`
 
   @media (max-width: 425px) {
     grid-column-gap: 0px;
+    grid-row-gap: 25px;
 
     display: flex;
     flex-direction: column;
@@ -279,25 +280,28 @@ export const TipInfo = styled.div`
 
   > p {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 30px auto;
 
     padding: 1px 0px;
     font-size: 24px;
+
+    line-height: 45px;
 
     text-align: justify;
     color: #555355;
   }
 
   @media (max-width: 425px) {
-    padding: 0px;
+    padding: 20px 0 0 0;
 
     > p {
       max-width: 900px;
-      margin: 20px auto;
+      margin: 30px auto;
 
       padding: 0px 15px 0px 15px;
 
-      font-size: 18px;
+      font-size: 1.2em;
+      line-height: 45px;
 
       text-align: justify;
       color: #555355;

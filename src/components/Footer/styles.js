@@ -26,7 +26,7 @@ export const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-  gap: 40px 160px;
+  gap: 40px 120px;
   padding: 0px 25px;
 `;
 

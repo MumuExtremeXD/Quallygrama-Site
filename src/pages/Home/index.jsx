@@ -17,7 +17,6 @@ import {
 import Header from "../../components/Headers/Header";
 import Footer from "../../components/Footer";
 
-import gramasVen from "../../images/gramasVen.webp";
 import gramasVenM from "../../images/gramasVenM.webp";
 
 import ImgEsm from "../../images/esmeraldaPi.webp";
@@ -52,12 +51,6 @@ function Home() {
               <button>Comprar</button>
             </Link>
           </div>
-
-          <img
-            className="ImgDesktopVg"
-            src={gramasVen}
-            alt="Variedades de grama"
-          />
 
           <img
             className="ImgMobileVg"
@@ -115,7 +108,7 @@ function Home() {
           setor.
         </p>
 
-        <Link to={""}>Conheça</Link>
+        <Link to={"/sobre-nos"}>Conheça</Link>
       </WrapperText>
 
       <WrapperProducts2>

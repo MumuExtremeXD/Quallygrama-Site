@@ -23,6 +23,10 @@ export const Wrapper = styled.div`
   background: #fafafa;
   padding-top: 120px;
 
+  @media (max-width: 768px) {
+    padding-top: 90px;
+  }
+
   @media (max-width: 425px) {
     padding-top: 85px;
   }
@@ -39,7 +43,7 @@ export const Wrapper = styled.div`
 
     padding: 15px 40px 45px;
 
-    @media (max-width: 760px) {
+    @media (max-width: 768px) {
       padding: 15px 40px 15px;
       flex-wrap: wrap;
       justify-content: center;
@@ -47,46 +51,22 @@ export const Wrapper = styled.div`
 
     @media (max-width: 680px) {
       padding: 15px 10px 15px;
-      flex-wrap: wrap;
-      justify-content: center;
     }
 
     > .ImgMobileVg {
-      display: none;
-
-      @media (max-width: 680px) {
-        display: block;
-      }
-
-      max-height: 820px;
       height: 100%;
       width: 100%;
 
       object-fit: cover;
 
-      @media (max-width: 760px) {
-        width: 100%;
+      max-height: 720px;
+
+      @media (max-width: 425px) {
+        max-height: 820px;
       }
-    }
-
-    > .ImgDesktopVg {
-      @media (max-width: 680px) {
-        display: none;
-      }
-
-      max-height: 820px;
-      height: 100%;
-      width: 100%;
-
-      object-fit: cover;
 
       @media (max-width: 768px) {
-        max-width: 400px;
-      }
-
-      @media (max-width: 760px) {
-        max-width: 650px;
-        width: 100%;
+        padding: 0px 0px 25px;
       }
     }
 
@@ -98,9 +78,9 @@ export const Wrapper = styled.div`
 
       padding: 0px 5px;
 
-      max-width: 670px;
+      max-width: 580px;
 
-      @media (max-width: 760px) {
+      @media (max-width: 768px) {
         align-items: center;
       }
 
@@ -108,53 +88,55 @@ export const Wrapper = styled.div`
         color: var(--primary);
         text-align: left;
 
-        font-size: 3.4rem;
-        line-height: auto;
+        font-size: 2.6rem;
+        line-height: 60px;
         font-weight: 600;
         letter-spacing: -0.02em;
 
-        padding: 0px 25px 35px 0px;
+        padding: 0px 15px 35px 0px;
 
         @media (max-width: 768px) {
           font-size: 1.6rem;
-          padding: 0px 20px 25px 20px;
         }
 
-        @media (max-width: 760px) {
+        @media (max-width: 768px) {
           text-align: center;
-          font-size: 1.7rem;
+          font-size: 1.8rem;
           padding: 15px 10px;
+          line-height: 35px;
+        }
+
+        @media (max-width: 425px) {
+          font-size: 1.4rem;
+          line-height: 30px;
         }
 
         @media (max-width: 375px) {
-          font-size: 1.3rem;
+          padding: 15px 0px;
+          font-size: 1.5rem;
+        }
+
+        @media (max-width: 320px) {
+          padding: 15px 0px;
+          font-size: 1.23rem;
         }
       }
 
       > p {
         text-align: left;
 
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         line-height: auto;
 
         color: var(--gray);
 
         letter-spacing: -0.02em;
-        padding: 0px 18px 0px 0px;
+        padding: 0px 24px 10px 0px;
 
         @media (max-width: 768px) {
           font-size: 1.2rem;
-          padding: 0px 18px 10px 0px;
-        }
-
-        @media (max-width: 760px) {
           padding: 0px 10px 10px 10px;
           text-align: center;
-        }
-
-        @media (max-width: 375px) {
-          padding: 0px 10px 0px 10px;
-          font-size: 1.1rem;
         }
 
         @media (max-width: 375px) {
@@ -215,9 +197,13 @@ export const WrapperProducts1 = styled.div`
   width: 100%;
 
   border-radius: 50% 50% 0 0;
-  padding: 60px 0px 45px 0px;
+  padding: 30px 0px 45px 0px;
 
   color: #888388;
+
+  @media (max-width: 672px) {
+    padding: 15px 0px 15px 0px;
+  }
 
   > h1 {
     text-align: center;
@@ -242,16 +228,16 @@ export const WrapperProducts1 = styled.div`
 
   @media (max-width: 672px) {
     > h1 {
-      padding: 0 40px;
-      font-size: 1.9em;
-      line-height: 40px;
+      padding: 0 20px;
+      font-size: 2.4em;
+      margin-bottom: 0px;
+      line-height: 50px;
     }
   }
 `;
 
 export const WrapperProducts2 = styled.div`
   max-width: 1440px;
-  margin: 20px 0px 15vh 0px;
 
   display: flex;
   justify-content: center;
@@ -259,18 +245,18 @@ export const WrapperProducts2 = styled.div`
   flex-direction: column;
 
   width: 100%;
-  padding: 0px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
 
   color: #888388;
 
   @media (min-width: 1441px) {
-    margin: 20px 0px 5vh 0px;
+    margin: 10px 0px 5vh 0px;
   }
 
   > h2 {
     text-align: center;
     font-size: 3em;
-    padding: 0 24px;
+    padding: 40px 24px 0px;
     margin-bottom: 30px;
     font-weight: 560;
 
@@ -298,8 +284,9 @@ export const WrapperProducts2 = styled.div`
   }
 
   @media (max-width: 425px) {
-    padding: 20px 0px 25px 0px;
+    padding: 0px 0px 25px 0px;
     margin-top: 0px;
+
     > h2 {
       text-align: center;
       font-size: 2.2em;
@@ -308,8 +295,6 @@ export const WrapperProducts2 = styled.div`
 `;
 
 export const WrapperText = styled.div`
-  margin: 10px 0px 10vh 0px;
-
   background-color: #fafafa;
 
   display: flex;
@@ -332,6 +317,7 @@ export const WrapperText = styled.div`
   > p:first-child {
     max-width: 1440px;
     font-size: 2.6em;
+    line-height: 40px;
 
     color: var(--third);
     padding: 0 180px;
@@ -349,12 +335,19 @@ export const WrapperText = styled.div`
     padding: 0 180px;
     text-align: center;
 
+    line-height: 30px;
+
+    color: #333;
+
     @media (max-width: 1024px) {
       padding: 0 20px;
     }
 
     @media (max-width: 600px) {
+      padding: 15px 22px;
       font-size: 1em;
+
+      text-align: justify;
     }
   }
 
@@ -381,7 +374,7 @@ export const WrapperText = styled.div`
   }
 
   @media (max-width: 425px) {
-    padding: 20px 0px 25px 0px;
+    padding: 40px 0px 45px 0px;
     margin-top: 0px;
   }
 `;

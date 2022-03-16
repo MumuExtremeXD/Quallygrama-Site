@@ -87,6 +87,23 @@ function Footer() {
           </Column>
 
           <Column>
+            <h4>Nossos Parceiros</h4>
+            <ul>
+              <li>
+                <a href="https://sodsolutions.com/" target="_blank">
+                  SodSolutions
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.turfgrasssod.org/" target="_blank">
+                  TPI
+                </a>
+              </li>
+            </ul>
+          </Column>
+
+          <Column>
             <h4>Fale conosco</h4>
             <ul>
               <li>
@@ -109,23 +126,6 @@ function Footer() {
                   Você também pode nos ligar nesse número
                   <a href="tel:+5501532059300"> (15) 3205-9300</a>
                 </p>
-              </li>
-            </ul>
-          </Column>
-
-          <Column>
-            <h4>Nossos Parceiros</h4>
-            <ul>
-              <li>
-                <a href="https://sodsolutions.com/" target="_blank">
-                  SodSolutions
-                </a>
-              </li>
-
-              <li>
-                <a href="https://www.turfgrasssod.org/" target="_blank">
-                  TPI
-                </a>
               </li>
             </ul>
           </Column>
