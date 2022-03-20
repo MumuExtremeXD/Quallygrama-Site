@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React, { useEffect } from "react";
 
 import { Link } from "react-router-dom";
@@ -8,6 +9,7 @@ import {
   WrapperProducts1,
   WrapperProducts2,
   WrapperText,
+  WrapperMap,
   CardBox,
   Card,
   CardImg,
@@ -26,6 +28,10 @@ import ImgSc from "../../images/scPi.webp";
 import ImgCo from "../../images/coreanaPi.webp";
 import ImgSt from "../../images/santoagostinhoPi.webp";
 import ImgDis from "../../images/discoveryPi.webp";
+
+import ImgPlantioP from "../../images/plantioP.webp";
+import ImgFertilizantesP from "../../images/fertilizantesP.webp";
+import ImgCuidadosP from "../../images/cuidadosP.webp";
 
 function Home() {
   useEffect(() => {
@@ -125,20 +131,32 @@ function Home() {
           <Card>
             <CardImg3>
               <Link to={"/dicas/1"}>
-                <img src={ImgEsm} alt="ts" loading="lazy" />
+                <img src={ImgFertilizantesP} alt="ts" loading="lazy" />
               </Link>
 
               <Link to={"/dicas/2"}>
-                <img src={ImgEsm} alt="ts" loading="lazy" />
+                <img src={ImgCuidadosP} alt="ts" loading="lazy" />
               </Link>
 
               <Link to={"/dicas/3"}>
-                <img src={ImgEsm} alt="ts" loading="lazy" />
+                <img src={ImgPlantioP} alt="ts" loading="lazy" />
               </Link>
             </CardImg3>
           </Card>
         </CardBox>
       </WrapperProducts2>
+
+      <WrapperMap>
+        <p>
+          Nossa <span>Localização</span>
+        </p>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14651.946579224186!2d-47.9858997!3d-23.3524984!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb43399af9f351227!2sQually%20Grama!5e0!3m2!1spt-BR!2sbr!4v1647801485924!5m2!1spt-BR!2sbr"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </WrapperMap>
 
       <Footer />
     </Container>

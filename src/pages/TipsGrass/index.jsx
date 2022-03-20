@@ -6,7 +6,6 @@ import {
   Container,
   SearchSection,
   Wrapper,
-  BoxImg,
   Box,
   InputForm,
   NotFoundContainer,

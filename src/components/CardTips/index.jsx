@@ -5,19 +5,13 @@ import { Link } from "react-router-dom";
 
 import { CardBody, Card, BoxImg } from "./styles";
 
-import ImgTeste from "../../images/esmeralda.webp";
-
 function CardTips({ Information }) {
   return (
     <Card>
       <Link to={`${Information.tipLink}/${Information.idDica}`}>
         <BoxImg>
-          <img src={ImgTeste} alt={Information.title} />
+          <img src={Information.TipImgP} alt={Information.title} />
         </BoxImg>
-        <CardBody>
-          <h3>{Information.title}</h3>
-          <p>Leia mais...</p>
-        </CardBody>
       </Link>
     </Card>
   );

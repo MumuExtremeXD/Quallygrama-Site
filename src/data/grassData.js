@@ -1,5 +1,13 @@
 /* eslint-disable import/no-anonymous-default-export */
 
+import ImgEsm from "../images/esmeraldaPi.webp";
+import ImgBer from "../images/bermudasPi.webp";
+import ImgSc from "../images/scPi.webp";
+
+import ImgCo from "../images/coreanaPi.webp";
+import ImgSt from "../images/santoagostinhoPi.webp";
+import ImgDis from "../images/discoveryPi.webp";
+
 import ImgEsmeralda1 from "../images/esmeralda.webp";
 import ImgEsmeralda2 from "../images/esmeralda2.webp";
 import ImgEsmeralda3 from "../images/esmeralda6.webp";
@@ -46,6 +54,7 @@ export default [
     PriceGrass: "R$14,00m²",
     PriceGrassPromotion: "R$7,00m²",
 
+    imgP: `${ImgEsm}`,
     img1: `${ImgEsmeralda1}`,
     img2: `${ImgEsmeralda2}`,
     img3: `${ImgEsmeralda3}`,
@@ -101,6 +110,7 @@ export default [
     PriceGrass: "R$16,00m²",
     PriceGrassPromotion: "R$9,50m²",
 
+    imgP: `${ImgBer}`,
     img1: `${ImgBermuda1}`,
     img2: `${ImgBermuda2}`,
     img3: `${ImgBermuda3}`,
@@ -155,6 +165,7 @@ export default [
     PriceGrass: "R$15,00m²",
     PriceGrassPromotion: "R$8,50m²",
 
+    imgP: `${ImgSc}`,
     img1: `${ImgSC1}`,
     img2: `${ImgSC2}`,
     img3: `${ImgSC3}`,
@@ -210,6 +221,7 @@ export default [
     PriceGrass: "R$14,00m²",
     PriceGrassPromotion: "R$7,00m²",
 
+    imgP: `${ImgSt}`,
     img1: `${ImgSA1}`,
     img2: `${ImgSA2}`,
     img3: `${ImgSA3}`,
@@ -265,6 +277,7 @@ export default [
     PriceGrass: "R$16,00m²",
     PriceGrassPromotion: "R$9,50m²",
 
+    imgP: `${ImgCo}`,
     img1: `${ImgCoreana1}`,
     img2: `${ImgCoreana2}`,
     img3: `${ImgCoreana3}`,
@@ -320,6 +333,7 @@ export default [
     PriceGrass: "R$16,00m²",
     PriceGrassPromotion: "R$9,50m²",
 
+    imgP: `${ImgDis}`,
     img1: `${ImgDiscovery1}`,
     img2: `${ImgDiscovery2}`,
     img3: `${ImgDiscovery3}`,

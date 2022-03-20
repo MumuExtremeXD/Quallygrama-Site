@@ -35,9 +35,10 @@ export const Wrapper = styled.div`
     display: flex;
 
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 
-    max-width: 1440px;
+    max-width: 1410px;
+
     width: 100%;
     height: 100%;
 
@@ -54,16 +55,10 @@ export const Wrapper = styled.div`
     }
 
     > .ImgMobileVg {
-      height: 100%;
+      max-width: 500px;
       width: 100%;
 
       object-fit: cover;
-
-      max-height: 720px;
-
-      @media (max-width: 425px) {
-        max-height: 820px;
-      }
 
       @media (max-width: 768px) {
         padding: 0px 0px 25px;
@@ -78,22 +73,22 @@ export const Wrapper = styled.div`
 
       padding: 0px 5px;
 
-      max-width: 580px;
+      max-width: 720px;
 
       @media (max-width: 768px) {
         align-items: center;
       }
 
       > h1 {
-        color: var(--primary);
+        color: var(--third);
         text-align: left;
 
-        font-size: 2.6rem;
-        line-height: 60px;
+        font-size: 3.8rem;
+        line-height: 70px;
         font-weight: 600;
         letter-spacing: -0.02em;
 
-        padding: 0px 15px 35px 0px;
+        padding: 0px 0px 35px 0px;
 
         @media (max-width: 768px) {
           font-size: 1.6rem;
@@ -512,5 +507,49 @@ export const CardImg3 = styled.div`
 
     flex-wrap: nowrap;
     overflow-x: scroll;
+  }
+`;
+
+export const WrapperMap = styled.div`
+  margin: 20px 0px;
+
+  margin-bottom: 230px;
+
+  position: relative;
+
+  max-width: 1300px;
+  height: 600px;
+
+  width: 100%;
+  background-color: #fff;
+
+  > p {
+    text-align: center;
+    font-size: 3em;
+    padding: 40px 24px 0px;
+    margin-bottom: 30px;
+    font-weight: 560;
+
+    color: #888388;
+
+    > span {
+      color: var(--fourth);
+    }
+  }
+
+  @media (max-width: 672px) {
+    > p {
+      font-size: 1.9em;
+      line-height: 40px;
+      margin-bottom: 30px;
+    }
+  }
+
+  > iframe {
+    margin: 20px 0px 0px 0px;
+    border: 0;
+
+    width: 100%;
+    height: 100%;
   }
 `;

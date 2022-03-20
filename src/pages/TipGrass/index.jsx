@@ -13,7 +13,6 @@ import {
   BackUp,
 } from "./styles";
 
-import ImgTeste from "../../images/esmeralda.webp";
 import Header from "../../components/Headers/HeaderTips";
 import Footer from "../../components/Footer";
 
@@ -76,7 +75,7 @@ function TipEsmelda() {
                   <TipImg>
                     <div className="Img1">
                       <img
-                        src={ImgTeste}
+                        src={Data2.TipImg1}
                         alt=""
                         loading="lazy"
                         onClick={function () {
@@ -88,7 +87,7 @@ function TipEsmelda() {
 
                     <div className="Img2">
                       <img
-                        src={ImgTeste}
+                        src={Data2.TipImg2}
                         alt=""
                         loading="lazy"
                         onClick={function () {
@@ -99,7 +98,7 @@ function TipEsmelda() {
                     </div>
                   </TipImg>
 
-                  <p>{Data2.description1}</p>
+                  <p>{Data2.description2}</p>
                 </TipInfo>
               </CardTip>
             </Section>

@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import Capa from "../../images/capa.webp";
-
 export const Container = styled.div`
   width: 100%;
 
@@ -52,50 +50,12 @@ export const SearchSection = styled.div`
   flex-wrap: wrap;
 
   width: 100%;
-  height: 290px;
+  height: 240px;
 
   margin: 0 auto;
   top: 0;
 
-  background-image: url(${Capa});
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  background-position: top;
-  background-size: auto;
-
-  @media (min-width: 1441px) {
-    background-attachment: scroll;
-    background-size: cover;
-  }
-
-  @media (max-width: 425px) {
-    background-position: top;
-    height: 450px;
-    background-size: auto;
-  }
-
-  @media (max-width: 425px) {
-    height: 240px;
-  }
-
-  > img {
-    user-select: none;
-
-    width: 100%;
-    max-height: 335px;
-
-    overflow-x: hidden;
-    position: absolute;
-    bottom: 0px;
-
-    margin: 0 auto;
-
-    @media (max-width: 425px) {
-      object-fit: cover;
-      min-width: 300px;
-    }
-  }
+  background: var(--third);
 
   .Headline {
     max-width: 1440px;
@@ -219,9 +179,13 @@ export const SearchSection = styled.div`
 `;
 
 export const CardTip = styled.div`
-  margin: 0px;
+  margin: 20px 0 0 0;
   padding: 5px 0px;
   max-width: 1440px;
+
+  @media (max-width: 425px) {
+    margin: 0;
+  }
 `;
 
 export const TipImg = styled.div`
@@ -280,7 +244,7 @@ export const TipInfo = styled.div`
 
   > p {
     max-width: 900px;
-    margin: 30px auto;
+    margin: 10px auto 30px;
 
     padding: 1px 0px;
     font-size: 24px;
@@ -292,7 +256,7 @@ export const TipInfo = styled.div`
   }
 
   @media (max-width: 425px) {
-    padding: 20px 0 0 0;
+    padding: 0;
 
     > p {
       max-width: 900px;

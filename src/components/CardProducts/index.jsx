@@ -10,13 +10,8 @@ function CardProd({ Information }) {
     <Card>
       <Link to={`${Information.ProdLink}/${Information.idGrama}`}>
         <BoxImg>
-          <img src={Information.img1} alt={Information.title} />
+          <img src={Information.imgP} alt={Information.title} />
         </BoxImg>
-
-        <CardBody>
-          <h3>{Information.title}</h3>
-          <p>Veja mais...</p>
-        </CardBody>
       </Link>
     </Card>
   );
