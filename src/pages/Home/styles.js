@@ -240,7 +240,7 @@ export const WrapperProducts2 = styled.div`
   flex-direction: column;
 
   width: 100%;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0px 30px 0px;
 
   color: #888388;
 
