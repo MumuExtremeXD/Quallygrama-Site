@@ -409,7 +409,7 @@ export const CardImg = styled.div`
   flex-wrap: wrap;
 
   width: 100%;
-  gap: 20px;
+  gap: 40px;
 
   > a > img {
     border-radius: 12px;
@@ -464,7 +464,7 @@ export const CardImg3 = styled.div`
   flex-wrap: wrap;
 
   width: 100%;
-  gap: 16px;
+  gap: 32px;
 
   > a > img {
     border-radius: 12px;

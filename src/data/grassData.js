@@ -118,7 +118,7 @@ export default [
     img5: `${ImgBermuda5}`,
 
     shortDescription: "Grama Bermudas com você em todos os momentos",
-    Origin: "Original do Reino Unido",
+    Origin: "Original da Bermudas",
 
     benefits1: "Boa adaptação ao calor",
     benefits2: "Alta regeneração",
@@ -330,8 +330,8 @@ export default [
 
     metersSold: "+ de 323.000m²",
 
-    PriceGrass: "R$16,00m²",
-    PriceGrassPromotion: "R$9,50m²",
+    PriceGrass: "R$11,00m²",
+    PriceGrassPromotion: "R$6,50m²",
 
     imgP: `${ImgDis}`,
     img1: `${ImgDiscovery1}`,

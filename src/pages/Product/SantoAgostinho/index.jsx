@@ -41,7 +41,8 @@ import Modal from "../../../components/Modal";
 import ImgEnlarge from "../../../components/ImgEnlarge";
 
 import CircularProgress from "@mui/material/CircularProgress";
-import ImgTeste from "../../../images/esmeralda.webp";
+import ImgSelo from "../../../images/Selo.webp";
+
 import Header from "../../../components/Headers/HeaderProd";
 import Footer from "../../../components/FooterProducts";
 
@@ -227,7 +228,7 @@ function ProdEsmelda() {
                           <h2>{Data2.shortDescription}</h2>
                           <p>{Data2.Origin}</p>
                         </div>
-                        <img src={ImgTeste} alt="Selo Qually" loading="lazy" />
+                        <img src={ImgSelo} alt="Selo Qually" loading="lazy" />
                       </ProductDescription>
 
                       <Divider />

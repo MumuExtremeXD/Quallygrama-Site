@@ -77,7 +77,7 @@ function Footer() {
             <h4>Políticas da empresa</h4>
             <ul>
               <li>
-                <Link to="/termos">Política de privacidade</Link>
+                <Link to="/termos">Política de Privacidade</Link>
               </li>
 
               <li>
@@ -123,7 +123,7 @@ function Footer() {
 
               <li>
                 <p>
-                  Você também pode nos ligar nesse número
+                  Você pode nos ligar nesse número
                   <a href="tel:+5501532059300"> (15) 3205-9300</a>
                 </p>
               </li>
@@ -135,7 +135,7 @@ function Footer() {
       <Copyright>
         <h4>
           ©Todos os direitos reservados {year} <br />
-          Qually Grama - Matriz Tatuí-SP
+          Qually Grama Comercio LTDA
         </h4>
       </Copyright>
     </Container>
